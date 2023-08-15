@@ -66,6 +66,7 @@
     transition: transform ease 0.5s;
 }
 
+// クリック前
 .header__hamburger span:nth-of-type(1) {
     top: 0;
 }
@@ -76,6 +77,22 @@
 
 .header__hamburger span:nth-of-type(3) {
     bottom: 0;
+}
+
+
+// クリック後
+.header__hamburger.is-active span:nth-of-type(1) {
+    transform: translateY(rem(10)) rotate(35deg);
+    width: rem(40);
+}
+
+.header__hamburger.is-active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.header__hamburger.is-active span:nth-of-type(3) {
+    transform: translateY(rem(-13)) rotate(-35deg);
+    width: rem(40);
 }
 
 
