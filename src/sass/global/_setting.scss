@@ -41,8 +41,13 @@ $gray: #DDF0F1;
 // z-index
 ////////////////////
 
+$layer-header: 100;
+$layer-header-logo: 200;
+$layer-hamburger: 200;
+
 
 body {
   font-family: $base-font-family;
+  font-weight: $regular;
   color: $black;
 }
