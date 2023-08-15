@@ -1,0 +1,54 @@
+@use "global" as *;
+
+// SP時2列表記
+.common-nav__items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: rem(7);
+}
+
+.common-nav__item:not(:first-child) {
+    margin-top: rem(16);
+}
+
+.common-nav__item > a {
+    display: block;
+    padding: rem(12) 0;
+    font-weight: $bold;
+    font-size: rem(16);
+    line-height: 1.125;
+    color: $white;
+}
+
+.common-nav__item {
+    padding-left: rem(20);
+    position: relative;
+}
+
+.common-nav__item::before {
+    position: absolute;
+    content:"";
+    top: rem(15);
+    left: 0;
+    width: rem(18);
+    height: rem(18);
+    background-image: url(../images/common/starfish-icon.svg);
+    background-size: cover;
+}
+
+.common-nav__lv2-item > a {
+    display: block;
+    padding: rem(12) 0;
+    font-size: rem(16);
+    line-height: 1.125;
+    color: $white;
+}
+
+// PC時はSP時の2列表記をさらに2列に分け、合計で4列表記にする
+.common-nav__item-wrap {
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: rem(7);
+    }
+}

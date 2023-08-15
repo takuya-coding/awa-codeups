@@ -12,6 +12,7 @@
 .footer__head {
     @include mq("md") {
         display: flex;
+        gap: rem(40);
     }
 }
 
@@ -26,4 +27,46 @@
 .footer__icon {
     display: flex;
     // align-items: center;
+    margin-top: rem(16);
+    gap: rem(16);
+    @include mq("md") {
+        margin-top: rem(35);
+    }
+}
+
+.footer__icon-facebook {
+    width: rem(23);
+    @include mq("md") {
+        width: rem(26);
+    }
+}
+
+.footer__icon-instagram {
+    width: rem(23);
+    @include mq("md") {
+        width: rem(26);
+    }
+}
+
+.footer__nav {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(24);
+    }
+}
+
+.footer__copyright {
+    display: block;
+    margin-top: rem(28);
+    font-family: $second-font-family;
+    font-size: rem(12);
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+    @include mq("md") {
+        margin-top: rem(68);
+        font-size: rem(14);
+        line-height: 1.286;
+    }
 }
