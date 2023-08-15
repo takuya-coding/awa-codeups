@@ -12,4 +12,10 @@ $('.js-hamburger').on('click', function() {
     }
 });
 
+// ドロワーメニューの背景orリンクをクリックした際にドロワーメニューを閉じる
+$('.js-drawer').on('click', function() {
+    $(this).removeClass('is-active');
+    $('.js-hamburger').removeClass('is-active');
+});
+
 });
