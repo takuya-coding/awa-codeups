@@ -18,4 +18,15 @@ $('.js-drawer').on('click', function() {
     $('.js-hamburger').removeClass('is-active');
 });
 
+
+// main-viewのスライダー
+new Splide( '.splide-main-view', {
+    type: "fade",
+    autoplay: true,
+    interval: 5000,
+    speed: 5000,
+    rewind: true,
+}).mount();
+
+
 });
