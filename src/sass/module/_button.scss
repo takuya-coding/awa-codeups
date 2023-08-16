@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.button a {
+    display: inline-block;
+    font-family: $second-font-family;
+    font-size: rem(14);
+    line-height: 1.571;
+    padding: rem(16) rem(40);
+    text-align: center;
+
+    // 後ろ側の重なり部分
+    box-shadow: 0 0 0 1px $green, 4px 4px 0 0 $white, 4px 4px 0 1px $green;
+
+    // ホバー時スライド用のコード
+    background-color: $green;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+ .button a::first-letter {
+    text-transform: capitalize;
+ }
+
+ .button__arrow {
+    display: inline-block;
+    width: rem(40);
+    height: rem(6);
+    -webkit-mask-image: url(../images/common/button-arrow.svg);
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-image: url(../images/common/button-arrow.svg);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+    background-color: $white;
+    margin-left: rem(8);
+    padding-bottom: rem(12);
+ }
+
+// 以下、ホバー時スライド用のコード
+ .button a::after {
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+ }
+
+ .button a:hover {
+    color: $green;
+ }
+
+ .button a:hover .button__arrow {
+    background-color: $green;
+ }
+
+ .button a:hover::after {
+    transform: scale(1, 1);
+ }
