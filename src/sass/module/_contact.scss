@@ -1,1 +1,83 @@
 @use "global" as *;
+
+.contact__inner .inner {
+    padding-right: rem(30);
+    padding-left: rem(30);
+    @include mq("md") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.contact__logo {
+    max-width: rem(174);
+    width: 100%;
+    filter: invert(51%) sepia(10%) saturate(1991%) hue-rotate(136deg) brightness(94%) contrast(89%);
+    margin: 0 auto;
+    @include mq("md") {
+        max-width: rem(200);
+    }
+}
+
+.contact__logo a {
+    display: block;
+}
+
+.contact__shop-info-wrapper {
+    padding: 0 rem(10);
+}
+
+.contact__shop-info-text {
+    border-top: 1px solid $green;
+    padding-top: rem(16);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(16);
+    line-height: 1.5;
+}
+
+.contact__tel,
+.contact__business-hours,
+.contact__regular-holiday {
+    margin-top: rem(4);
+}
+
+.contact__shop-info-map {
+    max-width: 100%;
+    margin-top: rem(16);
+}
+
+.contact__map {
+    position: relative;
+    width: 100%;
+    // height: 0;
+    padding-top: calc(calc(160 / 295) * 100%);
+}
+
+.contact__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__more {
+    margin-top: rem(40);
+}
+
+.contact__text {
+    margin-top: rem(8);
+    font-size: rem(14);
+    line-height: 1.286;
+    color: $green;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+}
+
+.contact__button {
+    margin-top: rem(40);
+    text-align: center;
+}
+
+

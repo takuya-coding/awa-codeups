@@ -32,7 +32,7 @@
 }
 
 
-// ブログタイトルの色違い
+// blogタイトルの色違い
 .section-title__en--color {
     color: $black;
     @include mq("md") {
@@ -52,5 +52,17 @@
     @include mq("md") {
         color: $white;
     }
+}
+
+
+// contactタイトルの大きさ違いと影
+.section-title__en--size {
+    font-size: rem(80);
+    line-height: 0.7;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-title__ja--shadow {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
