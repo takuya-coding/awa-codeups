@@ -29,4 +29,33 @@ new Splide( '.splide-main-view', {
 }).mount();
 
 
+// 背景色の後に画像が表示されるエフェクト（informationセクション）
+
+// 要素の取得とスピードの設定
+let box = $('.information__img'),
+speed = 700;
+
+// .information__imgの付いた要素に対して下記の処理を行う
+box.each(function() {
+    $(this).append('<div class="color"></div>')
+    let color = $(this).find($('.color')),
+    image = $(this).find('img');
+    let counter = 0;
+
+    image.css('opacity','0');
+    color.css('width','0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function(){
+        if(counter == 0){
+            $(this).delay(200).animate({'width':'100%'},speed,function(){
+                   image.css('opacity','1');
+                   $(this).css({'left':'0' , 'right':'auto'});
+                   $(this).animate({'width':'0%'},speed);
+                })
+            counter = 1;
+          }
+     });
+});
+
+
 });
