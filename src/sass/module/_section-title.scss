@@ -31,3 +31,26 @@
     }
 }
 
+
+// ブログタイトルの色違い
+.section-title__en--color {
+    color: $black;
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+.section-title__en--color::first-letter {
+    color: $green;
+    @include mq("md") {
+        color: $gray;
+    }
+}
+
+.section-title__ja--color {
+    color: $green;
+    @include mq("md") {
+        color: $white;
+    }
+}
+

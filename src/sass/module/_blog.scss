@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.blog {
+    @include mq("md") {
+        padding-top: rem(100);
+        background-image: url(../images/common/blog-background.jpg);
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+    }
+}
+
+.blog__inner .inner {
+    padding-right: rem(20);
+    padding-left: rem(20);
+    @include mq("md") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.blog__cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+    margin-top: rem(24);
+    @include mq("md") {
+        flex-direction: row;
+        margin-top: rem(80);
+    }
+}
+
+.blog__button {
+    margin-top: rem(40);
+    text-align: center;
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
