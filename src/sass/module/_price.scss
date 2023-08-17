@@ -23,6 +23,10 @@
 .price__img {
     aspect-ratio: 345 / 227;
     overflow: hidden;
+
+    // エフェクト用コード
+    position: relative;
+
     @include mq("md") {
         aspect-ratio: 492 / 746;
         max-width: calc(calc(492 / 987) * 100%);
@@ -30,10 +34,24 @@
     }
 }
 
+// エフェクト用コード
+.price__img .color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: $green;
+}
+
 .price__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    // エフェクト用コード
+    display: block;
 }
 
 .price__table {

@@ -64,7 +64,7 @@ box.each(function() {
 let box2 = $('.post__img'),
 speed2 = 700;
 
-// .post_imgの付いた要素に対して下記の処理を行う
+// .post__imgの付いた要素に対して下記の処理を行う
 box2.each(function() {
     $(this).append('<div class="color"></div>')
     let color2 = $(this).find($('.color')),
@@ -82,6 +82,35 @@ box2.each(function() {
                    $(this).animate({'width':'0%'},speed2);
                 })
             counter2 = 1;
+          }
+     });
+});
+
+
+// 背景色の後に画像が表示されるエフェクト（priceセクション）
+
+// 要素の取得とスピードの設定
+let box3 = $('.price__img'),
+speed3 = 700;
+
+// .price__imgの付いた要素に対して下記の処理を行う
+box3.each(function() {
+    $(this).append('<div class="color"></div>')
+    let color3 = $(this).find($('.color')),
+    image3 = $(this).find('img');
+    let counter3 = 0;
+
+    image3.css('opacity','0');
+    color3.css('width','0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color3.on('inview', function(){
+        if(counter3 == 0){
+            $(this).delay(200).animate({'width':'100%'},speed3,function(){
+                   image3.css('opacity','1');
+                   $(this).css({'left':'0' , 'right':'auto'});
+                   $(this).animate({'width':'0%'},speed3);
+                })
+            counter3 = 1;
           }
      });
 });
