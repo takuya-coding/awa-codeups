@@ -5,10 +5,14 @@
     background-color: $white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: rem(15) rem(16) rem(24);
+    @include mq("md") {
+        padding: rem(24);
+    }
 }
 
 .post__head {
     display: flex;
+    align-items: flex-end;
     gap: rem(13);
     @include mq("md") {
         gap: rem(16);
@@ -27,6 +31,7 @@
     @include mq("md") {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
     }
 }
 
@@ -53,8 +58,10 @@
     font-size: rem(16);
     border-bottom: 1px solid $green;
     padding-bottom: rem(4);
+    margin-top: rem(4);
     @include mq("md") {
         font-size: rem(24);
+        margin-top: rem(8);
     }
 }
 
