@@ -70,16 +70,34 @@
     overflow: hidden;
     max-width: calc(calc(151 / 300) * 100%);
     width: 100%;
+
+    // エフェクト用コード
+    position: relative;
+
     @include mq("md") {
         aspect-ratio: 180 / 140;
         max-width: calc(calc(180 / 456) * 100%);
     }
 }
 
+// エフェクト用コード
+.post__img .color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: $green;
+}
+
 .post__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    // エフェクト用コード
+    display: block;
 }
 
 .post__text {

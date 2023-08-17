@@ -58,4 +58,34 @@ box.each(function() {
 });
 
 
+// 背景色の後に画像が表示されるエフェクト（voiceセクション）
+
+// 要素の取得とスピードの設定
+let box2 = $('.post__img'),
+speed2 = 700;
+
+// .post_imgの付いた要素に対して下記の処理を行う
+box2.each(function() {
+    $(this).append('<div class="color"></div>')
+    let color2 = $(this).find($('.color')),
+    image2 = $(this).find('img');
+    let counter2 = 0;
+
+    image2.css('opacity','0');
+    color2.css('width','0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color2.on('inview', function(){
+        if(counter2 == 0){
+            $(this).delay(200).animate({'width':'100%'},speed2,function(){
+                   image2.css('opacity','1');
+                   $(this).css({'left':'0' , 'right':'auto'});
+                   $(this).animate({'width':'0%'},speed2);
+                })
+            counter2 = 1;
+          }
+     });
+});
+
+
+
 });
