@@ -26,7 +26,69 @@ new Splide( '.splide-main-view', {
     interval: 5000,
     speed: 5000,
     rewind: true,
+    //デフォルトの矢印とページネーションを削除
+    arrows: false,
+    pagination: false,
 }).mount();
+
+
+
+// campaignセクションのスライダー
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+// campaignセクションのスライダー
+// const target = '.campaign .splide-campaign';
+// const options = {
+//   mediaQuery: 'min',
+//   perMove: 1, //1度に何枚動かすか
+//   fixedWidth: '17.5rem',
+//   gap: '1.5rem',
+//   updateOnMove: true,
+//   //追加
+//   type: "loop",
+//   autoplay: true,
+//   interval: 4000,
+//   speed: 2000,
+//   //デフォルトの矢印とページネーションを削除
+//   //arrows: false,
+//   //pagination: false,
+
+//   breakpoints: {
+//     768: {
+//     fixedWidth: '20.875rem',
+//     gap: '2.5rem',
+//     //デフォルトの矢印とページネーションを削除
+//     //arrows: false,
+//     //pagination: false,
+//     }
+//   },
+// }
+// const mySplide = new Splide(target, options);
+
+// mySplide.mount();
+
+
 
 
 // 背景色の後に画像が表示されるエフェクト（informationセクション）
