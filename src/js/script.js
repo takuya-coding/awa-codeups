@@ -61,8 +61,8 @@ const mySwiper = new Swiper('.panels .swiper', {
     // loopAdditionalSlides: 1,
     autoplay: true,
 
-    slidesPerView: 'auto',
-    // slidesPerView: 1.26,
+    // slidesPerView: 'auto',
+    slidesPerView: 1.26,
     spaceBetween: 24,
     centerMode: true,
     grabCursor: true,
@@ -77,7 +77,11 @@ const mySwiper = new Swiper('.panels .swiper', {
     breakpoints: {
       768: {
         spaceBetween: 40,
-        // slidesPerView: 3.5,
+        slidesPerView: 2.5,
+      },
+      1440: {
+        spaceBetween: 40,
+        slidesPerView: 3.5,
       }
     },
   });
