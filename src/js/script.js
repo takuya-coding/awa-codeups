@@ -34,25 +34,51 @@ new Splide( '.splide-main-view', {
 
 
 // campaignセクションのスライダー
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'vertical',
+//     loop: true,
+  
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+  
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+  
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//   });
+
+const mySwiper = new Swiper('.panels .swiper', {
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
+    // loopAdditionalSlides: 1,
+    autoplay: true,
+
+    slidesPerView: 'auto',
+    // slidesPerView: 1.26,
+    spaceBetween: 24,
+    centerMode: true,
+    grabCursor: true,
+    // pagination: {
+    //   el: '.card02 .swiper-pagination',
+    //   clickable: true,
+    // },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.panels .swiper-button-next',
+      prevEl: '.panels .swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+    breakpoints: {
+      768: {
+        spaceBetween: 40,
+        // slidesPerView: 3.5,
+      }
     },
   });
 

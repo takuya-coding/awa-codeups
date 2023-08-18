@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.panels {
+    overflow: hidden;
+    // 右側だけinner幅から飛び出す
+    margin-right: calc(50% - 50vw);
+}
+
+// .swiper {
+//     overflow: visible;
+// }
+
+.panels__swiper {
+    overflow: visible;
+}
+
+// .swiper-slide {
+//     width: rem(280);
+//     @include mq("md") {
+//         width: rem(333);
+//     }
+// }
+
+.panels__item {
+    max-width: rem(280);
+    width: 100%;
+    @include mq("md") {
+        max-width: rem(333);
+        width: 100%;
+    }
+}

@@ -23,12 +23,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
   <!-- インデックスさせない -->
@@ -288,13 +290,14 @@
         <div class="campaign__panels panels">
 
           <div class="panels__swiper swiper">
+
             <!-- If we need navigation buttons -->
             <div class="panels__swiper-button-prev swiper-button-prev"></div>
             <div class="panels__swiper-button-next swiper-button-next"></div>
 
-            <div class="panels__swiper-wrapper swiper__wrapper">
+            <div class="panels__swiper-wrapper swiper-wrapper">
 
-              <div class="panels-item panel swiper__slide">
+              <div class="panels__item panel swiper-slide">
                 <div class="panel__img">
                   <picture>
                     <source srcset="./assets/images/common/campaign-panel1.webp" type="image/webp" />
@@ -312,7 +315,7 @@
                 </div>
               </div>
 
-              <div class="panels-item panel swiper__slide">
+              <div class="panels__item panel swiper-slide">
                 <div class="panel__img">
                   <picture>
                     <source srcset="./assets/images/common/campaign-panel2.webp" type="image/webp" />
@@ -330,7 +333,7 @@
                 </div>
               </div>
 
-              <div class="panels-item panel swiper__slide">
+              <div class="panels__item panel swiper-slide">
                 <div class="panel__img">
                   <picture>
                     <source srcset="./assets/images/common/campaign-panel3.webp" type="image/webp" />
@@ -348,7 +351,7 @@
                 </div>
               </div>
 
-              <div class="panels-item panel swiper__slide">
+              <div class="panels__item panel swiper-slide">
                 <div class="panel__img">
                   <picture>
                     <source srcset="./assets/images/common/campaign-panel4.webp" type="image/webp" />
@@ -367,6 +370,7 @@
               </div>
 
             </div>
+
           </div>
 
         </div>
