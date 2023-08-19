@@ -207,6 +207,34 @@ box3.each(function() {
      });
 });
 
+// footer手前で止まるトップに戻るボタン（レスポンシブ対応込み）
+// $(".to-top").hide();
+// $(window).on("scroll", function () {
+//   const scrollHeight = $(document).height(), //ドキュメントの高さ
+//         scrollPosition = $(window).height() + $(window).scrollTop(), //現在の位置
+//         footHeight = $("footer").innerHeight(); //footerの高さ
+//   if (scrollHeight - scrollPosition <= footHeight) {
+//     if (window.innerWidth <= 767) {
+//       $(".to-top").css({ position: "absolute", bottom: footHeight + 15 });
+//     } else {
+//       $(".to-top").css({ position: "absolute", bottom: footHeight + 20 });
+//     }
+//   } else {
+//     if (window.innerWidth <= 767) {
+//       $(".to-top").css({ position: "fixed", bottom: "15px" });
+//     } else {
+//       $(".to-top").css({ position: "fixed", bottom: "20px" });
+//     }
+//   }
+// });
+
+// $(window).on("resize", function () {
+//   if (window.innerWidth <= 767) {
+//     $(".to-top").css({ bottom: "15px" });
+//   } else {
+//     $(".to-top").css({ bottom: "20px" });
+//   }
+// });
 
 
 });
