@@ -207,34 +207,57 @@ box3.each(function() {
      });
 });
 
-// footer手前で止まるトップに戻るボタン（レスポンシブ対応込み）
-// $(".to-top").hide();
-// $(window).on("scroll", function () {
-//   const scrollHeight = $(document).height(), //ドキュメントの高さ
-//         scrollPosition = $(window).height() + $(window).scrollTop(), //現在の位置
-//         footHeight = $("footer").innerHeight(); //footerの高さ
-//   if (scrollHeight - scrollPosition <= footHeight) {
-//     if (window.innerWidth <= 767) {
-//       $(".to-top").css({ position: "absolute", bottom: footHeight + 15 });
-//     } else {
-//       $(".to-top").css({ position: "absolute", bottom: footHeight + 20 });
-//     }
-//   } else {
-//     if (window.innerWidth <= 767) {
-//       $(".to-top").css({ position: "fixed", bottom: "15px" });
-//     } else {
-//       $(".to-top").css({ position: "fixed", bottom: "20px" });
-//     }
-//   }
-// });
 
-// $(window).on("resize", function () {
-//   if (window.innerWidth <= 767) {
-//     $(".to-top").css({ bottom: "15px" });
-//   } else {
-//     $(".to-top").css({ bottom: "20px" });
-//   }
-// });
+// トップに戻るボタン（基本の動き）
+const topBtn = $('.js-to-top');
+topBtn.hide();
 
+// ボタンの表示設定
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    // 指定px以上のスクロールでボタンを表示
+    topBtn.fadeIn();
+  } else {
+    // 画面が指定pxより上ならボタンを非表示
+    topBtn.fadeOut();
+  }
+});
+
+// ボタンをクリックしたらスクロールして上に戻る
+topBtn.click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 300, 'swing');
+  return false;
+});
+
+// トップに戻るボタンのアレンジ（footer手前で止まる）
+topBtn.hide();
+$(window).on("scroll", function () {
+  const scrollHeight = $(document).height(), //ドキュメントの高さ
+        scrollPosition = $(window).height() + $(window).scrollTop(), //現在の位置
+        footHeight = $("footer").innerHeight(); //footerの高さ
+  if (scrollHeight - scrollPosition <= footHeight) {
+    if (window.innerWidth <= 767) {
+      topBtn.css({ position: "absolute", bottom: footHeight + 15 });
+    } else {
+      topBtn.css({ position: "absolute", bottom: footHeight + 20 });
+    }
+  } else {
+    if (window.innerWidth <= 767) {
+      topBtn.css({ position: "fixed", bottom: "15px" });
+    } else {
+      topBtn.css({ position: "fixed", bottom: "20px" });
+    }
+  }
+});
+
+$(window).on("resize", function () {
+  if (window.innerWidth <= 767) {
+    topBtn.css({ bottom: "15px" });
+  } else {
+    topBtn.css({ bottom: "20px" });
+  }
+});
 
 });
