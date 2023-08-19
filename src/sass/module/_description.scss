@@ -1,55 +1,62 @@
 @use "global" as *;
 
-.description {
-    position: relative;
-}
+// .description {
+//     position: relative;
+// }
 
 .description__img {
+    position: relative;
     width: 100%;
-    // position: relative;
 }
 
 .description__img-sub {
-    // aspect-ratio: 128 / 194;
-    // overflow: hidden;
+    width: calc(calc(128 / 345)) * 100%;
+    height: auto;
     position: absolute;
     z-index: 1;
-    top: rem(-18);
+    // top: rem(-26);
+    top: -12.3%;
     left: 0;
+    @include mq("md") {
+        width: calc(calc(400 / 1080)) * 100%;
+        // top: rem(-80);
+        top: -12.1%;
+    }
 }
 
 .description__img-sub img {
-    max-width: calc(calc(128 / 345)) * 100%;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    // @include mq("md") {
-    // max-width: calc(calc(400 / 606)) * 100%;
-    // }
 }
 
 .description__img-main {
-    // aspect-ratio: 281 / 186;
-    // overflow: hidden;
+    width: calc(calc(281 / 345)) * 100%;
+    height: auto;
     margin-left: auto;
+    @include mq("md") {
+        width: calc(calc(880 / 1080)) * 100%;
+    }
 }
 
 .description__img-main img {
-    max-width: calc(calc(281 / 345)) * 100%;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    @include mq("md") {
-        max-width: calc(calc(880 / 581)) * 100%;
-    }
 }
 
 .description__body {
     margin-top: rem(40);
     @include mq("md") {
+        position: relative;
+    }
+}
+
+.description__body-wrapper {
+    @include mq("md") {
         position: absolute;
-        top: rem(200);
-        left: rem(200);
+        top: rem(-500);
+        left: 18.5%;
         z-index: 2;
         display: flex;
         gap: rem(40);
