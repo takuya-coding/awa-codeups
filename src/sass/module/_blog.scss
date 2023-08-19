@@ -36,3 +36,36 @@
         margin-top: rem(80);
     }
 }
+
+// 魚のあしらい配置
+.blog__decoration {
+    position: relative;
+}
+
+.blog__decoration span {
+    display: none;
+    @include mq("md") {
+        display: inline-block;
+        width:rem(437);
+        height:rem(201);
+        -webkit-mask-image: url(../images/common/left-facing-fishes-white-decoration.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: url(../images/common/left-facing-fishes-white-decoration.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $white;
+
+        position: absolute;
+        content: "";
+        top: rem(-75);
+        z-index: $layer-decoration;
+        // 画面幅広いときに広がりすぎないようにする
+        right: calc(50% - min(44.2vw, 40rem));
+        // あしらい画像サイズ可変する場合の例
+        // width: clamp(rem(100), 13.5vw, rem(194));
+
+    }
+}
