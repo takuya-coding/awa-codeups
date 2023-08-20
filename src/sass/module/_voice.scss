@@ -42,7 +42,8 @@
 
         position: absolute;
         content: "";
-        top: rem(-110);
+        // top: rem(-110);
+        top: rem(-120);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         left: calc(50% - min(43vw, 38.75rem));
@@ -75,7 +76,8 @@
 
         position: absolute;
         content: "";
-        top: rem(-80);
+        // top: rem(-80);
+        top: rem(-94.5);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         right: calc(50% - min(37.5vw, 33.75rem));

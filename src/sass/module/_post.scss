@@ -7,7 +7,8 @@
     // padding: rem(15) rem(16) rem(24);
     padding: rem(13.5) rem(16) rem(24);
     @include mq("md") {
-        padding: rem(24);
+        // padding: rem(24);
+        padding: rem(23.5) rem(24) rem(24);
     }
 }
 
@@ -52,7 +53,9 @@
     padding: rem(4) rem(11);
     border: 1px solid $green;
     @include mq("md") {
-        padding: rem(6) rem(16);
+        // padding: rem(6) rem(16);
+        // padding: rem(2.8) rem(15.2);
+        padding: rem(4.5) rem(15.2);
     }
 }
 
@@ -67,14 +70,15 @@
     @include mq("md") {
         font-size: rem(24);
         margin-top: rem(8);
+        padding-bottom: 0;
     }
 }
 
 .post__img {
     aspect-ratio: 151 / 117;
     overflow: hidden;
-    max-width: calc(calc(151 / 300) * 100%);
-    // max-width: rem(151);
+    // max-width: calc(calc(151 / 300) * 100%);
+    max-width: rem(151);
     width: 100%;
 
     // エフェクト用コード
@@ -82,7 +86,9 @@
 
     @include mq("md") {
         aspect-ratio: 180 / 140;
-        max-width: calc(calc(180 / 456) * 100%);
+        // max-width: calc(calc(180 / 456) * 100%);
+        max-width: rem(180);
+        width: 100%;
     }
 }
 
@@ -111,7 +117,8 @@
     font-size: rem(16);
     line-height: 1.5;
     @include mq("md") {
-        margin-top: rem(40);
+        // margin-top: rem(40);
+        margin-top: rem(41.5);
     }
 }
 
