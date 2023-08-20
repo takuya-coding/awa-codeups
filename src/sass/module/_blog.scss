@@ -9,7 +9,7 @@
     }
 }
 
-.blog__inner .inner {
+.blog__inner.inner {
     padding-right: rem(20);
     padding-left: rem(20);
     @include mq("md") {
@@ -22,7 +22,8 @@
     display: flex;
     flex-direction: column;
     gap: rem(40);
-    margin-top: rem(24);
+    // margin-top: rem(24);
+    margin-top: rem(27);
     @include mq("md") {
         flex-direction: row;
         margin-top: rem(80);
