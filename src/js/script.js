@@ -64,10 +64,10 @@ const mySwiper = new Swiper('.js-panels .swiper', {
     slidesPerView: 1.26,
     speed: 1500, //スライド切り替えのアニメーションのスピード
     width: 360, //panel1枚の幅を固定
-    // autoplay: {
-    //   delay: 3000, //次のスライドに切り替わるまでの時間
-    //   disableOnInteraction: false, //ユーザーが操作したときに自動再生を止める（falseにしておくのがオススメ）
-    // },
+    autoplay: {
+      delay: 3000, //次のスライドに切り替わるまでの時間
+      disableOnInteraction: false, //ユーザーが操作したときに自動再生を止める（falseにしておくのがオススメ）
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

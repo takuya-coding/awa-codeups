@@ -10,11 +10,12 @@
     height: auto;
     position: absolute;
     z-index: 1;
-    top: -12.3%;
+    // top: -12.3%;
+    top: -14%;
     left: 0;
     @include mq("md") {
         width: calc(calc(400 / 1080)) * 100%;
-        top: -12.1%;
+        // top: -12.1%;
     }
 }
 
