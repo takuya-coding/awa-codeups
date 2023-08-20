@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.voice {
-    @include mq("md") {
-        padding-top: rem(140);
-    }
-}
-
 .voice__posts {
     margin-top: rem(40);
     display: flex;
@@ -22,5 +16,71 @@
     text-align: center;
     @include mq("md") {
         margin-top: rem(80);
+    }
+}
+
+// 魚のあしらい配置
+.voice__decoration-left {
+    position: relative;
+}
+
+.voice__decoration-left span {
+    display: none;
+    @include mq("md") {
+        display: inline-block;
+        width:rem(301);
+        height:rem(138);
+        -webkit-mask-image: url(../images/common/right-facing-fishes-green-decoration.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: url(../images/common/right-facing-fishes-green-decoration.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $green;
+
+        position: absolute;
+        content: "";
+        top: rem(-110);
+        z-index: $layer-decoration;
+        // 画面幅広いときに広がりすぎないようにする
+        left: calc(50% - min(43vw, 38.75rem));
+        // あしらい画像サイズ可変する場合の例
+        width: clamp(rem(150), 20.9vw, rem(301));
+
+    }
+}
+
+// タツノオトシゴのあしらい配置
+.voice__decoration-right {
+    position: relative;
+}
+
+.voice__decoration-right span {
+    display: none;
+    @include mq("md") {
+        display: inline-block;
+        width:rem(71);
+        height:rem(162);
+        -webkit-mask-image: url(../images/common/seahorse-decoration.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: url(../images/common/seahorse-decoration.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $green;
+
+        position: absolute;
+        content: "";
+        top: rem(-80);
+        z-index: $layer-decoration;
+        // 画面幅広いときに広がりすぎないようにする
+        right: calc(50% - min(37.5vw, 33.75rem));
+        // あしらい画像サイズ可変する場合の例
+        width: clamp(rem(60), 4.93vw, rem(71));
+
     }
 }
