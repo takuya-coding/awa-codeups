@@ -4,6 +4,10 @@
     overflow: hidden;
     // 右側だけinner幅から飛び出す
     margin-right: calc(50% - 50vw);
+
+    // max-width: rem(1260);
+    // width: 100vw;
+
 }
 
 // .swiper {
@@ -34,7 +38,8 @@
 .panels {
     position: relative;
     padding-top: rem(100);
-    margin-top: rem(-65);
+    // panel下部のbox-shadowが隠れてしまうためpadding-bottomを設定
+    padding-bottom: rem(10);
 }
 
 .panels__swiper-controller {

@@ -19,6 +19,7 @@ $('.js-drawer').on('click', function() {
 });
 
 
+
 // main-viewのスライダー
 new Splide( '.splide-main-view', {
     type: "fade",
@@ -82,7 +83,7 @@ const mySwiper = new Swiper('.panels .swiper', {
       1440: {
         spaceBetween: 40,
         slidesPerView: 3.5,
-      }
+      },
     },
   });
 
@@ -122,7 +123,6 @@ const mySwiper = new Swiper('.panels .swiper', {
 
 
 // 背景色の後に画像が表示されるエフェクト（informationセクション）
-
 // 要素の取得とスピードの設定
 let box = $('.information__img'),
 speed = 700;
@@ -151,7 +151,6 @@ box.each(function() {
 
 
 // 背景色の後に画像が表示されるエフェクト（voiceセクション）
-
 // 要素の取得とスピードの設定
 let box2 = $('.post__img'),
 speed2 = 700;
@@ -180,7 +179,6 @@ box2.each(function() {
 
 
 // 背景色の後に画像が表示されるエフェクト（priceセクション）
-
 // 要素の取得とスピードの設定
 let box3 = $('.price__img'),
 speed3 = 700;
@@ -206,6 +204,7 @@ box3.each(function() {
           }
      });
 });
+
 
 
 // トップに戻るボタン（基本の動き）
@@ -259,5 +258,6 @@ $(window).on("resize", function () {
     topBtn.css({ bottom: "20px" });
   }
 });
+
 
 });
