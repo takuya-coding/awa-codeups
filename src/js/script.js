@@ -57,32 +57,26 @@ new Splide( '.splide-main-view', {
 //     },
 //   });
 
-const mySwiper = new Swiper('.panels .swiper', {
+const mySwiper = new Swiper('.js-panels .swiper', {
     loop: true,
-    // loopAdditionalSlides: 1,
-    autoplay: true,
-
-    // slidesPerView: 'auto',
-    slidesPerView: 1.26,
+    loopAdditionalSlides: 2, //複製するスライド数を指定（0だとループが滑らかに繋がらないことがあるため1以上がオススメ）
     spaceBetween: 24,
-    centerMode: true,
-    grabCursor: true,
-    // pagination: {
-    //   el: '.card02 .swiper-pagination',
-    //   clickable: true,
-    // },
+    slidesPerView: 1.26,
+    speed: 1500, //スライド切り替えのアニメーションのスピード
+    width: 360, //panel1枚の幅を固定
+    autoplay: {
+      delay: 3000, //次のスライドに切り替わるまでの時間
+      disableOnInteraction: false, //ユーザーが操作したときに自動再生を止める（falseにしておくのがオススメ）
+    },
     navigation: {
-      nextEl: '.panels .swiper-button-next',
-      prevEl: '.panels .swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       768: {
         spaceBetween: 40,
-        slidesPerView: 2.5,
-      },
-      1440: {
-        spaceBetween: 40,
         slidesPerView: 3.5,
+        width: 1270,
       },
     },
   });

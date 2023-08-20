@@ -5,41 +5,14 @@
     // 右側だけinner幅から飛び出す
     margin-right: calc(50% - 50vw);
 
-    // max-width: rem(1260);
-    // width: 100vw;
-
-}
-
-// .swiper {
-//     overflow: visible;
-// }
-
-.panels__swiper {
-    overflow: visible;
-
-}
-
-// .swiper-slide {
-//     width: rem(280);
-//     @include mq("md") {
-//         width: rem(333);
-//     }
-// }
-
-// .panels__item {
-//     max-width: rem(280);
-//     width: 100%;
-//     @include mq("md") {
-//         max-width: rem(333);
-//         width: 100%;
-//     }
-// }
-
-.panels {
     position: relative;
     padding-top: rem(100);
     // panel下部のbox-shadowが隠れてしまうためpadding-bottomを設定
     padding-bottom: rem(10);
+}
+
+.panels__swiper {
+    overflow: visible;
 }
 
 .panels__swiper-controller {
@@ -52,13 +25,13 @@
 
 .panels__swiper-button-prev::after,
 .panels__swiper-button-next::after {
-    bottom: 0;
-    content: "";
-    height: 0;
-    margin: auto;
     position: absolute;
+    content: "";
+    bottom: 0;
     top: 0;
     width: 0;
+    height: 0;
+    margin: auto;
 }
 
 .panels__swiper-button-prev::after,
@@ -100,6 +73,7 @@
 
 .panels__swiper-button-next::before {
     @include mq("md") {
+        // 矢印の向き反転
         transform: translate(-50%, -50%) scaleX(-1);
     }
 }
