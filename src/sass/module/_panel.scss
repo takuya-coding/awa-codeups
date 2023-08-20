@@ -30,12 +30,15 @@
 .panel__category {
     display: inline-block;
     font-size: rem(12);
-    line-height: 1.833;
+    // line-height: 1.833;
+    line-height: 1.733;
     color: $green;
     border: 1px solid $green;
-    padding: rem(4) rem(12);
+    // padding: rem(4) rem(12);
+    padding: rem(4) rem(11.84);
     @include mq("md") {
-        padding: rem(6) rem(16);
+        // padding: rem(6) rem(16);
+        padding: rem(4.8) rem(14.4);
     }
 }
 
@@ -45,7 +48,11 @@
     line-height: 1.5;
     margin-top: rem(4);
     border-bottom: 1px solid $green;
-    padding-bottom: rem(8);
+    // padding-bottom: rem(8);
+    padding-bottom: rem(6.4);
+    @include mq("md") {
+        padding-bottom: rem(8);
+    }
 }
 
 .panel__text {

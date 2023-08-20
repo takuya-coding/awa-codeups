@@ -6,9 +6,14 @@
     margin-right: calc(50% - 50vw);
 
     position: relative;
-    padding-top: rem(100);
+    // padding-top: rem(100);
+    padding-top: rem(92);
     // panel下部のbox-shadowが隠れてしまうためpadding-bottomを設定
     padding-bottom: rem(10);
+    @include mq("md") {
+    // padding-top: rem(100);
+    padding-top: rem(106);
+    }
 }
 
 .panels__swiper {
@@ -16,11 +21,15 @@
 }
 
 .panels__swiper-controller {
-    max-width: rem(190);
-    width: 100%;
-    position: absolute;
-    top: rem(40);
-    right: 12.5vw;
+    @include mq("md") {
+        // max-width: rem(190);
+        max-width: rem(206);
+        width: 100%;
+        position: absolute;
+        top: rem(40);
+        // right: 12.5vw;
+        right: 13.7vw;
+    }
 }
 
 .panels__swiper-button-prev::after,
