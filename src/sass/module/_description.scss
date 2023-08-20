@@ -1,9 +1,5 @@
 @use "global" as *;
 
-// .description {
-//     position: relative;
-// }
-
 .description__img {
     position: relative;
     width: 100%;
@@ -14,12 +10,10 @@
     height: auto;
     position: absolute;
     z-index: 1;
-    // top: rem(-26);
     top: -12.3%;
     left: 0;
     @include mq("md") {
         width: calc(calc(400 / 1080)) * 100%;
-        // top: rem(-80);
         top: -12.1%;
     }
 }
@@ -48,6 +42,7 @@
 .description__body {
     margin-top: rem(40);
     @include mq("md") {
+        margin-top: 0;
         position: relative;
     }
 }
@@ -55,11 +50,13 @@
 .description__body-wrapper {
     @include mq("md") {
         position: absolute;
-        top: rem(-500);
+        top: rem(-460);
         left: 18.5%;
         z-index: 2;
         display: flex;
         gap: rem(40);
+        // 画面幅縮小時に右側の余白確保
+        padding-right: rem(40);
     }
 }
 
