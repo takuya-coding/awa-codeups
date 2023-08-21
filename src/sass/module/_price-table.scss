@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .price-table th {
-    // padding-bottom: rem(4);
-    padding-bottom: rem(2.5);
+    padding-bottom: rem(4);
+    // padding-bottom: rem(2.5);
     border-bottom: 1px solid $green;
     width: 100%;
     font-weight: $bold;
@@ -43,7 +43,8 @@
 .price-table__margin {
     display: block;
     // margin-top: rem(40);
-    margin-top: rem(36.8);
+    // margin-top: rem(36.8);
+    margin-top: rem(35);
     @include mq("md") {
         margin-top: rem(35.2);
     }
