@@ -48,7 +48,9 @@
     // ロゴサイズを調整後、下線の位置が合わせられないため、heightを指定して調整
     height: rem(70);
     @include mq("md") {
-        max-width: rem(200);
+        // max-width: rem(200);
+        max-width: rem(215);
+        height: rem(81);
     }
 }
 
@@ -127,11 +129,12 @@
         padding-left: rem(81);
         border-left: 1px solid $green;
         // フレックアイテムのサイズ指定
-        max-width: calc(calc(396 / 836) * 100%);
+        // max-width: calc(calc(396 / 836) * 100%);
+        max-width: 43.27%;
         width: 100%;
 
         // 仮の数値で設定（後ほど微調整）
-        padding-top: rem(20);
+        padding-top: rem(32.5);
         padding-bottom: rem(20);
     }
 }
@@ -146,7 +149,8 @@
 }
 
 .contact__button {
-    margin-top: rem(40);
+    // margin-top: rem(40);
+    margin-top: rem(38.5);
     text-align: center;
 }
 
