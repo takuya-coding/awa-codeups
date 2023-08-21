@@ -9,8 +9,13 @@
 }
 
 .price__inner.inner {
+    // SP時のみtableの左右幅が合わないためinner幅にて微調整
     padding-left: rem(14);
     padding-right: rem(14);
+    @include mq("md") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
 }
 
 .price__wrapper {
@@ -65,7 +70,7 @@
     @include mq("md") {
         max-width: calc(calc(492 / 987) * 100%);
         width: 100%;
-        margin-top: 0;
+        margin-top: rem(-4.5);
     }
 }
 
