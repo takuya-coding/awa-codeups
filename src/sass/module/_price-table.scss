@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .price-table th {
-    padding-bottom: rem(4);
+    // padding-bottom: rem(4);
+    padding-bottom: rem(2.5);
     border-bottom: 1px solid $green;
     width: 100%;
     font-weight: $bold;
@@ -11,7 +12,8 @@
 }
 
 .price-table td {
-    padding-top: rem(8);
+    // padding-top: rem(8);
+    padding-top: rem(5.2);
     font-size: rem(14);
     line-height: 1.714;
     @include mq("md") {
@@ -40,5 +42,9 @@
 // 余白付ける用spanタグ
 .price-table__margin {
     display: block;
-    margin-top: rem(40);
+    // margin-top: rem(40);
+    margin-top: rem(36.8);
+    @include mq("md") {
+        margin-top: rem(35.2);
+    }
 }
