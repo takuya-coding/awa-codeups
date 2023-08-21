@@ -3,8 +3,10 @@
 // SP時2列表記
 .common-nav__items {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: rem(7);
+    // grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1.1fr 1fr;
+    // column-gap: rem(7);
+    column-gap: rem(8.5);
 }
 
 .common-nav__item:not(:first-child) {
@@ -21,7 +23,8 @@
 }
 
 .common-nav__item {
-    padding-left: rem(20);
+    // padding-left: rem(20);
+    padding-left: rem(21.5);
     position: relative;
 }
 
@@ -42,6 +45,7 @@
     font-size: rem(16);
     line-height: 1.125;
     color: $white;
+    padding-left: rem(2.5);
 }
 
 // PC時はSP時の2列表記をさらに2列に分け、合計で4列表記にする
@@ -50,5 +54,12 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: rem(7);
+    }
+}
+
+.common-nav__item-wrap-for-pc:nth-child(2) {
+    margin-top: rem(16);
+    @include mq("md") {
+        margin-top: 0;
     }
 }
