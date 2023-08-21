@@ -7,6 +7,10 @@
     grid-template-columns: 1.1fr 1fr;
     // column-gap: rem(7);
     column-gap: rem(8.5);
+    @include mq("md") {
+    grid-template-columns: 1fr 1fr;
+    column-gap: rem(31);
+    }
 }
 
 .common-nav__item:not(:first-child) {
@@ -45,7 +49,7 @@
     font-size: rem(16);
     line-height: 1.125;
     color: $white;
-    padding-left: rem(2.5);
+    padding-left: rem(1);
 }
 
 // PC時はSP時の2列表記をさらに2列に分け、合計で4列表記にする
@@ -54,6 +58,10 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: rem(7);
+        @include mq("md") {
+            // column-gap: rem(32.5);
+            column-gap: rem(50);
+        }
     }
 }
 
