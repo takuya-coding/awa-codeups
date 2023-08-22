@@ -1,6 +1,6 @@
 @use "global" as *;
 
-// footer手前で泊まるようにするために記述（jQueryと連動）
+// footer手前で止まるようにするために記述（jQueryと連動）
 body {
     position: relative;
 }
@@ -36,7 +36,10 @@ body {
     transform: translateX(-50%) rotate(-45deg);
     border-radius: rem(5);
     @include mq("md") {
-        width: rem(14.5);
+        // width: rem(14.5);
+        width: rem(9.7);
+        top: 31.2%;
+        left: 46.7%;
     }
 }
 
@@ -50,6 +53,7 @@ body {
     transform: translateY(-50%) rotate(90deg);
     border-radius: rem(5);
     @include mq("md") {
-        width: rem(49);
+        // width: rem(49);
+        width: rem(36.5);
     }
 }
