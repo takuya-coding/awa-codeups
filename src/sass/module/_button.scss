@@ -98,9 +98,10 @@
    content: "";
    top: rem(4);
    // bottom: rem(-4);
-   bottom: rem(-0.6);
+   bottom: rem(0.6);
    left: rem(4);
-   right: rem(-4);
+   // right: rem(-4);
+   right: rem(-5.6);
    border: 1px solid $green;
    // z-index: 1;
  }
