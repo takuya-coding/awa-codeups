@@ -67,6 +67,9 @@
     font-size: rem(18);
     line-height: 1;
     color: $white;
+}
+
+.pc-nav__item p::first-letter {
     text-transform: capitalize;
 }
 
