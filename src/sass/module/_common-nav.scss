@@ -35,7 +35,8 @@
 .common-nav__item::before {
     position: absolute;
     content:"";
-    top: rem(15);
+    // top: rem(15);
+    top: rem(11.8);
     left: 0;
     width: rem(18);
     height: rem(18);
@@ -62,6 +63,12 @@
             // column-gap: rem(32.5);
             column-gap: rem(50);
         }
+    }
+}
+
+.common-nav__item-wrap:nth-child(2) {
+    @include mq("md") {
+        column-gap: rem(18);
     }
 }
 
