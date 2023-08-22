@@ -5,13 +5,14 @@
     font-family: $second-font-family;
     font-size: rem(14);
     line-height: 1.571;
-   //  padding: rem(16) rem(40);
-   // padding: rem(15.2) rem(40);
-   padding: rem(15.2) rem(38.5);
+    //  padding: rem(16) rem(40);
+    // padding: rem(15.2) rem(40);
+    padding: rem(15.2) rem(38.5);
     text-align: center;
+    border: 1px solid $green;
 
-    // 後ろ側の重なり部分
-    box-shadow: 0 0 0 1px $green, 4px 4px 0 0 $white, 4px 4px 0 1px $green;
+    // 後ろ側の重なり部分（whiteの部分を透明にできない）
+   //  box-shadow: 0 0 0 1px $green, 4px 4px 0 0 $white, 4px 4px 0 1px $green;
 
     // ホバー時スライド用のコード
     background-color: $green;
@@ -25,6 +26,18 @@
  .button a::first-letter {
     text-transform: capitalize;
  }
+
+//  .button a::before {
+//    display: inline-block;
+//    position: absolute;
+//    content: "";
+//    top: rem(-4);
+//    bottom: rem(-4);
+//    left: rem(-4);
+//    right: rem(-4);
+//    border: 1px solid $green;
+//    z-index: -1;
+//  }
 
  .button__arrow {
     display: inline-block;
@@ -51,8 +64,10 @@
     left: 0;
     content: "";
     width: 100%;
+   //  width: 105%;
     height: 100%;
-    transform: scale(0, 1);
+   //  transform: scale(0, 1);
+    transform: scale(0, 2);
     transform-origin: left top;
     transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
@@ -67,5 +82,25 @@
  }
 
  .button a:hover::after {
-    transform: scale(1, 1);
+   //  transform: scale(1, 1);
+    transform: scale(1, 2);
+ }
+
+
+//  後ろ側の重なり部分
+ .button__wrapper {
+   position: relative;
+   display: inline-block;
+ }
+
+ .button__wrapper::before {
+   position: absolute;
+   content: "";
+   top: rem(4);
+   // bottom: rem(-4);
+   bottom: rem(-0.6);
+   left: rem(4);
+   right: rem(-4);
+   border: 1px solid $green;
+   // z-index: 1;
  }
