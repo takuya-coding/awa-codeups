@@ -1,54 +1,5 @@
 @use "global" as *;
 
-// .campaign__splide {
-//     overflow: hidden;
-//     // 右側だけinner幅から飛び出す
-//     margin-right: calc(50% - 50vw);
-// }
-
-// .splide__track {
-//     overflow: visible;
-// }
-
-// .campaign__wrapper {
-//     overflow: visible;
-// }
-
-
-// .campaign__arrows {
-//     display: block;
-// }
-
-// .splide__arrows {
-//     display: block;
-// }
-
-// .campaign__arrow-prev {
-//     display: none;
-//     @include mq("md") {
-//         width: rem(80);
-//         height: rem(80);
-//         background-color: transparent;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         border: 1px solid $green;
-//     }
-// }
-
-// .campaign__arrow-next {
-//     display: none;
-//     @include mq("md") {
-//         width: rem(80);
-//         height: rem(80);
-//         background-color: transparent;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         border: 1px solid $green;
-//     }
-// }
-
 .campaign__panels {
     margin-top: rem(-65);
 }
