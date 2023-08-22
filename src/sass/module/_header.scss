@@ -64,7 +64,8 @@
 
 .header__hamburger span {
     position: absolute;
-    left: 0;
+    // left: 0;
+    left: rem(-4);
     width: 100%;
     height: rem(1);
     background-color: $white;
@@ -88,7 +89,8 @@
 
 // クリック後
 .header__hamburger.is-active span:nth-of-type(1) {
-    transform: translateY(rem(10)) rotate(35deg);
+    // transform: translateY(rem(10)) rotate(35deg);
+    transform: translateY(rem(11.5)) rotate(37.5deg);
     width: rem(40);
 }
 
@@ -97,7 +99,8 @@
 }
 
 .header__hamburger.is-active span:nth-of-type(3) {
-    transform: translateY(rem(-13)) rotate(-35deg);
+    // transform: translateY(rem(-13)) rotate(-35deg);
+    transform: translateY(rem(-11.5)) rotate(-37.5deg);
     width: rem(40);
 }
 

@@ -11,6 +11,7 @@
     background-color: $green;
     transform: translateX(100%);
     transition: ease 0.3s;
+    overflow: scroll;
 
     @include mq("md") {
         display: none;
@@ -54,7 +55,8 @@
 .sp-nav__item::before {
     position: absolute;
     content:"";
-    top: rem(15);
+    // top: rem(15);
+    top: rem(11.8);
     left: 0;
     width: rem(18);
     height: rem(18);
