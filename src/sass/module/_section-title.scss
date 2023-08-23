@@ -59,7 +59,7 @@
 .section-title__en--size {
     font-size: rem(80);
     line-height: 0.7;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     @include mq("md") {
         // 指定しないとスタイル反映されない
         font-size: rem(80);
@@ -67,7 +67,7 @@
     }
 }
 
-.section-title__ja--shadow {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+// .section-title__ja--shadow {
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+// }
 
