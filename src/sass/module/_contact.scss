@@ -136,7 +136,7 @@
 
         // 仮の数値で設定（後ほど微調整）
         padding-top: rem(32.5);
-        padding-bottom: rem(20);
+        padding-bottom: rem(16.8);
     }
 }
 
@@ -154,6 +154,9 @@
     margin-top: rem(40);
     // margin-top: rem(38.5);
     text-align: center;
+    @include mq("md") {
+        margin-top: rem(35.2);
+    }
 }
 
 // 魚のあしらい配置

@@ -76,7 +76,8 @@ const mySwiper = new Swiper('.js-panels .swiper', {
       768: {
         spaceBetween: 40,
         slidesPerView: 3.5,
-        width: 1270,
+        // width: 1270,
+        width: 1267,
       },
     },
   });

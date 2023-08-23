@@ -35,7 +35,8 @@
     margin-top: rem(38.5);
     text-align: center;
     @include mq("md") {
-        margin-top: rem(80);
+        // margin-top: rem(80);
+        margin-top: rem(78.5);
     }
 }
 
@@ -62,7 +63,8 @@
 
         position: absolute;
         content: "";
-        top: rem(-75);
+        // top: rem(-75);
+        top: rem(-78.2);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         left: calc(50% - min(43vw, 38.75rem));

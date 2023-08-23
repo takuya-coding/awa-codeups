@@ -11,6 +11,7 @@
     @include mq("md") {
     grid-template-columns: 1fr 1fr;
     column-gap: rem(31);
+    margin-top: rem(2);
     }
 }
 
