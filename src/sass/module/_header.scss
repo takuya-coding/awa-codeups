@@ -61,7 +61,7 @@
 .header__hamburger span {
     position: absolute;
     left: 0;
-    left: rem(-4);
+    // left: rem(-4);
     width: 100%;
     height: rem(1);
     background-color: $white;
@@ -88,6 +88,7 @@
     // transform: translateY(rem(10)) rotate(35deg);
     transform: translateY(rem(11.5)) rotate(37.5deg);
     width: rem(40);
+    left: rem(-4);
 }
 
 .header__hamburger.is-active span:nth-of-type(2) {
@@ -98,6 +99,8 @@
     // transform: translateY(rem(-13)) rotate(-35deg);
     transform: translateY(rem(-11.5)) rotate(-37.5deg);
     width: rem(40);
+    left: rem(-4);
+
 }
 
 
