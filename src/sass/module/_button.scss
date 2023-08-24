@@ -6,12 +6,11 @@
     font-size: rem(14);
     line-height: 1.571;
     //  padding: rem(16) rem(40);
-    // padding: rem(15.2) rem(40);
     padding: rem(15.2) rem(38.5);
     text-align: center;
     border: 1px solid $green;
 
-    // 後ろ側の重なり部分（whiteの部分を透明にできない）
+    // 後ろ側の重なり部分（box-shadowではwhiteの部分を透明にできないため疑似要素使う方法に変更）
    //  box-shadow: 0 0 0 1px $green, 4px 4px 0 0 $white, 4px 4px 0 1px $green;
 
     // ホバー時スライド用のコード

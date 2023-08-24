@@ -35,28 +35,6 @@ new Splide( '.splide-main-view', {
 
 
 // campaignセクションのスライダー
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'vertical',
-//     loop: true,
-  
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-  
-//     // And if we need scrollbar
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   });
-
 const mySwiper = new Swiper('.js-panels .swiper', {
     loop: true,
     loopAdditionalSlides: 2, //複製するスライド数を指定（0だとループが滑らかに繋がらないことがあるため1以上がオススメ）
