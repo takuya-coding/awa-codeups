@@ -12,6 +12,8 @@
     transform: translateX(100%);
     transition: ease 0.3s;
     overflow: scroll;
+
+    margin-top: rem(80);
     @include mq("md") {
         display: none;
     }
@@ -31,7 +33,10 @@
     padding-bottom: rem(100);
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: rem(7);
+    // column-gap: rem(7);
+    column-gap: rem(3.8);
+
+    padding-top: rem(12);
 }
 
 .sp-nav__item:not(:first-child) {

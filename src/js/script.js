@@ -6,18 +6,20 @@ $('.js-hamburger').on('click', function() {
     if($('.js-hamburger').hasClass('is-active')) {
         $('.js-drawer').removeClass('is-active');
         $(this).removeClass('is-active');
+        $('.js-header').removeClass('is-active');
     } else {
         $('.js-drawer').addClass('is-active');
         $(this).addClass('is-active');
+        $('.js-header').addClass('is-active');
     }
 });
 
 // ドロワーメニューの背景orリンクをクリックした際にドロワーメニューを閉じる
-$('.js-drawer').on('click', function() {
+$('.js-drawer, js-header-logo').on('click', function() {
     $(this).removeClass('is-active');
     $('.js-hamburger').removeClass('is-active');
+    $('.js-header').removeClass('is-active');
 });
-
 
 
 // main-viewのスライダー
