@@ -86,3 +86,9 @@
         transform: translate(-50%, -50%) scaleX(-1);
     }
 }
+
+// タブレットの青線表示対策
+.panels__swiper-button-prev.swiper-button-prev:focus,
+.panels__swiper-button-next.swiper-button-next:focus {
+    outline: none;
+}
