@@ -12,7 +12,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    z-index: $layer-main-view-text;
+    z-index: 10;
 }
 
 .main-view__main-title {

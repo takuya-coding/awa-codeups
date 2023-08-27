@@ -3,9 +3,25 @@
 .blog {
     @include mq("md") {
         padding-top: rem(100);
+        // background-image: url(../images/common/blog-background.jpg);
+        // background-size: 100% 60%;
+        // background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+.blog__background-img {
+    @include mq("md") {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-height: rem(500);
+        height: 100%;
         background-image: url(../images/common/blog-background.jpg);
-        background-size: 100% 60%;
+        background-size: cover;
         background-repeat: no-repeat;
+        z-index: -10;
     }
 }
 
