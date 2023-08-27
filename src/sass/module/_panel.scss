@@ -50,6 +50,11 @@
     border-bottom: 1px solid $green;
     // padding-bottom: rem(8);
     padding-bottom: rem(6.4);
+
+    // タイトルが長い場合に切り捨てるための記述
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @include mq("md") {
         padding-bottom: rem(8);
     }
