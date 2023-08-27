@@ -40,3 +40,26 @@
     }
   }
 }
+
+
+// 以下追記
+
+// ほぼ共通の部分
+body {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: $black;
+}
+
+// hover指定がない場合のaタグの透過処理
+// a {
+//   text-decoration: none;
+//   color: inherit;
+//   transition: opacity 0.3s;
+// }
+
+// a:hover {
+//   @include mq("md") {
+//     opacity: 0.8;
+//   }
+// }

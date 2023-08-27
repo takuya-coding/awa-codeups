@@ -118,3 +118,15 @@
         line-height: 1.286;
     }
 }
+
+
+// hover指定がない場合のaタグの透過処理
+.footer a {
+  transition: opacity 0.3s;
+}
+
+.footer a:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
+}
