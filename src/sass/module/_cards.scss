@@ -1,5 +1,14 @@
 @use "global" as *;
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+    @include mq("md") {
+        flex-direction: row;
+    }
+}
+
 .cards__item {
     max-width: rem(333);
     width: 100%;

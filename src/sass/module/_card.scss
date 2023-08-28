@@ -47,9 +47,9 @@
     padding-bottom: rem(4);
 
     // タイトルが長い場合に切り捨てるための記述
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
 }
 
 .card__text {

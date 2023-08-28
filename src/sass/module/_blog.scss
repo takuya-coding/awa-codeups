@@ -36,13 +36,9 @@
 }
 
 .blog__cards {
-    display: flex;
-    flex-direction: column;
-    gap: rem(40);
     // margin-top: rem(24);
     margin-top: rem(27);
     @include mq("md") {
-        flex-direction: row;
         margin-top: rem(80);
     }
 }
