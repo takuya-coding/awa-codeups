@@ -6,8 +6,6 @@
     gap: rem(40);
     // カード枚数が増えた場合、4枚目以降は折り返すように
     flex-wrap: wrap;
-    // カード枚数が1,2枚に減った場合、左右中央寄せ
-    justify-content: center;
     @include mq("md") {
         flex-direction: row;
     }

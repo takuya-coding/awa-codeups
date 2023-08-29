@@ -2,15 +2,9 @@
 
 .voice__posts {
     margin-top: rem(40);
-    display: flex;
-    flex-direction: column;
-    // gap: rem(40);
-    gap: rem(36.5);
     @include mq("md") {
         // margin-top: rem(30);
         margin-top: rem(28.5);
-        flex-direction: row;
-        gap: rem(38.2);
     }
 }
 
