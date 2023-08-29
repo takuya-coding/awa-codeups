@@ -8,6 +8,10 @@
 
     // hover指定がない場合のaタグの透過処理
     transition: opacity 0.3s;
+
+    // テキスト量が増えてもpanelの高さを揃えるための記述
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -31,6 +35,11 @@
 .card__body {
     // margin-top: rem(24);
     margin-top: rem(16);
+
+    // テキスト量が増えてもpanelの高さを揃えるための記述
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 
 .card__time {
@@ -50,6 +59,9 @@
     // white-space: nowrap;
     // overflow: hidden;
     // text-overflow: ellipsis;
+
+    // テキスト量が増えてもpanelの高さを揃えるための記述
+    flex-grow: 1;
 }
 
 .card__text {
