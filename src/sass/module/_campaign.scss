@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .campaign__panels {
-    margin-top: rem(-65);
+    // margin-top: rem(-65);
+    margin-top: rem(65);
 }
 
 .campaign__button {
@@ -12,5 +13,83 @@
         // margin-top: rem(70);
         margin-top: rem(68.5);
     }
+}
+
+
+.campaign {
+    position: relative;
+}
+
+.campaign__swiper-controller {
+    @include mq("md") {
+        // max-width: rem(190);
+        max-width: rem(207.6);
+        width: 100%;
+        position: absolute;
+        top: rem(60);
+        // right: 12.5vw;
+        right: 13.6vw;
+    }
+}
+
+.campaign__swiper-button-prev::after,
+.campaign__swiper-button-next::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+.campaign__swiper-button-prev::after,
+.campaign__swiper-button-next::after {
+    display: none;
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $green;
+        border-radius: 50%;
+    }
+}
+
+.campaign__swiper-button-prev::before,
+.campaign__swiper-button-next::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(42);
+        height: rem(8);
+        -webkit-mask-image: url(../images/common/round-button-arrow.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        mask-image: url(../images/common/round-button-arrow.svg);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        background: $green;
+    }
+}
+
+.campaign__swiper-button-next::before {
+    @include mq("md") {
+        // 矢印の向き反転
+        transform: translate(-50%, -50%) scaleX(-1);
+    }
+}
+
+// // タブレットの青線表示対策
+.campaign__swiper-button-prev.swiper-button-prev:focus,
+.campaign__swiper-button-next.swiper-button-next:focus {
+    outline: none;
 }
 

@@ -194,12 +194,13 @@
           <h2 class="section-title__ja">キャンペーン</h2>
         </div>
 
-        <div class="campaign__panels panels js-panels">
-          <div class="panels__swiper-controller">
-            <div class="panels__swiper-button-prev swiper-button-prev"></div>
-            <div class="panels__swiper-button-next swiper-button-next"></div>
-          </div>
+        <!-- panelsにoverflow: hiddenすると、ボタンも消えてしまうため、panelsクラスの外側に出す -->
+        <div class="panels__swiper-controller campaign__swiper-controller">
+          <div class="panels__swiper-button-prev campaign__swiper-button-prev swiper-button-prev"></div>
+          <div class="panels__swiper-button-next campaign__swiper-button-next swiper-button-next"></div>
+        </div>
 
+        <div class="campaign__panels panels js-panels">
             <div class="panels__swiper swiper">
               <div class="panels__swiper-wrapper swiper-wrapper">
                 <div class="panels__item panel swiper-slide">
