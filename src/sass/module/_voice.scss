@@ -46,7 +46,9 @@
         top: rem(-120);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
-        left: calc(50% - min(43vw, 38.75rem));
+        // left: calc(50% - min(43vw, 38.75rem));
+        // 画面幅広いときに広がりすぎないようにする
+        left: calc(50% - min(48vw, 38.75rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(150), 20.9vw, rem(301));
 
@@ -81,7 +83,9 @@
         top: rem(-96.1);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
-        right: calc(50% - min(37.5vw, 33.75rem));
+        // right: calc(50% - min(37.5vw, 33.75rem));
+        // 画面幅広いときに広がりすぎないようにする
+        right: calc(50% - min(48vw, 33.75rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(60), 4.93vw, rem(71));
 
