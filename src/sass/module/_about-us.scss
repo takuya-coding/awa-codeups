@@ -2,7 +2,6 @@
 
 .about-us__description {
     // margin-top: rem(50);
-    // margin-top: rem(53);
     margin-top: rem(54.5);
     @include mq("md") {
         margin-top: rem(120);
@@ -32,7 +31,6 @@
 
         position: absolute;
         content: "";
-        // top: rem(-130);
         top: rem(-91.5);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする

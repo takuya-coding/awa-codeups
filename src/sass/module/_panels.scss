@@ -4,92 +4,10 @@
     overflow: hidden;
     // 右側だけinner幅から飛び出す
     margin-right: calc(50% - 50vw);
-
-    // position: relative;
-    // padding-top: rem(100);
-    // padding-top: rem(92);
-
     // panel下部のbox-shadowが隠れてしまうためpadding-bottomを設定
     padding-bottom: rem(10);
-    @include mq("md") {
-    // padding-top: rem(100);
-    // padding-top: rem(106);
-    }
 }
 
 .panels__swiper {
     overflow: visible;
 }
-
-// .panels__swiper-controller {
-//     @include mq("md") {
-//         // max-width: rem(190);
-//         max-width: rem(207.6);
-//         width: 100%;
-//         position: absolute;
-//         // top: rem(40);
-//         // right: 12.5vw;
-//         right: 13.6vw;
-//     }
-// }
-
-// .panels__swiper-button-prev::after,
-// .panels__swiper-button-next::after {
-//     position: absolute;
-//     content: "";
-//     bottom: 0;
-//     top: 0;
-//     width: 0;
-//     height: 0;
-//     margin: auto;
-// }
-
-// .panels__swiper-button-prev::after,
-// .panels__swiper-button-next::after {
-//     display: none;
-//     @include mq("md") {
-//         width: rem(80);
-//         height: rem(80);
-//         background-color: transparent;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         border: 1px solid $green;
-//         border-radius: 50%;
-//     }
-// }
-
-// .panels__swiper-button-prev::before,
-// .panels__swiper-button-next::before {
-//     @include mq("md") {
-//         position: absolute;
-//         content: "";
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         width: rem(42);
-//         height: rem(8);
-//         -webkit-mask-image: url(../images/common/round-button-arrow.svg);
-//         -webkit-mask-size: contain;
-//         -webkit-mask-repeat: no-repeat;
-//         -webkit-mask-position: center center;
-//         mask-image: url(../images/common/round-button-arrow.svg);
-//         mask-size: contain;
-//         mask-repeat: no-repeat;
-//         mask-position: center center;
-//         background: $green;
-//     }
-// }
-
-// .panels__swiper-button-next::before {
-//     @include mq("md") {
-//         // 矢印の向き反転
-//         transform: translate(-50%, -50%) scaleX(-1);
-//     }
-// }
-
-// // タブレットの青線表示対策
-// .panels__swiper-button-prev.swiper-button-prev:focus,
-// .panels__swiper-button-next.swiper-button-next:focus {
-//     outline: none;
-// }

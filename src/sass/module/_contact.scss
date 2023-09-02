@@ -19,7 +19,6 @@
 .contact__wrapper {
     @include mq("md") {
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        // padding: rem(80) rem(112) rem(80) rem(50);
         padding: rem(80) rem(112) rem(80) rem(50);
 
         display: flex;
@@ -188,10 +187,11 @@
     @include mq("md") {
         width:rem(301);
         height:rem(138);
-
         top: rem(-40);
         // 画面幅広いときに広がりすぎないようにする
-        right: calc(50% - min(46.5vw, 41.875rem));
+        // right: calc(50% - min(46.5vw, 41.875rem));
+        // 画面狭いときに中に入りすぎないように調整
+        right: calc(50% - min(48vw, 10.78125rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(150), 20.9vw, rem(301));
 

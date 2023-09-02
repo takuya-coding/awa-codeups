@@ -68,16 +68,6 @@
     display: block;
 }
 
-// .price__table {
-//     // margin-top: rem(40);
-//     margin-top: rem(35.2);
-//     @include mq("md") {
-//         max-width: calc(calc(492 / 987) * 100%);
-//         width: 100%;
-//         margin-top: rem(-4.5);
-//     }
-// }
-
 .price__lists {
     margin-top: rem(40);
     @include mq("md") {
@@ -119,7 +109,6 @@
 
         position: absolute;
         content: "";
-        // top: rem(-150);
         top: rem(-157.8);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
