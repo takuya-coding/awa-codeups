@@ -6,7 +6,9 @@
     padding-top: rem(80);
     padding-bottom: rem(85);
     @include mq("md") {
-        padding: rem(100) 0;
+        // padding: rem(100) 0;
+        padding-top: rem(100);
+        padding-bottom: rem(103);
     }
 }
 
@@ -24,7 +26,7 @@
     // margin-top: rem(24);
     margin-top: rem(27);
     @include mq("md") {
-        margin-top: rem(40);
+        margin-top: rem(38.5);
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
@@ -81,7 +83,7 @@
     @include mq("md") {
         max-width: calc(calc(492 / 987) * 100%);
         width: 100%;
-        margin-top: rem(-4.5);
+        margin-top: 0;
     }
 }
 
@@ -90,7 +92,7 @@
     text-align: center;
     @include mq("md") {
         // margin-top: rem(80);
-        margin-top: rem(77);
+        margin-top: rem(78.5);
     }
 }
 
@@ -118,7 +120,7 @@
         position: absolute;
         content: "";
         // top: rem(-150);
-        top: rem(-162.6);
+        top: rem(-157.8);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // left: calc(50% - min(43vw, 38.75rem));
