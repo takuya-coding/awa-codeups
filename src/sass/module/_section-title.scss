@@ -60,12 +60,16 @@
 // contactタイトルの大きさ違い
 .section-title__en--size {
     font-size: rem(80);
-    line-height: 0.7;
+    // line-height: 0.7;
+    // line-heightが1を下回ることはない（コーディングしづらくなる）
+    line-height: 1;
     // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     @include mq("md") {
         // 指定しないとスタイル反映されないため記述
         font-size: rem(80);
-        line-height: 0.7;
+        // line-height: 0.7;
+        // line-heightが1を下回ることはない（コーディングしづらくなる）
+        line-height: 1;
     }
 }
 
