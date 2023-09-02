@@ -46,7 +46,8 @@
     height: inherit;
     display: flex;
     align-items: center;
-    max-width: rem(105);
+    // max-width: rem(105);
+    max-width: rem(102);
     width: 100%;
     @include mq("md") {
         max-width: rem(138);

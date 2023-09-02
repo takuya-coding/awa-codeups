@@ -2,7 +2,9 @@
 
 .information {
     background-color: $gray;
-    padding: rem(80) 0;
+    // padding: rem(80) 0;
+    padding-top: rem(80);
+    padding-bottom: rem(83);
     @include mq("md") {
         padding: rem(100) 0;
     }
@@ -55,7 +57,8 @@
 }
 
 .information__body {
-    margin-top: rem(24);
+    // margin-top: rem(24);
+    margin-top: rem(25.5);
     @include mq("md") {
         margin-top: 0;
         max-width: calc(calc(492 / 1032) * 100%);
@@ -69,7 +72,8 @@
     font-size: rem(20);
     line-height: 1.2;
     border-bottom: 1px solid $green;
-    padding-bottom: rem(4);
+    // padding-bottom: rem(4);
+    padding-bottom: rem(2.5);
     @include mq("md") {
         font-size: rem(24);
         line-height: 1;
@@ -81,16 +85,14 @@
 .information__text {
     font-size: rem(16);
     line-height: 1.5;
-    // margin-top: rem(8);
-    margin-top: rem(6.4);
+    margin-top: rem(8);
     @include mq("md") {
         margin-top: rem(6.4);
     }
 }
 
 .information__button {
-    // margin-top: rem(40);
-    margin-top: rem(38.5);
+    margin-top: rem(40);
     text-align: center;
     @include mq("md") {
     margin-top: rem(40);

@@ -2,7 +2,10 @@
 
 .campaign__panels {
     // margin-top: rem(-65);
-    margin-top: rem(65);
+    margin-top: rem(27);
+    @include mq("md") {
+        margin-top: rem(65);
+    }
 }
 
 .campaign__button {

@@ -57,7 +57,7 @@
 }
 
 
-// contactタイトルの大きさ違い
+// contact英語タイトルの大きさ違い
 .section-title__en--size {
     font-size: rem(80);
     // line-height: 0.7;
@@ -71,5 +71,11 @@
         // line-heightが1を下回ることはない（コーディングしづらくなる）
         line-height: 1;
     }
+}
+
+// contact日本語タイトルの縦方向配置違い
+.section-title__ja--position {
+    line-height: 1;
+    margin-top: 0;
 }
 

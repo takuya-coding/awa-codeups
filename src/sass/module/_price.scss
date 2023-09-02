@@ -2,7 +2,9 @@
 
 .price {
     background-color: $gray;
-    padding: rem(80) 0;
+    // padding: rem(80) 0;
+    padding-top: rem(80);
+    padding-bottom: rem(85);
     @include mq("md") {
         padding: rem(100) 0;
     }
@@ -75,8 +77,7 @@
 // }
 
 .price__lists {
-    // margin-top: rem(40);
-    margin-top: rem(35.2);
+    margin-top: rem(40);
     @include mq("md") {
         max-width: calc(calc(492 / 987) * 100%);
         width: 100%;
@@ -85,8 +86,7 @@
 }
 
 .price__button {
-    // margin-top: rem(40);
-    margin-top: rem(37);
+    margin-top: rem(40);
     text-align: center;
     @include mq("md") {
         // margin-top: rem(80);
