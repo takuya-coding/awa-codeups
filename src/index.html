@@ -195,9 +195,9 @@
         </div>
 
         <!-- panelsにoverflow: hiddenすると、ボタンも消えてしまうため、panelsクラスの外側に出す -->
-        <div class="panels__swiper-controller campaign__swiper-controller">
-          <div class="panels__swiper-button-prev campaign__swiper-button-prev swiper-button-prev"></div>
-          <div class="panels__swiper-button-next campaign__swiper-button-next swiper-button-next"></div>
+        <div class="campaign__swiper-controller">
+          <div class="campaign__swiper-button-prev swiper-button-prev"></div>
+          <div class="campaign__swiper-button-next swiper-button-next"></div>
         </div>
 
         <div class="campaign__panels panels js-panels">
@@ -504,7 +504,7 @@
               <img src="./assets/images/common/price-pc.jp" alt="無数のキンギョハナダイがサンゴ礁の周りを泳いでいる" width="492" height="746" decoding="async" loading="lazy">
             </picture>
           </div>
-          <div class="price__table price-table">
+          <!-- <div class="price__table price-table">
             <table>
               <tr>
                 <th colspan="2">ライセンス講習</th>
@@ -561,6 +561,16 @@
                 <td class="price-table__course">1日ダイビング&#040;3ダイブ&#041;</td><td class="price-table__price">&#165;32&#044;000</td>
               </tr>
             </table>
+          </div> -->
+          <div class="price__lists price-lists">
+            <div class="price-lists__list price-list">
+              <h3 class="price-list__title">ライセンス講習</h3>
+              <dl class="price-list__content">
+                <dt class="price-list__course">オープンウォーターダイバーコース</dt><dd class="price-list__price">&#165;50&#044;000</dd>
+                <dt class="price-list__course">アドバンスドオープンウォーターコース</dt><dd class="price-list__price">&#165;60&#044;000</dd>
+                <dt class="price-list__course">レスキュー＋EFRコース</dt><dd class="price-list__price">&#165;70&#044;000</dd>
+              </dl>
+            </div>
           </div>
         </div>
         <!-- <div class="price__button button">
