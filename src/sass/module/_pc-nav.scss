@@ -26,10 +26,12 @@
     align-items: center;
 
     // レスポンシブ時におけるテキスト改行を防ぐ
-    padding: 0 rem(10);
-    @include mq("lg") {
-        padding: 0 rem(20);
-    }
+    // padding: 0 rem(10);
+    // @include mq("lg") {
+    //     padding: 0 rem(20);
+    // }
+    // レスポンシブ時におけるテキスト改行を防ぐのにブレイクポイントを増やさず対応
+    padding: 0 min(1.3vw, rem(20));
 
     // hoverアニメーションの線の基点とするためrelativeを指定
     position: relative;

@@ -51,6 +51,12 @@ body {
   color: $black;
 }
 
+// ドロワーメニュー展開時に背景のコンテンツをスクロールさせないための記述（jsにも記述あり）
+body.is-active {
+  height: 100%;
+  overflow: hidden;
+}
+
 // hover指定がない場合のaタグの透過処理
 // a {
 //   text-decoration: none;

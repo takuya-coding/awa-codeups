@@ -7,10 +7,14 @@ $('.js-hamburger').on('click', function() {
         $('.js-drawer').removeClass('is-active');
         $(this).removeClass('is-active');
         $('.js-header').removeClass('is-active');
+        // ドロワーメニュー展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
+        $('body').removeClass('is-active');
     } else {
         $('.js-drawer').addClass('is-active');
         $(this).addClass('is-active');
         $('.js-header').addClass('is-active');
+        // ドロワーメニュー展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
+        $('body').addClass('is-active');
     }
 });
 
