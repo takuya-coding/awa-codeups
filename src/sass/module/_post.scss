@@ -52,6 +52,8 @@
     // padding: rem(4) rem(12);
     padding: rem(4) rem(11);
     border: 1px solid $green;
+    // 年齢（性別）の情報がなかった場合もレイアウト担保するため
+    margin-left: auto;
     @include mq("md") {
         // padding: rem(6) rem(16);
         padding: rem(4.5) rem(15.2);
