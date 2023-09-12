@@ -50,8 +50,6 @@
     margin-top: rem(40);
     @include mq("md") {
         margin-top: 0;
-        // position: relative;
-
         position: absolute;
         top: rem(121);
         // left: 18.5%;
