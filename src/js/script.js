@@ -23,6 +23,8 @@ $('.js-drawer, js-header-logo').on('click', function() {
     $(this).removeClass('is-active');
     $('.js-hamburger').removeClass('is-active');
     $('.js-header').removeClass('is-active');
+    // ドロワーメニュー展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
+    $('body').removeClass('is-active');
 });
 
 
