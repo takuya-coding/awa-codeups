@@ -22,11 +22,12 @@
 }
 
 .post__info {
-    max-width: calc(calc(149 / 300) * 100%);
-    // max-width: rem(149);
+    // max-width: calc(calc(149 / 300) * 100%);
+    max-width: rem(149);
     width: 100%;
     @include mq("md") {
-        max-width: calc(calc(276 / 456) * 100%);
+        // max-width: calc(calc(276 / 456) * 100%);
+        max-width: rem(276);
     }
 }
 
