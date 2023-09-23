@@ -4,9 +4,14 @@
    display: inline-block;
    font-family: $second-font-family;
    font-size: rem(14);
-   line-height: 1.571;
+   // line-height: 1.571;
+   line-height: 1;
    //  padding: rem(16) rem(40);
-   padding: rem(15.2) rem(39.3);
+   // padding: rem(15.2) rem(39.3);
+   // padding: 1.3286em 2.8071em;
+   padding: 1.3286em 1em;
+   max-width: rem(202);
+   width: 100%;
    text-align: center;
    border: 1px solid $green;
 
@@ -40,7 +45,8 @@
    mask-repeat: no-repeat;
    mask-position: center;
    background-color: $white;
-   margin-left: rem(8);
+   // margin-left: rem(8);
+   margin-left: rem(9.6);
    padding-bottom: rem(12);
 }
 
