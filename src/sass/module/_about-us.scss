@@ -9,11 +9,11 @@
 }
 
 // サンゴのあしらい配置
-.about-us__decoration {
+.about-us {
     position: relative;
 }
 
-.about-us__decoration span {
+.about-us::after {
     display: none;
     @include mq("md") {
         display: inline-block;
@@ -31,7 +31,7 @@
 
         position: absolute;
         content: "";
-        top: rem(-91.5);
+        bottom: rem(-90);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // right: calc(50% - min(44.2vw, 40rem));
