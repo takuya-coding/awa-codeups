@@ -107,6 +107,17 @@
     }
 }
 
+.contact__tel {
+    display: block;
+}
+
+// SPのみタップしたとき電話がかかるようにする
+@media(min-width: 768px) {
+    a[href^="tel:"] {
+      pointer-events: none;
+    }
+  }
+
 .contact__tel,
 .contact__business-hours,
 .contact__regular-holiday {
