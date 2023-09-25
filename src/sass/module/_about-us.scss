@@ -10,7 +10,9 @@
 
 // サンゴのあしらい配置
 .about-us {
-    position: relative;
+    @include mq("md") {
+        position: relative;
+    }
 }
 
 .about-us::after {

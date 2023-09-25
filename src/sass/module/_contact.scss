@@ -7,6 +7,12 @@
 //     }
 // }
 
+.contact {
+    @include mq("md") {
+        position: relative;
+    }
+}
+
 .contact__inner.inner {
     padding-right: rem(30);
     padding-left: rem(30);
@@ -169,11 +175,7 @@
 }
 
 // 魚のあしらい配置
-.contact__decoration {
-    position: relative;
-}
-
-.contact__decoration span {
+.contact::before {
     display: inline-block;
     width: rem(109);
     height: rem(50);
@@ -207,7 +209,6 @@
         right: calc(50% - min(48vw, 41.875rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(150), 20.9vw, rem(301));
-
     }
 }
 

@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.voice {
+    @include mq("md") {
+        position: relative;
+    }
+}
+
 .voice__posts {
     margin-top: rem(40);
     @include mq("md") {
@@ -20,11 +26,7 @@
 }
 
 // 魚のあしらい配置
-.voice__decoration-left {
-    position: relative;
-}
-
-.voice__decoration-left span {
+.voice::before {
     display: none;
     @include mq("md") {
         display: inline-block;
@@ -42,7 +44,7 @@
 
         position: absolute;
         content: "";
-        top: rem(-121.6);
+        top: rem(-120);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // left: calc(50% - min(43vw, 38.75rem));
@@ -50,16 +52,11 @@
         left: calc(50% - min(48vw, 38.75rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(150), 20.9vw, rem(301));
-
     }
 }
 
 // タツノオトシゴのあしらい配置
-.voice__decoration-right {
-    position: relative;
-}
-
-.voice__decoration-right span {
+.voice::after {
     display: none;
     @include mq("md") {
         display: inline-block;
@@ -74,10 +71,9 @@
         mask-repeat: no-repeat;
         mask-position: center;
         background-color: $green;
-
         position: absolute;
         content: "";
-        top: rem(-91.3);
+        bottom: rem(-72);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // right: calc(50% - min(37.5vw, 33.75rem));
@@ -85,6 +81,5 @@
         right: calc(50% - min(48vw, 33.75rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(60), 4.93vw, rem(71));
-
     }
 }

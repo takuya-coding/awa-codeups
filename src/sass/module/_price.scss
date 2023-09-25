@@ -9,6 +9,8 @@
         // padding: rem(100) 0;
         padding-top: rem(100);
         padding-bottom: rem(103);
+
+        position: relative;
     }
 }
 
@@ -89,11 +91,7 @@
 }
 
 // 魚のあしらい配置
-.price__decoration {
-    position: relative;
-}
-
-.price__decoration span {
+.price::after {
     display: none;
     @include mq("md") {
         display: inline-block;
@@ -108,10 +106,9 @@
         mask-repeat: no-repeat;
         mask-position: center;
         background-color: $green;
-
         position: absolute;
         content: "";
-        top: rem(-157.8);
+        bottom: rem(58);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // left: calc(50% - min(43vw, 38.75rem));
@@ -119,6 +116,5 @@
         left: calc(50% - min(48vw, 38.75rem));
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(220), 30.3vw, rem(437));
-
     }
 }
