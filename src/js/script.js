@@ -28,6 +28,7 @@ $('.js-drawer, js-header-logo').on('click', function() {
 });
 
 
+
 // main-viewのスライダー
 const mainviewSwiper = new Swiper('.js-main-view-swiper', {
   // direction: 'horizontal',
@@ -43,7 +44,7 @@ const mainviewSwiper = new Swiper('.js-main-view-swiper', {
 
 
 // campaignセクションのスライダー
-const mySwiper = new Swiper('.js-panels .swiper', {
+const campaignSwiper = new Swiper('.js-panels .js-campaign-swiper', {
     loop: true,
     loopAdditionalSlides: 2, //複製するスライド数を指定（0だとループが滑らかに繋がらないことがあるため1以上がオススメ）
     spaceBetween: 24,
