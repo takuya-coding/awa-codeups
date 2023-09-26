@@ -29,16 +29,16 @@ $('.js-drawer, js-header-logo').on('click', function() {
 
 
 // main-viewのスライダー
-new Splide( '.splide-main-view', {
-    type: "fade",
-    autoplay: true,
-    interval: 5000,
-    speed: 5000,
-    rewind: true,
-    //デフォルトの矢印とページネーションを削除
-    arrows: false,
-    pagination: false,
-}).mount();
+const mainviewSwiper = new Swiper('.js-main-view-swiper', {
+  // direction: 'horizontal',
+  loop: true,
+  speed: 3000,
+  effect: 'fade',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }
+});
 
 
 

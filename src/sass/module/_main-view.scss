@@ -39,17 +39,8 @@
     color: $white;
 }
 
-
-.splide__slide img {
+.main-view__img img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-}
-
-.splide__arrows {
-    display: none;
-}
-
-.splide__pagination {
-    display: none;
 }

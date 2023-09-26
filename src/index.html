@@ -23,13 +23,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <!-- <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
@@ -135,14 +133,13 @@
     </div>
   </header>
   <main>
-    <div class="main-view splide splide-main-view" aria-labelledby="carousel-heading">
+    <div class="main-view swiper js-main-view-swiper">
       <div class="main-view__inner">
-        <h2 class="main-view__main-title" id="carousel-heading">diving</h2>
+        <h2 class="main-view__main-title">diving</h2>
         <p class="main-view__sub-title">into&nbsp;the&nbsp;ocean</p>
       </div>
-      <div class="main-view__wrapper splide__track">
-        <ul class="main-view__list splide__list">
-          <li class="main-view__slide splide__slide">
+      <div class="main-view__wrapper swiper-wrapper">
+          <div class="main-view__slide swiper-slide">
             <div class="main-view__img">
               <picture>
                 <source srcset="./assets/images/common/top-mv1-sp.webp" media="(max-width:767px)" type="image/webp" />
@@ -151,8 +148,8 @@
                 <img src="./assets/images/common/top-mv1-pc.jp" alt="ウミガメがきれいな海の中を泳いでいる" width="1440" height="768" decoding="async">
               </picture>
             </div>
-          </li>
-          <li class="main-view__slide splide__slide">
+          </div>
+          <div class="main-view__slide swiper-slide">
             <div class="main-view__img">
               <picture>
                 <source srcset="./assets/images/common/top-mv2-sp.webp" media="(max-width:767px)" type="image/webp" />
@@ -161,8 +158,8 @@
                 <img src="./assets/images/common/top-mv2-pc.jp" alt="2人のダイバーが海の中でウミガメに遭遇" width="1440" height="768" decoding="async">
               </picture>
             </div>
-          </li>
-          <li class="main-view__slide splide__slide">
+          </div>
+          <div class="main-view__slide swiper-slide">
             <div class="main-view__img">
               <picture>
                 <source srcset="./assets/images/common/top-mv3-sp.webp" media="(max-width:767px)" type="image/webp" />
@@ -171,8 +168,8 @@
                 <img src="./assets/images/common/top-mv3-pc.jp" alt="船の上からダイビングスポットを見た際の景色" width="1440" height="768" decoding="async">
               </picture>
             </div>
-          </li>
-          <li class="main-view__slide splide__slide">
+          </div>
+          <div class="main-view__slide swiper-slide">
             <div class="main-view__img">
               <picture>
                 <source srcset="./assets/images/common/top-mv4-sp.webp" media="(max-width:767px)" type="image/webp" />
@@ -181,8 +178,7 @@
                 <img src="./assets/images/common/top-mv4-pc.jp" alt="美しいビーチと青い空" width="1440" height="768" decoding="async">
               </picture>
             </div>
-          </li>
-        </ul>
+          </div>
       </div>
     </div>
 
