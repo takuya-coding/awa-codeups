@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.about-us__description {
+.top-about-us__description {
     // margin-top: rem(50);
     margin-top: rem(54.5);
     @include mq("md") {
@@ -9,13 +9,13 @@
 }
 
 // サンゴのあしらい配置
-.about-us {
+.top-about-us {
     @include mq("md") {
         position: relative;
     }
 }
 
-.about-us::after {
+.top-about-us::after {
     display: none;
     @include mq("md") {
         display: inline-block;
