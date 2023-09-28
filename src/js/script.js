@@ -29,8 +29,8 @@ $('.js-drawer, js-header-logo').on('click', function() {
 
 
 
-// main-viewのスライダー
-const mainviewSwiper = new Swiper('.js-main-view-swiper', {
+// top-main-viewのスライダー
+const mainviewSwiper = new Swiper('.js-top-main-view-swiper', {
   // direction: 'horizontal',
   loop: true,
   speed: 3000,
