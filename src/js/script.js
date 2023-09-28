@@ -104,12 +104,12 @@ const campaignSwiper = new Swiper('.js-panels .js-top-campaign-swiper', {
 
 
 
-// 背景色の後に画像が表示されるエフェクト（informationセクション）
+// 背景色の後に画像が表示されるエフェクト（top-informationセクション）
 // 要素の取得とスピードの設定
-let box = $('.information__img'),
+let box = $('.top-information__img'),
 speed = 700;
 
-// .information__imgの付いた要素に対して下記の処理を行う
+// .top-information__imgの付いた要素に対して下記の処理を行う
 box.each(function() {
     $(this).append('<div class="color"></div>')
     let color = $(this).find($('.color')),

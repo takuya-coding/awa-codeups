@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.information {
+.top-information {
     background-color: $gray;
     // padding: rem(80) 0;
     padding-top: rem(80);
@@ -10,7 +10,7 @@
     }
 }
 
-.information__flex {
+.top-information__flex {
     // margin-top: rem(24);
     margin-top: rem(27.5);
     @include mq("md") {
@@ -20,7 +20,7 @@
     }
 }
 
-.information__img {
+.top-information__img {
     aspect-ratio: 345 / 227;
     overflow: hidden;
 
@@ -36,7 +36,7 @@
 }
 
 // エフェクト用コード
-.information__img .color {
+.top-information__img .color {
     position: absolute;
     top: 0;
     right: 0;
@@ -46,7 +46,7 @@
     background-color: $green;
 }
 
-.information__img img {
+.top-information__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -55,7 +55,7 @@
     display: block;
 }
 
-.information__body {
+.top-information__body {
     // margin-top: rem(24);
     margin-top: rem(25.5);
     @include mq("md") {
@@ -66,7 +66,7 @@
     }
 }
 
-.information__body-title {
+.top-information__body-title {
     font-weight: $bold;
     font-size: rem(20);
     line-height: 1.2;
@@ -81,7 +81,7 @@
     }
 }
 
-.information__text {
+.top-information__text {
     font-size: rem(16);
     line-height: 1.5;
     margin-top: rem(8);
@@ -90,7 +90,7 @@
     }
 }
 
-.information__button {
+.top-information__button {
     margin-top: rem(40);
     text-align: center;
     @include mq("md") {
