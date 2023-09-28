@@ -43,8 +43,8 @@ const mainviewSwiper = new Swiper('.js-main-view-swiper', {
 
 
 
-// campaignセクションのスライダー
-const campaignSwiper = new Swiper('.js-panels .js-campaign-swiper', {
+// top-campaignセクションのスライダー
+const campaignSwiper = new Swiper('.js-panels .js-top-campaign-swiper', {
     loop: true,
     loopAdditionalSlides: 2, //複製するスライド数を指定（0だとループが滑らかに繋がらないことがあるため1以上がオススメ）
     spaceBetween: 24,
@@ -70,8 +70,8 @@ const campaignSwiper = new Swiper('.js-panels .js-campaign-swiper', {
   });
 
 
-// campaignセクションのスライダー
-// const target = '.campaign .splide-campaign';
+// top-campaignセクションのスライダー
+// const target = '.top-campaign .splide-top-campaign';
 // const options = {
 //   mediaQuery: 'min',
 //   perMove: 1, //1度に何枚動かすか

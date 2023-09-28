@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign__panels {
+.top-campaign__panels {
     // margin-top: rem(-65);
     margin-top: rem(27);
     @include mq("md") {
@@ -9,7 +9,7 @@
     }
 }
 
-.campaign__button {
+.top-campaign__button {
     // margin-top: rem(40);
     margin-top: rem(30.5);
     text-align: center;
@@ -19,11 +19,11 @@
 }
 
 
-.campaign {
+.top-campaign {
     position: relative;
 }
 
-.campaign__swiper-controller {
+.top-campaign__swiper-controller {
     @include mq("md") {
         // max-width: rem(190);
         max-width: rem(207.6);
@@ -34,8 +34,8 @@
     }
 }
 
-.campaign__swiper-button-prev::after,
-.campaign__swiper-button-next::after {
+.top-campaign__swiper-button-prev::after,
+.top-campaign__swiper-button-next::after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -45,8 +45,8 @@
     margin: auto;
 }
 
-.campaign__swiper-button-prev::after,
-.campaign__swiper-button-next::after {
+.top-campaign__swiper-button-prev::after,
+.top-campaign__swiper-button-next::after {
     display: none;
     @include mq("md") {
         width: rem(80);
@@ -60,8 +60,8 @@
     }
 }
 
-.campaign__swiper-button-prev::before,
-.campaign__swiper-button-next::before {
+.top-campaign__swiper-button-prev::before,
+.top-campaign__swiper-button-next::before {
     @include mq("md") {
         position: absolute;
         content: "";
@@ -82,7 +82,7 @@
     }
 }
 
-.campaign__swiper-button-next::before {
+.top-campaign__swiper-button-next::before {
     @include mq("md") {
         // 矢印の向き反転
         transform: translate(-50%, -50%) scaleX(-1);
@@ -90,8 +90,8 @@
 }
 
 // // タブレットの青線表示対策
-.campaign__swiper-button-prev.swiper-button-prev:focus,
-.campaign__swiper-button-next.swiper-button-next:focus {
+.top-campaign__swiper-button-prev.swiper-button-prev:focus,
+.top-campaign__swiper-button-next.swiper-button-next:focus {
     outline: none;
 }
 
