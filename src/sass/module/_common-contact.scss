@@ -1,19 +1,19 @@
 @use "global" as *;
 
-// .contact {
+// .common-contact {
 //     padding-top: rem(80);
 //     @include mq("md") {
 //         padding-top: rem(140);
 //     }
 // }
 
-.contact {
+.common-contact {
     @include mq("md") {
         position: relative;
     }
 }
 
-.contact__inner.inner {
+.common-contact__inner.inner {
     padding-right: rem(30);
     padding-left: rem(30);
     @include mq("md") {
@@ -22,7 +22,7 @@
     }
 }
 
-.contact__wrapper {
+.common-contact__wrapper {
     @include mq("md") {
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
         padding: rem(80) rem(112) rem(80) rem(50);
@@ -34,7 +34,7 @@
     }
 }
 
-.contact__shop-info {
+.common-contact__shop-info {
     padding-right: rem(10);
     padding-left: rem(10);
     // フレックアイテムのサイズ指定
@@ -50,7 +50,7 @@
 }
 
 // 疑似要素で縦線を入れる
-.contact__shop-info::after {
+.common-contact__shop-info::after {
     @include mq("md") {
         position: absolute;
         content: "";
@@ -63,7 +63,7 @@
     }
 }
 
-.contact__logo {
+.common-contact__logo {
     max-width: rem(173);
     width: 100%;
     filter: invert(51%) sepia(10%) saturate(1991%) hue-rotate(136deg) brightness(94%) contrast(89%);
@@ -76,11 +76,11 @@
     }
 }
 
-.contact__logo a {
+.common-contact__logo a {
     display: block;
 }
 
-.contact__shop-info-wrapper {
+.common-contact__shop-info-wrapper {
     border-top: 1px solid $green;
     // padding: 0 rem(10);
     padding-top: rem(16);
@@ -93,7 +93,7 @@
     }
 }
 
-.contact__shop-info-text {
+.common-contact__shop-info-text {
     text-align: center;
     text-transform: uppercase;
     font-size: rem(16);
@@ -107,7 +107,7 @@
     }
 }
 
-.contact__tel {
+.common-contact__tel {
     display: block;
 }
 
@@ -118,13 +118,13 @@
     }
   }
 
-.contact__tel,
-.contact__business-hours,
-.contact__regular-holiday {
+.common-contact__tel,
+.common-contact__business-hours,
+.common-contact__regular-holiday {
     margin-top: rem(4);
 }
 
-.contact__shop-info-map {
+.common-contact__shop-info-map {
     max-width: 100%;
     margin-top: rem(16);
     @include mq("md") {
@@ -136,7 +136,7 @@
     }
 }
 
-.contact__map {
+.common-contact__map {
     position: relative;
     width: 100%;
     // height: 0;
@@ -146,7 +146,7 @@
     }
 }
 
-.contact__map iframe {
+.common-contact__map iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,7 +154,7 @@
     height: 100%;
 }
 
-.contact__more {
+.common-contact__more {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: 0;
@@ -166,7 +166,7 @@
     }
 }
 
-.contact__text {
+.common-contact__text {
     margin-top: rem(7);
     font-size: rem(14);
     line-height: 1.286;
@@ -175,7 +175,7 @@
     text-align: center;
 }
 
-.contact__button {
+.common-contact__button {
     margin-top: rem(40);
     // margin-top: rem(38.5);
     text-align: center;
@@ -186,7 +186,7 @@
 }
 
 // 魚のあしらい配置
-.contact::before {
+.common-contact::before {
     display: inline-block;
     width: rem(109);
     height: rem(50);
