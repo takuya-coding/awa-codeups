@@ -160,12 +160,12 @@ box2.each(function() {
 });
 
 
-// 背景色の後に画像が表示されるエフェクト（priceセクション）
+// 背景色の後に画像が表示されるエフェクト（top-priceセクション）
 // 要素の取得とスピードの設定
-let box3 = $('.price__img'),
+let box3 = $('.top-price__img'),
 speed3 = 700;
 
-// .price__imgの付いた要素に対して下記の処理を行う
+// .top-price__imgの付いた要素に対して下記の処理を行う
 box3.each(function() {
     $(this).append('<div class="color"></div>')
     let color3 = $(this).find($('.color')),
