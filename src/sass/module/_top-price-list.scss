@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.price-list__title {
+.top-price-list__title {
     padding-bottom: rem(4);
     border-bottom: 1px solid $green;
     width: 100%;
@@ -10,7 +10,7 @@
     text-align: left;
 }
 
-.price-list__content {
+.top-price-list__content {
     margin-top: rem(8);
     display: flex;
     flex-wrap: wrap;
@@ -25,12 +25,12 @@
     }
 }
 
-.price-list__course {
+.top-price-list__course {
     max-width: calc(calc(275 / 345) * 100%);
     width: 100%;
 }
 
-.price-list__price {
+.top-price-list__price {
     max-width: calc(calc(70 / 345) * 100%);
     width: 100%;
     text-align: right;
