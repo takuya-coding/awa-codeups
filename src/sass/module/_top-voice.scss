@@ -73,7 +73,7 @@
         background-color: $green;
         position: absolute;
         content: "";
-        bottom: rem(-72);
+        bottom: rem(-70.5);
         z-index: $layer-decoration;
         // 画面幅広いときに広がりすぎないようにする
         // right: calc(50% - min(37.5vw, 33.75rem));
