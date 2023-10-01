@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.breadcrumbs__list {
+    display: flex;
+    gap: rem(8);
+}
