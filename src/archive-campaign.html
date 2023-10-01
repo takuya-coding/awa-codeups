@@ -31,9 +31,9 @@
 <body>
     <header class="header js-header">
         <div class="header__inner">
-          <h1 class="header__logo">
+          <div class="header__logo">
             <a href="#"><img src="./assets/images/common/logo.svg" alt="CodeUps"></a>
-          </h1>
+          </div>
           <button type="button" class="header__hamburger js-hamburger">
             <span></span>
             <span></span>
@@ -128,7 +128,21 @@
         </div>
       </header>
 
-      <main></main>
+      <main>
+        <div class="campaign-main-view">
+            <div class="campaign-main-view__inner">
+                <h1 class="campaign-main-view__title">campaign</h1>
+            </div>
+            <div class="campaign-main-view__img">
+                <picture>
+                    <source srcset="./assets/images/common/campaign-mv-sp.webp" media="(max-width:767px)" type="image/webp" />
+                    <source srcset="./assets/images/common/campaign-mv-sp.jpg" media="(max-width:767px)" />
+                    <source srcset="./assets/images/common/campaign-mv-pc.webp" type="image/webp" />
+                    <img src="./assets/images/common/campaign-mv-pc.jp" alt="二匹のチョウチョウウオが海の中を泳いでいる" width="1440" height="768" decoding="async">
+                  </picture>
+            </div>
+        </div>
+      </main>
 
       <footer class="footer layout-footer">
         <div class="footer__inner inner">

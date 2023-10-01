@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.campaign-main-view {
+    width: 100%;
+    height: rem(460);
+    position: relative;
+    @include mq("md") {
+        height: rem(548);
+    }
+}
+
+.campaign-main-view__inner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.campaign-main-view__title {
+    font-family: $third-font-family;
+    font-weight: $regular;
+    font-size: rem(40);
+    color: $white;
+    text-transform: capitalize;
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1.25;
+    }
+}
+
+.campaign-main-view__img {
+    aspect-ratio: 375 / 460;
+    overflow: hidden;
+    @include mq("md") {
+        aspect-ratio: 1440 / 548;
+    }
+}
+
+.campaign-main-view__img img {
+    width: 100%;
+    height: rem(460);
+    object-fit: cover;
+    @include mq("md") {
+        height: rem(548);
+    }
+}
