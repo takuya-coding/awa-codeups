@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.tab-01-button-list {
+    display: flex;
+    gap: rem(16) rem(21);
+    flex-wrap: wrap;
+    @include mq("md") {
+        gap: rem(24) rem(32);
+    }
+}
+
+.tab-01-button-list__item {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(14);
+    color: $green;
+    line-height: 1;
+    padding: 0.714286em 1em;
+    max-width: rem(162);
+    width: 100%;
+    text-align: center;
+    border: 1px solid $green;
+    text-transform: uppercase;
+}
+
+.tab-01-button-list__item.is-active {
+    color: $white;
+    background-color: $green;
+}
