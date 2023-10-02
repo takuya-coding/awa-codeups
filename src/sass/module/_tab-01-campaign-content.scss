@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.tab-01-campaign-content__item {
+    max-width: rem(280);
+    width: 100%;
+    @include mq("md") {
+        max-width: rem(520);
+    }
+}
