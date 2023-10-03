@@ -126,3 +126,59 @@
         font-size: rem(40);
     }
 }
+
+
+// 以下campaignページ用panelのスタイル
+// 余白変更
+.panel__body--campaign {
+    @include mq("md") {
+        padding: rem(24) rem(24) rem(40);
+    }
+}
+
+.panel__campaign-body {
+    display: none;
+    @include mq("md") {
+        display: block;
+        margin-top: rem(24);
+    }
+}
+
+.panel__campaign-text {
+    @include mq("md") {
+        font-family: $base-font-family;
+        line-height: 1.5;
+    }
+}
+
+.panel__campaign-list {
+    @include mq("md") {
+        text-align: center;
+        margin-top: rem(32);
+    }
+}
+
+.panel__campaign-time {
+    @include mq("md") {
+        font-family: $third-font-family;
+        font-weight: bold;
+        line-height: 1.125;
+        color: $green;
+    }
+}
+
+.panel__campaign-message {
+    @include mq("md") {
+        font-family: $base-font-family;
+        font-size: rem(14);
+        line-height: 1.286;
+        color: $green;
+    }
+}
+
+.panel__campaign-button {
+    @include mq("md") {
+        margin-top: rem(16);
+    }
+}
+
