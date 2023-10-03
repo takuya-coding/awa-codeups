@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.tab-01-button-list {
+.tab-01-list {
     display: flex;
     gap: rem(16) rem(21);
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
     }
 }
 
-.tab-01-button-list__item {
+.tab-01-list__button {
     display: inline-block;
     font-family: $base-font-family;
     font-size: rem(14);
@@ -23,7 +23,7 @@
     text-transform: uppercase;
 }
 
-.tab-01-button-list__item.is-active {
+.tab-01-list__button.is-active {
     color: $white;
     background-color: $green;
 }
