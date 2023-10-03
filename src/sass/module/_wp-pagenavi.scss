@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.wp-pagenavi {
+	clear: both;
+	text-align:center;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	color: $green;
+	border: 1px solid $green;
+	padding: rem(8) rem(14);
+	margin: 0 rem(6);
+	white-space: nowrap;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+    font-family: $third-font-family;
+    font-weight: bold;
+    font-size: rem(16);
+}
+
+.wp-pagenavi a:hover{
+	color: $white;
+	background-color: $green;
+	border-color: $green;
+    }
+
+.wp-pagenavi span.current{
+	color: $white;
+	background-color: $green;
+	border-color: $green;
+	font-weight: bold;
+    }
+
+.previouspostslink img {
+    max-width: rem(8);
+    width: 100%;
+}
+
+.nextpostslink img {
+    max-width: rem(8);
+    width: 100%;
+}
