@@ -3,13 +3,18 @@
 .wp-pagenavi {
 	clear: both;
 	text-align:center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(12);
 }
 
 .wp-pagenavi a, .wp-pagenavi span {
 	color: $green;
 	border: 1px solid $green;
 	padding: rem(8) rem(14);
-	margin: 0 rem(6);
+	// margin: 0 rem(6);
 	white-space: nowrap;
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
@@ -20,6 +25,16 @@
     font-family: $third-font-family;
     font-weight: bold;
     font-size: rem(16);
+
+	// display: inline-block;
+	// max-width: rem(38);
+	// width: 100%;
+	width: rem(38);
+	height: rem(38);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .wp-pagenavi a:hover{
@@ -35,12 +50,37 @@
 	font-weight: bold;
     }
 
-.previouspostslink img {
+.previouspostslink img,
+.nextpostslink img {
+	display: inline-flex;
+	align-items: center;
     max-width: rem(8);
     width: 100%;
 }
 
 .nextpostslink img {
-    max-width: rem(8);
-    width: 100%;
+	transform: scaleX(-1);
 }
+
+.wp-pagenavi span {
+	// gapの残り差分を指定
+	margin-left: rem(28);
+}
+
+.nextpostslink {
+	// gapの残り差分を指定
+	margin-left: rem(28);
+}
+
+.wp-pagenavi a:nth-of-type(5),
+.wp-pagenavi a:nth-of-type(6) {
+	display: none;
+	@include mq("md") {
+		// display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+}
+
+// hoverした際、矢印色反転させる必要あり
