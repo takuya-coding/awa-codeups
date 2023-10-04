@@ -6,5 +6,12 @@
 }
 
 .breadcrumbs__item {
+    font-size: rem(14);
     text-transform: uppercase;
+}
+
+.breadcrumbs__item a:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
 }

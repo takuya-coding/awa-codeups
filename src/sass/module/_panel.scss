@@ -136,6 +136,12 @@
     }
 }
 
+.panel__title--campaign {
+    @include mq("md") {
+        font-size: rem(24);
+    }
+}
+
 .panel__campaign-body {
     display: none;
     @include mq("md") {
