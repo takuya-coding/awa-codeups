@@ -110,6 +110,8 @@
     color: $white;
     text-align: center;
     text-transform: capitalize;
+
+    // overflow-wrap: break-word;
     @include mq("md") {
         // margin-top: rem(68);
         margin-top: rem(80);
