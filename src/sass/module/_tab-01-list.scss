@@ -3,8 +3,11 @@
 .tab-01-list {
     display: flex;
     gap: rem(16) rem(21);
+    gap: rem(16) 6.086%;
+    justify-content: center;
     flex-wrap: wrap;
     @include mq("md") {
+        justify-content: start;
         gap: rem(24) rem(32);
     }
 }
@@ -17,7 +20,8 @@
     line-height: 1;
     padding: 0.714286em 1em;
     max-width: rem(162);
-    width: 100%;
+    width: 46.95%;
+    // width: 100%;
     text-align: center;
     border: 1px solid $green;
     text-transform: uppercase;
