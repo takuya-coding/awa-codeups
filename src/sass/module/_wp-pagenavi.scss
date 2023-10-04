@@ -32,7 +32,7 @@
 	width: rem(38);
 	height: rem(38);
 
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -77,10 +77,16 @@
 	display: none;
 	@include mq("md") {
 		// display: inline-block;
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: center;
     }
 }
 
-// hoverした際、矢印色反転させる必要あり
+.previouspostslink:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.nextpostslink:hover img {
+    filter: brightness(0) invert(1);
+}
