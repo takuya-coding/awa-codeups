@@ -11,10 +11,9 @@
     background-color: $green;
     transform: translateX(100%);
     transition: ease 0.3s;
-    // overflow: scroll;
 
-    // margin-top: rem(80);
-    padding-top: rem(80);
+    margin-top: rem(80);
+    // padding-top: rem(80);
     overflow-y: scroll;
     // ドロワーおよびメインコンテンツ両方のスクロールバーが表示されないように、ドロワー側のスクロールバーを非表示にする
     /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
@@ -25,6 +24,12 @@
     @include mq("md") {
         display: none;
     }
+}
+
+// ドロワーおよびメインコンテンツ両方のスクロールバーが表示されないように、ドロワー側のスクロールバーを非表示にする
+/*Google Chrome、Safariへの対応*/
+.sp-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .sp-nav.is-active {
