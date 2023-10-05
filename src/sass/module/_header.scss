@@ -20,7 +20,8 @@
 
 .header__inner {
     height: inherit;
-    padding: 0 rem(15);
+    // padding: 0 rem(15);
+    padding: 0 rem(10) 0 rem(15);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,8 +38,6 @@
     position: relative;
     z-index: $layer-header-logo;
     filter: invert(100%) sepia(0%) saturate(244%) hue-rotate(320deg) brightness(107%) contrast(103%);
-
-
     margin-right: auto;
 }
 
@@ -54,59 +53,74 @@
     }
 }
 
+// .header__hamburger {
+//     position: relative;
+//     width: rem(32);
+//     height: rem(24);
+//     z-index: $layer-hamburger;
+//     @include mq("md") {
+//         display: none;
+//     }
+// }
+
 .header__hamburger {
-    position: relative;
-    width: rem(32);
-    height: rem(24);
-    z-index: $layer-hamburger;
+    height: inherit;
     @include mq("md") {
         display: none;
     }
 }
 
-.header__hamburger span {
-    position: absolute;
-    left: 0;
-    // left: rem(-4);
-    width: 100%;
-    height: rem(1);
-    background-color: $white;
-    border-radius: rem(4);
-    transition: transform ease 0.5s;
-}
+// .header__hamburger span {
+//     position: absolute;
+//     left: 0;
+//     // left: rem(-4);
+//     width: 100%;
+//     height: rem(1);
+//     background-color: $white;
+//     border-radius: rem(4);
+//     transition: transform ease 0.5s;
+// }
 
 // クリック前
-.header__hamburger span:nth-of-type(1) {
-    top: 0;
-}
+// .header__hamburger span:nth-of-type(1) {
+//     top: 0;
+// }
 
-.header__hamburger span:nth-of-type(2) {
-    top: rem(12);
-}
+// .header__hamburger span:nth-of-type(2) {
+//     top: rem(12);
+// }
 
-.header__hamburger span:nth-of-type(3) {
-    bottom: 0;
-}
+// .header__hamburger span:nth-of-type(3) {
+//     bottom: 0;
+// }
 
 
 // クリック後
-.header__hamburger.is-active span:nth-of-type(1) {
-    // transform: translateY(rem(10)) rotate(35deg);
-    transform: translateY(rem(11.5)) rotate(37.5deg);
-    width: rem(40);
-    left: rem(-4);
-}
+// .header__hamburger.is-active span:nth-of-type(1) {
+//     // transform: translateY(rem(10)) rotate(35deg);
+//     transform: translateY(rem(11.5)) rotate(37.5deg);
+//     width: rem(40);
+//     left: rem(-4);
+// }
 
-.header__hamburger.is-active span:nth-of-type(2) {
-    opacity: 0;
-}
+// .header__hamburger.is-active span:nth-of-type(2) {
+//     opacity: 0;
+// }
 
-.header__hamburger.is-active span:nth-of-type(3) {
-    // transform: translateY(rem(-13)) rotate(-35deg);
-    transform: translateY(rem(-11.5)) rotate(-37.5deg);
-    width: rem(40);
-    left: rem(-4);
+// .header__hamburger.is-active span:nth-of-type(3) {
+//     // transform: translateY(rem(-13)) rotate(-35deg);
+//     transform: translateY(rem(-11.5)) rotate(-37.5deg);
+//     width: rem(40);
+//     left: rem(-4);
+// }
 
+.header__sp-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $layer-sp-nav;
 }
 
 
