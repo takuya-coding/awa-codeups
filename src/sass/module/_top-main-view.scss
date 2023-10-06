@@ -5,7 +5,7 @@
     height: 100vh;
     position: relative;
 
-    // スマホ、タブレット横にした際、テキストが上に詰まって窮屈にならないように追記
+    // スマホ、タブレット横にした際、テキストが上に詰まって窮屈にならないように追記（height:100vhの場合のみ）
     min-height: rem(320);
     @include mq("md") {
         min-height: rem(500);
