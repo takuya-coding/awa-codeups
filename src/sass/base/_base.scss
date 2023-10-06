@@ -69,3 +69,14 @@ body.is-active {
 //     opacity: 0.8;
 //   }
 // }
+
+// コンテンツ量が少なく短いページでもfooterを最下部に表示するためのコード
+// （bodyタグ直下の子要素としてwrapクラスが付いたdivタグ記述）
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

@@ -274,6 +274,17 @@ $(window).on("resize", function () {
 
 
 
+  // コンテンツ量が少なく短いページでもfooterを最下部に表示する
+  // スマホで見た際、footerがアドレスバーに隠れないようにするためのコード
+  $(window).on("load resize", function () {
+    let window_height = window.innerHeight
+      ? window.innerHeight
+      : $(window).innerHeight();
+    $(".wrap").css("min-height", window_height + "px");
+  });
+
+
+
   // campaignページのタブ
 //   const campaign_tabButton = $(".js-tab-button-campaign"),
 //         campaign_tabContent = $(".js-tab-content-campaign");
