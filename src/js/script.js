@@ -16,7 +16,25 @@ $('.js-hamburger').on('click', function() {
         // ドロワーメニュー展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
         $('body').addClass('is-active');
     }
+
+  // resizeイベント
+  $(window).resize(function () {
+  if(window.matchMedia("(min-width: 768px)").matches) {
+      closeDrawer();
+     }
+  });
 });
+
+function openDrawer() {
+  $(".js-drawer").addClass("is-active");
+  $(".js-hamburger").addClass("is-active");
+  $('.js-header').addClass('is-active');
+}
+function closeDrawer() {
+  $(".js-drawer").removeClass("is-active");
+  $(".js-hamburger").removeClass("is-active");
+  $('.js-header').removeClass('is-active');
+}
 
 // ドロワーメニューの背景orリンクをクリックした際にドロワーメニューを閉じる
 $('.js-drawer, js-header-logo').on('click', function() {
