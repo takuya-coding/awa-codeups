@@ -34,6 +34,7 @@
         // あしらい画像サイズ可変する場合の例
         width: clamp(rem(150), 20.9vw, rem(301));
         @include mq("md") {
+            top: rem(-68.7);
             width:rem(301);
             height:rem(138);
         }
