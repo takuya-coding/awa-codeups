@@ -41,9 +41,7 @@
 }
 
 .description {
-    @include mq("md") {
-        position: relative;
-    }
+    position: relative;
 }
 
 .description__body {
@@ -59,7 +57,6 @@
         gap: rem(40);
         // 画面幅縮小時に右側の余白確保
         padding-right: rem(40);
-
     }
 }
 
@@ -116,5 +113,58 @@
     @include mq("md") {
         // margin-top: rem(40);
         margin-top: rem(38.5);
+    }
+}
+
+
+
+// 以下about-usページのスタイル
+.description__img-sub--about-us {
+    display: none;
+    @include mq("md") {
+        display: block;
+        width: calc(calc(400 / 1080)) * 100%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        top: -14%;
+        left: 0;
+    }
+}
+
+.description__img-main--about-us {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    @include mq("md") {
+        width: calc(calc(880 / 1080)) * 100%;
+    }
+}
+
+.description__body-about--us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    @include mq("md") {
+        top: rem(121);
+        // left: 18.5%;
+        left: rem(200);
+        display: flex;
+        gap: rem(40);
+        // 画面幅縮小時に右側の余白確保
+        padding-right: rem(40);
+    }
+}
+
+.description__title--about-us {
+    font-family: $second-font-family;
+    font-weight: $regular;
+    font-size: rem(40);
+    line-height: 1;
+    color: $white;
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1.25;
     }
 }
