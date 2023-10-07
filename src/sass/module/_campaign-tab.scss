@@ -26,7 +26,7 @@
         position: absolute;
         content: "";
         top: rem(-23.9);
-        z-index: $layer-decoration;
+        z-index: -10;
         // 画面幅広いときに広がりすぎないようにする
         // left: calc(50% - min(43vw, 38.75rem));
         // 画面狭いときに中に入りすぎないように調整
