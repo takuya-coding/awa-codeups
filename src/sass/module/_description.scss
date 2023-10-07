@@ -57,6 +57,7 @@
         gap: rem(40);
         // 画面幅縮小時に右側の余白確保
         padding-right: rem(40);
+        // align-items: center;
     }
 }
 
@@ -158,13 +159,16 @@
 }
 
 .description__title--about-us {
-    font-family: $second-font-family;
-    font-weight: $regular;
-    font-size: rem(40);
-    line-height: 1;
     color: $white;
+}
+
+.description__unit--about-us {
+    // margin-top: rem(16);
+    // margin-top: rem(164);
+    margin-top: 45%;
     @include mq("md") {
-        font-size: rem(80);
-        line-height: 1.25;
+        max-width: rem(400);
+        width: 100%;
+        margin-top: 0;
     }
 }
