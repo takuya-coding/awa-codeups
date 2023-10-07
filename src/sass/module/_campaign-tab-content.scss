@@ -3,8 +3,9 @@
 .campaign-tab-content {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: rem(40);
-    margin-top: rem(40);
+    // row-gap: rem(40);
+    row-gap: rem(39.2);
+    margin-top: rem(38.5);
     justify-items: center;
     @include mq("md") {
         grid-template-columns: 1fr 1fr;

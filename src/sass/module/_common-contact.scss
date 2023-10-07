@@ -8,9 +8,7 @@
 // }
 
 .common-contact {
-    @include mq("md") {
-        position: relative;
-    }
+    position: relative;
 }
 
 .common-contact__inner.inner {
