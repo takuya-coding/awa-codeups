@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(8);
+    margin-top: rem(40);
     @include mq("md") {
         grid-auto-flow: dense;
         // gapの値を差し引いた値
@@ -23,6 +24,7 @@
         // grid-template-columns: 1fr rem(80) 1fr;
         // 固定値ではなく、比率管理に変更：80px / 492px = 0.16
         grid-template-columns: 1fr 0.163fr 1fr;
+        margin-top: rem(80);
     }
 }
 
