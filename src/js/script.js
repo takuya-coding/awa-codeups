@@ -332,11 +332,15 @@ open.on("click", function () {
   //そして、is-openで表示する。
   modal.addClass("is-open");
   // $("body,html").css("overflow-y", "hidden");
+  // モーダル展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
+  $('body').addClass('is-active');
 });
 
 modal.on("click", function () {
   modal.removeClass("is-open");
   // $("body,html").css("overflow-y", "visible");
+  // モーダル展開時に背景のコンテンツをスクロールさせないための記述（base.scssにも記述あり）
+  $('body').removeClass('is-active');
 });
 
 

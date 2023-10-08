@@ -78,7 +78,8 @@
 // モーダル開いた際のグレー背景
 .gallery__modal {
     position: fixed;
-    z-index: 100;
+    // $layer-to-top（トップに戻るボタン）よりも上に配置
+    z-index: 400;
     top: 0;
     left: 0;
     width: 100%;
@@ -94,18 +95,14 @@
     opacity: 1;
 }
 
-// .gallery__modal-body {
-//     position: relative;
-// }
-
-// モーダル開いた際のグレー背景の上側のギャラリー画像
+// モーダル開いた際のグレー背景上側の画像
 .gallery__modal-img {
     position: absolute;
     // max-width: rem(920);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 200;
+    z-index: 500;
 }
 
 .gallery__modal-img img {
