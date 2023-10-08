@@ -68,6 +68,7 @@
 
 // 横長画像用の設定
 .gallery__item {
+    cursor: pointer;
     aspect-ratio: 345 / 219;
     overflow: hidden;
     @include mq("md") {
