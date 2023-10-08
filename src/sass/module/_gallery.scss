@@ -14,9 +14,15 @@
     gap: rem(8);
     @include mq("md") {
         grid-auto-flow: dense;
-        grid-template-rows: repeat(4, rem(369));
+        // gapの値を差し引いた値
+        // grid-template-rows: repeat(4, rem(369));
+        // grid-template-rows: 1fr;
+
         // 真ん中はgapの値を差し引いた値
-        grid-template-columns: 1fr rem(80) 1fr;
+        // rem(80)指定だと画面幅狭くなると、縦長画像の下に余白ができてしまう
+        // grid-template-columns: 1fr rem(80) 1fr;
+        // 固定値ではなく、比率管理に変更：80px / 492px = 0.16
+        grid-template-columns: 1fr 0.163fr 1fr;
     }
 }
 
@@ -66,6 +72,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+
 
 
 
