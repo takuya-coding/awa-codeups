@@ -108,12 +108,13 @@
     z-index: 200;
 }
 
-// .gallery__modal-img img {
-//     margin: auto;
-//     max-width: calc(calc(920 / 1440) * 100vw);
-//     max-height: calc(calc(586 / 768) * 100vh);
-//     object-fit: cover;
-// }
+.gallery__modal-img img {
+    margin: auto;
+    // max-width: calc(calc(920 / 1440) * 100vw);
+    // max-height: calc(calc(586 / 768) * 100vh);
+    // object-fit: cover;
+    object-fit: contain;
+}
 
 
 
