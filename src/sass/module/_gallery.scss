@@ -32,8 +32,8 @@
     overflow: hidden;
     @include mq("md") {
         aspect-ratio: 580 / 369;
-        grid-column: span 2;
         grid-row: span 1;
+        grid-column: span 2;
     }
 }
 
@@ -73,6 +73,47 @@
     object-fit: cover;
 }
 
+
+// 以下、モーダルに関する記述
+// モーダル開いた際のグレー背景
+.gallery__modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32, 32, 32, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.gallery__modal.is-open {
+    visibility: visible;
+    opacity: 1;
+}
+
+// .gallery__modal-body {
+//     position: relative;
+// }
+
+// モーダル開いた際のグレー背景の上側のギャラリー画像
+.gallery__modal-img {
+    position: absolute;
+    // max-width: rem(920);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+// .gallery__modal-img img {
+//     margin: auto;
+//     max-width: calc(calc(920 / 1440) * 100vw);
+//     max-height: calc(calc(586 / 768) * 100vh);
+//     object-fit: cover;
+// }
 
 
 

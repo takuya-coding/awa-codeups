@@ -319,4 +319,25 @@ campaign_tabButton.on("click", function () {
   $(this).addClass("is-active");
 });
 
+
+
+// about-usページのモーダル
+const open = $(".js-modal-open"),
+      modal = $(".js-modal");
+
+//開くボタンをクリックしたらモーダルを表示する
+open.on("click", function () {
+  // まず、クリックした画像の HTML(<img>タグ全体)をjs-modal-img内にコピー
+  $(".js-modal-img").html($(this).prop("outerHTML"));
+  //そして、is-openで表示する。
+  modal.addClass("is-open");
+  // $("body,html").css("overflow-y", "hidden");
+});
+
+modal.on("click", function () {
+  modal.removeClass("is-open");
+  // $("body,html").css("overflow-y", "visible");
+});
+
+
 });
