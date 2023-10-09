@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.campaign-tab__pagination {
+    margin-top: rem(80);
+}
+
 .campaign-tab {
     position: relative;
 }
