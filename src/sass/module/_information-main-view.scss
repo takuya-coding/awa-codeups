@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.about-us-main-view {
+.information-main-view {
     width: 100%;
     height: rem(460);
     position: relative;
@@ -9,11 +9,11 @@
     }
 }
 
-.about-us-main-view__inner {
+.information-main-view__inner {
     height: inherit;
 }
 
-.about-us-main-view__title {
+.information-main-view__title {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -23,22 +23,19 @@
     font-weight: $regular;
     font-size: rem(40);
     color: $white;
+    text-transform: capitalize;
     @include mq("md") {
         font-size: rem(80);
         line-height: 1.25;
     }
 }
 
-.about-us-main-view__title::first-letter {
-    text-transform: capitalize;
-}
-
-.about-us-main-view__img {
+.information-main-view__img {
     width: 100%;
     height: inherit;
 }
 
-.about-us-main-view__img img {
+.information-main-view__img img {
     width: 100%;
     height: rem(460);
     object-fit: cover;
@@ -46,4 +43,3 @@
         height: rem(548);
     }
 }
-
