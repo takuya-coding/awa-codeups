@@ -27,7 +27,8 @@
     // 画面幅広いときに広がりすぎないようにする
     // left: calc(50% - min(43vw, 38.75rem));
     // 画面狭いときに中に入りすぎないように調整
-    left: calc(50% - min(50vw, 38.75rem));
+    // left: calc(50% - min(50vw, 38.75rem));
+    left: calc(50% - min(50vw, 17.15rem));
     // あしらい画像サイズ可変する場合の例
     width: clamp(rem(150), 20.9vw, rem(301));
     @include mq("md") {
