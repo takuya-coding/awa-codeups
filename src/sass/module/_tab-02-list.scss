@@ -3,7 +3,7 @@
 .tab-02-list {
     display: flex;
     gap: rem(16) 5.507%;
-    justify-content: center;
+    // justify-content: center;
     flex-wrap: wrap;
     @include mq("md") {
         gap: rem(24) 8.333%;
