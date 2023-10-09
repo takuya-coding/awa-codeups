@@ -8,8 +8,16 @@
 }
 
 .information-tab-content__item {
+    display: none;
     padding: rem(24);
     border: 1px solid $green;
+}
+
+.information-tab-content__item.is-active {
+    display: block;
+}
+
+.information-tab-content__item-wrap {
     @include mq("md") {
         display: flex;
         align-items: center;

@@ -344,4 +344,19 @@ modal.on("click", function () {
 });
 
 
+
+// informationページのタブ
+const information_tabButton = $(".js-tab-button-information"),
+      information_tabContent = $(".js-tab-content-information");
+
+information_tabButton.on("click", function () {
+let index = information_tabButton.index(this);
+information_tabButton.removeClass("is-active");
+$(this).addClass("is-active");
+information_tabContent.removeClass("is-active");
+information_tabContent.eq(index).addClass("is-active");
+});
+
+
+
 });
