@@ -28,7 +28,6 @@
     // right: calc(50% - min(48vw, 10.78125rem));
     // // あしらい画像サイズ可変する場合の例
     // width: clamp(rem(80), 29.07vw, rem(109));
-
     display: none;
 
     @include mq("md") {
@@ -58,10 +57,6 @@
         width: clamp(rem(150), 20.9vw, rem(301));
     }
 }
-
-// .gallery__title {
-
-// }
 
 .gallery__list {
     display: grid;
