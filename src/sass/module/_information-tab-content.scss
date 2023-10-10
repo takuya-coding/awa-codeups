@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.information-tab-content {
-    margin-top: rem(16);
-    @include mq("md") {
-        margin-top: rem(24);
-    }
-}
-
 .information-tab-content__item {
     display: none;
     padding: rem(24);
@@ -55,6 +48,7 @@
     aspect-ratio: 297 / 189;
     overflow: hidden;
     @include mq("md") {
+        margin-top: rem(-2);
         aspect-ratio: 492 / 313;
         width: 50%;
     }

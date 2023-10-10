@@ -35,3 +35,11 @@
         left: calc(50% - min(43vw, 38.75rem));
     }
 }
+
+.information-tab__content {
+    margin-top: rem(16);
+    @include mq("md") {
+        // margin-top: rem(24);
+        margin-top: rem(25.6);
+    }
+}
