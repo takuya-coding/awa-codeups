@@ -1,0 +1,57 @@
+@use "global" as *;
+
+// .blog-sidebar__item-archive {
+
+// }
+
+.sidebar-archive {
+    font-family: $base-font-family;
+    font-weight: $regular;
+    font-size: rem(24);
+    color: $green;
+}
+
+.sidebar-archive__list {
+
+}
+
+.sidebar-archive__summary {
+    cursor: pointer;
+}
+
+.sidebar-archive__lv2-wrap {
+    text-indent: 1em;
+}
+
+.sidebar-archive__lv2-list {
+
+}
+
+.sidebar-archive__lv2-summary {
+    cursor: pointer;
+}
+
+.sidebar-archive__lv2-content {
+    text-indent: 1em;
+}
+
+
+// オープン時にアニメーションを設定
+.sidebar-archive__list[open] .sidebar-archive__lv2-wrap {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        // 透明
+        opacity: 0;
+        // 上から表示
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
