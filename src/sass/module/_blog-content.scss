@@ -3,14 +3,31 @@
 .blog-content__inner.inner {
     padding-right: 0;
     padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
     @include mq("md") {
         max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: $padding-pc;
         padding-left: $padding-pc;
-        margin-right: auto;
-        margin-left: auto;
+    }
+}
+
+.blog-content__wrapper {
+    @include mq("md") {
+        display: flex;
+        gap: rem(80);
+    }
+}
+
+.blog-content__main {
+    width: 100%;
+    @include mq("md") {
+        width: calc(calc(706 / 1000) * 100%);
+    }
+}
+
+.blog-content__sidebar {
+    width: 100%;
+    @include mq("md") {
+        width: calc(calc(294 / 1000) * 100%);
     }
 }
 

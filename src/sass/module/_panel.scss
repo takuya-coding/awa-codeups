@@ -196,3 +196,10 @@
     text-align: center;
 }
 
+.panel__body--sidebar {
+    padding: rem(16) rem(23) rem(24);
+    @include mq("md") {
+        padding: rem(16) rem(23) rem(24);
+    }
+}
+

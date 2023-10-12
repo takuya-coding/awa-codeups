@@ -13,16 +13,17 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(40);
+    justify-items: center;
     @include mq("md") {
         grid-template-columns: repeat(2, 1fr);
         gap: rem(80) rem(40);
     }
 }
 
-// .blog-main__item {
-//     max-width: rem(333);
-//     width: 100%;
-// }
+.blog-main__item {
+    max-width: rem(333);
+    width: 100%;
+}
 
 .blog-main__pagination {
     margin-top: rem(80);

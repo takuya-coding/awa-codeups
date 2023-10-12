@@ -5,3 +5,8 @@
     flex-direction: column;
     gap: rem(40);
 }
+
+.sidebar-panels__item {
+    max-width: rem(294);
+    width: 100%;
+}
