@@ -203,3 +203,22 @@
     }
 }
 
+.panel__text--sidebar {
+    @include mq("md") {
+        font-size: rem(14);
+    }
+}
+
+.panel__price-before--sidebar {
+    @include mq("md") {
+        font-size: rem(20);
+        margin-top: rem(18);
+    }
+}
+
+.panel__price-after--sidebar {
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}
+
