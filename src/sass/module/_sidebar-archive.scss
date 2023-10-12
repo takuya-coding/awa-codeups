@@ -17,7 +17,16 @@
 
 .sidebar-archive__summary {
     cursor: pointer;
+    // hover指定がない場合のaタグの透過処理
+    transition: opacity 0.3s;
 }
+
+.sidebar-archive__summary:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
+}
+
 
 .sidebar-archive__lv2-wrap {
     text-indent: 1em;
@@ -29,6 +38,14 @@
 
 .sidebar-archive__lv2-summary {
     cursor: pointer;
+    // hover指定がない場合のaタグの透過処理
+    transition: opacity 0.3s;
+}
+
+.sidebar-archive__lv2-summary:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
 }
 
 .sidebar-archive__lv2-content {
