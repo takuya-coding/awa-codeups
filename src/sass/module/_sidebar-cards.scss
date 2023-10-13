@@ -7,8 +7,12 @@
 }
 
 .sidebar-cards__item {
-    max-width: rem(294);
-    width: 100%;
-    min-height: rem(122);
-    height: 100%;
+    // max-width: rem(294);
+    // width: 100%;
+    // min-height: rem(122);
+    // height: 100%;
+
+    // スマホ実機で確認すると指定のサイズよりも小さく表示され、リロードすると指定のサイズになる不具合対策として、数値指定
+    width: rem(294);
+    height: rem(122);
 }
