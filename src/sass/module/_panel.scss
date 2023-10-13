@@ -192,8 +192,18 @@
 
 
 // サイドバーpanelのみ適用させるコード
+
+.panel__img--sidebar {
+    aspect-ratio: 294 / 188;
+    @include mq("md") {
+        aspect-ratio: 294 / 188;
+    }
+}
+
 .panel__title--sidebar {
     text-align: center;
+    margin-top: 0;
+    padding-bottom: rem(8);
 }
 
 .panel__body--sidebar {
@@ -221,4 +231,6 @@
         font-size: rem(32);
     }
 }
+
+
 

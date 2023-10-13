@@ -19,7 +19,36 @@
     cursor: pointer;
     // hover指定がない場合のaタグの透過処理
     transition: opacity 0.3s;
+
+    // Chrome,Safari以外でデフォルトの矢印を消す
+    display: block;
 }
+
+// Chrome,Safariでデフォルトの矢印を消す
+.sidebar-archive__summary::-webkit-details-marker {
+    display: none;
+}
+
+// 矢印をカスタマイズ
+.sidebar-archive__summary span {
+    display: inline-block;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    background-color: $green;
+    width: rem(13);
+    height: rem(16);
+    // height: calc(15 / 2 * tan(60deg));
+    // width: calc(15 / 2 * tan(60deg));
+    transition: 0.4s;
+    margin-right: rem(8);
+}
+
+// アコーディオン開閉時の矢印の挙動
+.sidebar-archive__list[open] .sidebar-archive__summary span {
+    transform: rotate(90deg);
+}
+
+
+
 
 .sidebar-archive__summary:hover {
     @include mq("md") {
@@ -39,8 +68,36 @@
 .sidebar-archive__lv2-summary {
     cursor: pointer;
     // hover指定がない場合のaタグの透過処理
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
+
+    // Chrome,Safari以外でデフォルトの矢印を消す
+    display: block;
 }
+
+// Chrome,Safariでデフォルトの矢印を消す
+.sidebar-archive__lv2-summary::-webkit-details-marker {
+    display: none;
+}
+
+// 矢印をカスタマイズ
+.sidebar-archive__lv2-summary span {
+    display: inline-block;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    background-color: $green;
+    width: rem(13);
+    height: rem(16);
+    // height: calc(15 / 2 * tan(60deg));
+    // width: calc(15 / 2 * tan(60deg));
+    transition: 0.4s;
+    margin-right: rem(8);
+}
+
+// アコーディオン開閉時の矢印の挙動
+.sidebar-archive__lv2-list[open] .sidebar-archive__lv2-summary span {
+    transform: rotate(90deg);
+}
+
+
 
 .sidebar-archive__lv2-summary:hover {
     @include mq("md") {
