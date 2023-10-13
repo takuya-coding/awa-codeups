@@ -23,7 +23,8 @@
 .sidebar-card__img {
     aspect-ratio: 121 / 90;
     overflow: hidden;
-    flex: 1;
+    // flex: 1;
+    width: calc(calc(121 / 246) * 100%);
 }
 
 .sidebar-card__img img {
@@ -33,7 +34,8 @@
 }
 
 .sidebar-card__body {
-    flex: 1;
+    // flex: 1;
+    width: calc(calc(125 / 246) * 100%);
 }
 
 .sidebar-card__time {
