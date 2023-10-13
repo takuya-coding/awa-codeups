@@ -29,12 +29,17 @@
 	// display: inline-block;
 	// max-width: rem(38);
 	// width: 100%;
-	width: rem(38);
+	// width: rem(38);
+	min-width: rem(38);
 	height: rem(38);
 
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+
+	@include mq("md") {
+		width: rem(38);
+    }
 }
 
 .wp-pagenavi a:hover{
