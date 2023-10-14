@@ -216,6 +216,7 @@
 .panel__text--sidebar {
     @include mq("md") {
         font-size: rem(14);
+        margin-top: rem(9.6);
     }
 }
 
@@ -229,6 +230,12 @@
 .panel__price-after--sidebar {
     @include mq("md") {
         font-size: rem(32);
+    }
+}
+
+.panel__price--sidebar {
+    @include mq("md") {
+        gap: rem(17.6);
     }
 }
 
