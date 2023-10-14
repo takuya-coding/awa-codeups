@@ -1,19 +1,11 @@
 @use "global" as *;
 
-// .blog-sidebar__item-archive {
-
-// }
-
 .sidebar-archive {
     font-family: $base-font-family;
     font-weight: $regular;
     font-size: rem(24);
     color: $green;
 }
-
-// .sidebar-archive__list {
-
-// }
 
 .sidebar-archive__summary {
     cursor: pointer;
@@ -22,6 +14,10 @@
 
     // Chrome,Safari以外でデフォルトの矢印を消す
     display: block;
+
+    // 矢印アイコン分の余白
+    padding-left: rem(32);
+    position: relative;
 }
 
 // Chrome,Safariでデフォルトの矢印を消す
@@ -29,26 +25,44 @@
     display: none;
 }
 
-// 矢印をカスタマイズ
-.sidebar-archive__summary span {
+// 矢印カスタマイズ
+.sidebar-archive__summary::before {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     display: inline-block;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     background-color: $green;
     width: rem(13);
     height: rem(16);
-    // height: calc(15 / 2 * tan(60deg));
-    // width: calc(15 / 2 * tan(60deg));
     transition: 0.4s;
-    margin-right: rem(8);
 }
 
 // アコーディオン開閉時の矢印の挙動
-.sidebar-archive__list[open] .sidebar-archive__summary span {
+.sidebar-archive__list[open] .sidebar-archive__summary::before {
+    top: 30%;
+    left: 0;
     transform: rotate(90deg);
 }
 
+// // 矢印をカスタマイズ（spanタグ使う場合）
+// .sidebar-archive__summary span {
+//     display: inline-block;
+//     clip-path: polygon(0 0, 0 100%, 100% 50%);
+//     background-color: $green;
+//     width: rem(13);
+//     height: rem(16);
+//     transition: 0.4s;
+//     margin-right: rem(8);
+// }
 
-
+// // アコーディオン開閉時の矢印の挙動（spanタグ使う場合）
+// .sidebar-archive__list[open] .sidebar-archive__summary span {
+//     transform: rotate(90deg);
+// }
 
 .sidebar-archive__summary:hover {
     @include mq("md") {
@@ -56,14 +70,9 @@
     }
 }
 
-
 .sidebar-archive__lv2-wrap {
     text-indent: 1em;
 }
-
-// .sidebar-archive__lv2-list {
-
-// }
 
 .sidebar-archive__lv2-summary {
     cursor: pointer;
@@ -72,6 +81,10 @@
 
     // Chrome,Safari以外でデフォルトの矢印を消す
     display: block;
+
+    // 矢印アイコン分の余白
+    padding-left: rem(32);
+    position: relative;
 }
 
 // Chrome,Safariでデフォルトの矢印を消す
@@ -79,25 +92,44 @@
     display: none;
 }
 
-// 矢印をカスタマイズ
-.sidebar-archive__lv2-summary span {
+// 矢印カスタマイズ
+.sidebar-archive__lv2-summary::before {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
     display: inline-block;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     background-color: $green;
     width: rem(13);
     height: rem(16);
-    // height: calc(15 / 2 * tan(60deg));
-    // width: calc(15 / 2 * tan(60deg));
     transition: 0.4s;
-    margin-right: rem(8);
 }
 
 // アコーディオン開閉時の矢印の挙動
-.sidebar-archive__lv2-list[open] .sidebar-archive__lv2-summary span {
+.sidebar-archive__lv2-list[open] .sidebar-archive__lv2-summary::before {
+    top: 30%;
+    left: 12%;
     transform: rotate(90deg);
 }
 
+// // 矢印をカスタマイズ（spanタグ使う場合）
+// .sidebar-archive__lv2-summary span {
+//     display: inline-block;
+//     clip-path: polygon(0 0, 0 100%, 100% 50%);
+//     background-color: $green;
+//     width: rem(13);
+//     height: rem(16);
+//     transition: 0.4s;
+//     margin-right: rem(8);
+// }
 
+// // アコーディオン開閉時の矢印の挙動（spanタグ使う場合）
+// .sidebar-archive__lv2-list[open] .sidebar-archive__lv2-summary span {
+//     transform: rotate(90deg);
+// }
 
 .sidebar-archive__lv2-summary:hover {
     @include mq("md") {
