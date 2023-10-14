@@ -5,6 +5,11 @@
     font-weight: $regular;
     font-size: rem(24);
     color: $green;
+    line-height: 1.5;
+}
+
+.sidebar-archive__list:not(:first-child) {
+    margin-top: rem(7.4);
 }
 
 .sidebar-archive__summary {
@@ -31,20 +36,20 @@
     margin: auto;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: rem(5);
     transform: translateY(-50%);
     display: inline-block;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     background-color: $green;
-    width: rem(13);
-    height: rem(16);
+    width: rem(19.4);
+    height: rem(22.4);
     transition: 0.4s;
 }
 
 // アコーディオン開閉時の矢印の挙動
 .sidebar-archive__list[open] .sidebar-archive__summary::before {
-    top: 30%;
-    left: 0;
+    top: 27%;
+    left: rem(5);
     transform: rotate(90deg);
 }
 
@@ -72,6 +77,7 @@
 
 .sidebar-archive__lv2-wrap {
     text-indent: 1em;
+    margin-top: rem(4);
 }
 
 .sidebar-archive__lv2-summary {
@@ -98,20 +104,22 @@
     margin: auto;
     position: absolute;
     top: 50%;
-    left: 12%;
+    // left: 10%;
+    left: rem(29);
     transform: translateY(-50%);
     display: inline-block;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     background-color: $green;
-    width: rem(13);
-    height: rem(16);
+    width: rem(19.4);
+    height: rem(22.4);
     transition: 0.4s;
 }
 
 // アコーディオン開閉時の矢印の挙動
 .sidebar-archive__lv2-list[open] .sidebar-archive__lv2-summary::before {
-    top: 30%;
-    left: 12%;
+    top: 27%;
+    // left: 10%;
+    left: rem(29);
     transform: rotate(90deg);
 }
 
