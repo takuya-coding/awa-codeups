@@ -56,6 +56,7 @@ tbody {
     display: block;
     width: 100%;
     padding: rem(8) rem(16);
+
     padding-left: rem(30);
 
     @include mq("md") {
@@ -95,12 +96,11 @@ tbody {
 //     }
 // }
 
-.price-table_th span {
+.price-table__th span {
     position: relative;
 }
 
 .price-table__th span::before {
-    // display: inline-block;
     width: rem(24);
     height: rem(24);
     position: absolute;
@@ -109,6 +109,7 @@ tbody {
     // 100px-24px=76px
     // left: calc(calc(76 / 345) * 100%);
     left: 0;
+    left: rem(-32);
     transform: translateY(-50%);
     // transform: translate(-50%, -50%);
     -webkit-mask-image: url(../images/common/information-tab-icon1.svg);
