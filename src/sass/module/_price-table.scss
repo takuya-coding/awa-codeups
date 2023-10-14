@@ -57,7 +57,7 @@ tbody {
     width: 100%;
     padding: rem(8) rem(16);
 
-    padding-left: rem(30);
+    // padding-left: rem(30);
 
     @include mq("md") {
         padding: rem(41) rem(16) rem(113);
@@ -124,7 +124,8 @@ tbody {
     @include mq("md") {
         width: rem(64);
         height: rem(64);
-        top: calc(calc(73 / 178) * 100%);
+        // top: calc(calc(73 / 178) * 100%);
+        top: rem(24);
         left: 50%;
         transform: translateX(-50%);
     }

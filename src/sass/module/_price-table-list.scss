@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.price-table-list__item:not(:first-child) {
+    margin-top: rem(30);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
