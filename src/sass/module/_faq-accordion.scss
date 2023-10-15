@@ -56,12 +56,21 @@
     color: $white;
     background-color: $green;
     padding: rem(16);
+    padding-right: rem(60);
     cursor: pointer;
+    transition: opacity 0.3s;
 
     position: relative;
     @include mq("md") {
         font-size: rem(20);
         padding: rem(25) rem(40);
+        padding-right: rem(112);
+    }
+}
+
+.faq-accordion__title:hover {
+    @include mq("md") {
+        opacity: 0.8;
     }
 }
 
@@ -131,5 +140,6 @@
     font-weight: $regular;
     font-size: rem(16);
     color: $black;
+    line-height: 1.42;
 }
 
