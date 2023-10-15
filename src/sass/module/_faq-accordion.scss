@@ -78,6 +78,7 @@
     transform: translateY(-50%);
     transition: opacity 0.3s;
     @include mq("md") {
+        width: rem(32);
         right: rem(40);
     }
 }
@@ -100,6 +101,7 @@
     transform: translateY(-50%) rotate(90deg);
     transition: transform 0.3s;
     @include mq("md") {
+        width: rem(32);
         right: rem(40);
     }
 }
