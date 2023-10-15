@@ -359,4 +359,16 @@ information_tabContent.eq(index).addClass("is-active");
 
 
 
+// FAQページのアコーディオン
+$(function () {
+  $(".js-faq-accordion__title").on("click", function () {
+    // $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
+    $(this).toggleClass("is-open");
+  });
+});
+
+
+
+
 });
