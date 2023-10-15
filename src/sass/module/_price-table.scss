@@ -83,11 +83,12 @@ tbody {
 
     // flexアイテムとして、割合を記述（240+106=346px）
     // flex: calc(240 / 346);
-    flex: 0.6936;
+    // flex: 0.6936;
+    flex: 0.77;
 
-    padding: rem(7) rem(16);
     // テキストが途中で開業しない程度に左右の余白調整
-    padding: rem(7) rem(8);
+    // padding: rem(7) rem(8);
+    padding: rem(5.4) rem(8);
     text-align: center;
     // 上下の余白感がテキスト量によって異なるので、min-heightを指定
     min-height: rem(60);
@@ -120,11 +121,13 @@ tbody {
 
     // flexアイテムとして、割合を記述（240+106=346px）
     // flex: calc(106 / 346);
-    flex: 0.3064;
+    // flex: 0.3064;
+    flex: 0.28;
 
-    // padding: rem(7) rem(16);
     // テキストが途中で開業しない程度に左右の余白調整
-    padding: rem(7) rem(8);
+    // padding: rem(7) rem(8);
+    padding: rem(5.4) rem(8);
+    padding-right: rem(15);
     // 上下の余白感がテキスト量によって異なるので、min-heightを指定
     min-height: rem(60);
     // テキスト上下左右中央寄せ目的

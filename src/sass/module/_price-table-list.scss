@@ -10,7 +10,7 @@
 }
 
 .price-table-list__item:not(:first-child) {
-    margin-top: rem(30);
+    margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(80);
     }
