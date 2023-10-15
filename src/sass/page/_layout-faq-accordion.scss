@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.layout-faq-accordion {
+    // margin-top: rem(52);
+    margin-top: rem(50);
+    @include mq("md") {
+        // margin-top: rem(150);
+        margin-top: rem(148.4);
+    }
+}
