@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.about-us-main-view {
+.main-view {
     width: 100%;
     height: rem(460);
     position: relative;
@@ -9,11 +9,11 @@
     }
 }
 
-.about-us-main-view__inner {
+.main-view__inner {
     height: inherit;
 }
 
-.about-us-main-view__title {
+.main-view__title {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -29,21 +29,27 @@
     }
 }
 
-.about-us-main-view__title::first-letter {
+.main-view__title::first-letter {
     text-transform: capitalize;
 }
 
-.about-us-main-view__img {
+.main-view__img {
     width: 100%;
     height: inherit;
 }
 
-.about-us-main-view__img img {
+.main-view__img img {
     width: 100%;
     height: rem(460);
     object-fit: cover;
     @include mq("md") {
         height: rem(548);
     }
+}
+
+
+// FAQページのメインビュータイトルのみ適用
+.main-view__title.main-view__title--uppercase {
+    text-transform: uppercase;
 }
 
