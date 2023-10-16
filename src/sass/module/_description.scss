@@ -137,9 +137,9 @@
     width: 100%;
     height: auto;
     margin-left: auto;
-    @include mq("md") {
-        width: calc(calc(880 / 1080)) * 100%;
-    }
+    // @include mq("md") {
+    //     width: calc(calc(880 / 1080)) * 100%;
+    // }
 }
 
 // .description__body-about--us {
