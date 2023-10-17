@@ -17,7 +17,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
+        // 100vwはスクロールバーの幅を含み、横スクロールが表示されてしまうので使わない
+        // width: 100vw;
+        width: 100%;
         max-height: rem(500);
         height: 100%;
         background-image: url(../images/common/blog-background.jpg);

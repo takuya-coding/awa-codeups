@@ -3,6 +3,7 @@
 .panels {
     overflow: hidden;
     // 右側だけinner幅から飛び出す
+    // margin-right: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     // panel下部のbox-shadowが隠れてしまうためpadding-bottomを設定
     padding-bottom: rem(10);
