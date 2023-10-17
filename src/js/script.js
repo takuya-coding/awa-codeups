@@ -285,39 +285,30 @@ $(window).on("resize", function () {
 
 
 
-  // campaignページのタブ
-//   const campaign_tabButton = $(".js-tab-button-campaign"),
-//         campaign_tabContent = $(".js-tab-content-campaign");
-//   campaign_tabButton.on("click", function () {
-//   let index = campaign_tabButton.index(this);
+// campaignページのタブ
+// WordPress化前提に考えると、別ページ扱いになるためJSはコメントアウト
+// const campaign_tabButton = $(".js-tab-button-campaign"),
+//       campaign_tabContent = $(".js-tab-content-campaign");
+
+// campaign_tabButton.on("click", function () {
+//   // クリックされたタブのテキストを取得
+//   const selectedCategory = $(this).text().trim();
+  
+//   // 全てのパネルを非表示にする
+//   campaign_tabContent.removeClass("is-active");
+
+//   // 選択されたカテゴリーに合致するパネルを表示する
+//   campaign_tabContent.each(function() {
+//     const categoryText = $(this).find(".panel__category").text().trim();
+//     if (selectedCategory === "all" || categoryText === selectedCategory) {
+//       $(this).addClass("is-active");
+//     }
+//   });
+
+//   // タブのアクティブ状態を切り替える
 //   campaign_tabButton.removeClass("is-active");
 //   $(this).addClass("is-active");
-//   campaign_tabContent.removeClass("is-active");
-//   campaign_tabContent.eq(index).addClass("is-active");
 // });
-
-const campaign_tabButton = $(".js-tab-button-campaign"),
-      campaign_tabContent = $(".js-tab-content-campaign");
-
-campaign_tabButton.on("click", function () {
-  // クリックされたタブのテキストを取得
-  const selectedCategory = $(this).text().trim();
-  
-  // 全てのパネルを非表示にする
-  campaign_tabContent.removeClass("is-active");
-
-  // 選択されたカテゴリーに合致するパネルを表示する
-  campaign_tabContent.each(function() {
-    const categoryText = $(this).find(".panel__category").text().trim();
-    if (selectedCategory === "all" || categoryText === selectedCategory) {
-      $(this).addClass("is-active");
-    }
-  });
-
-  // タブのアクティブ状態を切り替える
-  campaign_tabButton.removeClass("is-active");
-  $(this).addClass("is-active");
-});
 
 
 
