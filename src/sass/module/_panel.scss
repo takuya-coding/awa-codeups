@@ -130,13 +130,13 @@
 
 // 以下campaignページ用panelのスタイル
 // 余白変更
-.panel__body--campaign {
+.panel__body.panel__body--campaign {
     @include mq("md") {
         padding: rem(24) rem(24) rem(40);
     }
 }
 
-.panel__title--campaign {
+.panel__title.panel__title--campaign {
     @include mq("md") {
         font-size: rem(24);
     }
