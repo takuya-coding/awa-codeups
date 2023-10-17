@@ -74,8 +74,9 @@
     }
 }
 
-.common-contact__logo a {
-    display: block;
+.common-contact__logo img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .common-contact__shop-info-wrapper {

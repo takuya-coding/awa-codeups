@@ -47,8 +47,16 @@
     // max-width: rem(105);
     max-width: rem(102);
     width: 100%;
+    transition: opacity 0.3s;
     @include mq("md") {
         max-width: rem(133);
+    }
+}
+
+// hover指定がない場合のaタグの透過処理
+.header__logo a:hover {
+    @include mq("md") {
+        opacity: 0.8;
     }
 }
 
