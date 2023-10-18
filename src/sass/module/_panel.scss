@@ -192,48 +192,47 @@
 
 
 // サイドバーpanelのみ適用させるコード
-
-.panel__img--sidebar {
+.panel__img.panel__img--sidebar {
     aspect-ratio: 294 / 188;
     @include mq("md") {
         aspect-ratio: 294 / 188;
     }
 }
 
-.panel__title--sidebar {
+.panel__title.panel__title--sidebar {
     text-align: center;
     margin-top: 0;
     padding-bottom: rem(8);
 }
 
-.panel__body--sidebar {
+.panel__body.panel__body--sidebar {
     padding: rem(16) rem(23) rem(24);
     @include mq("md") {
         padding: rem(16) rem(23) rem(24);
     }
 }
 
-.panel__text--sidebar {
+.panel__text.panel__text--sidebar {
     @include mq("md") {
         font-size: rem(14);
         margin-top: rem(9.6);
     }
 }
 
-.panel__price-before--sidebar {
+.panel__price-before.panel__price-before--sidebar {
     @include mq("md") {
         font-size: rem(20);
         margin-top: rem(18);
     }
 }
 
-.panel__price-after--sidebar {
+.panel__price-after.panel__price-after--sidebar {
     @include mq("md") {
         font-size: rem(32);
     }
 }
 
-.panel__price--sidebar {
+.panel__price.panel__price--sidebar {
     @include mq("md") {
         gap: rem(17.6);
     }
