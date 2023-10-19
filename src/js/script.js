@@ -320,6 +320,22 @@ const open = $(".js-modal-open"),
 open.on("click", function () {
   // まず、クリックした画像の HTML(<img>タグ全体)をjs-modal-img内にコピー
   $(".js-modal-img").html($(this).prop("outerHTML"));
+
+  // クリックされた画像の親要素（.gallery__item）のaspect-ratioの値を取得
+  let aspectRatio = $(this).css('aspect-ratio');
+  // 取得したaspect-ratioの値をモーダルの画像に適用
+  $(".js-modal-img > .gallery__item").css('aspect-ratio', aspectRatio);
+
+  // 下記記述でもOK
+  // // クリックされた画像の親要素（.gallery__item）の実際の幅と高さからアスペクト比を計算
+  // let width = $(this).width();
+  // let height = $(this).height();
+  // let aspectRatio = width / height;
+  // // アスペクト比をaspect-ratioの形式に変換
+  // let aspectRatioCSS = width + " / " + height;
+  // // gallery__modal-imgの子要素であるgallery__itemのCSSを変更
+  // $(".gallery__modal-img > .gallery__item").css("aspect-ratio", aspectRatioCSS);
+
   //そして、is-openで表示する。
   modal.addClass("is-open");
   // $("body,html").css("overflow-y", "hidden");
