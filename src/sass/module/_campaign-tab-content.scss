@@ -15,7 +15,7 @@
 
 .campaign-tab-content__item {
     display: none;
-    max-width: rem(280);
+    // max-width: rem(280);
     width: 100%;
     @include mq("md") {
         max-width: rem(520);
