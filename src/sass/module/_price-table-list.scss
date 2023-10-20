@@ -2,7 +2,9 @@
 
 .price-table-list__inner.inner {
     // コンテンツ幅345px＋左右padding15px分
-    max-width: rem(375);
+    // max-width: rem(375);
+    // コンテンツ幅540px＋左右padding15px分
+    max-width: rem(570);
     @include mq("md") {
         // コンテンツ幅700px＋左右padding25px分
         max-width: rem(750);
