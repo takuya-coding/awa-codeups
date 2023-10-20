@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-about-us__description {
+.top-about-us__content {
     // margin-top: rem(50);
     margin-top: rem(54.5);
     @include mq("md") {
