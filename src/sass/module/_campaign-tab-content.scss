@@ -14,7 +14,11 @@
 }
 
 .campaign-tab-content__item {
-    display: none;
+    // JSタブ切り替えのためのdisplay:none;
+    // display: none;
+    // flexじゃないとテキスト増減に対してpanelの高さが揃わない
+    display: flex;
+
     // max-width: rem(280);
     width: 100%;
     @include mq("md") {
@@ -22,6 +26,6 @@
     }
 }
 
-.campaign-tab-content__item.is-active {
-    display: block;
-}
+// .campaign-tab-content__item.is-active {
+//     // display: block;
+// }

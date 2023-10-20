@@ -37,6 +37,13 @@
     }
 }
 
+// カテゴリーのタグが増えた場合を想定したスタイル
+.panel__category-wrap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: rem(8);
+}
+
 .panel__category {
     display: inline-block;
     font-size: rem(12);
@@ -67,7 +74,9 @@
     // text-overflow: ellipsis;
 
     // テキスト量が増えてもpanelの高さを揃えるための記述
-    flex-grow: 1;
+    // flex-grow: 1;
+    // 伸びるだけじゃなく縮むようにもする（panel__campaign-bodyと1:1で伸び縮みするように）
+    flex: 1 1 auto;
     @include mq("md") {
         padding-bottom: rem(8);
     }
@@ -143,14 +152,27 @@
 }
 
 .panel__campaign-body {
-    display: none;
+    // JSタブ切り替えのためのdisplay:none;
+    // display: none;
+
+    // テキスト量が増えてもpanelの高さを揃えるための記述
+    // panel__titleと1:1で伸び縮むするように設定
+    flex: 1 1 auto;
+    // panel__campaign-textにflex指定するために設定
+    display: flex;
+    flex-direction: column;
+
     @include mq("md") {
-        display: block;
+        // display: block;
         margin-top: rem(24);
     }
 }
 
 .panel__campaign-text {
+    // テキスト量が増えてもpanelの高さを揃えるための記述
+    // panel__titleと1:1で伸び縮むするように設定
+    flex: 1 1 auto;
+
     @include mq("md") {
         font-family: $base-font-family;
         line-height: 1.5;
