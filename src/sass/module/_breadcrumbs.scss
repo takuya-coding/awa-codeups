@@ -1,16 +1,16 @@
 @use "global" as *;
 
-.breadcrumbs__list {
-    display: flex;
-    gap: rem(8);
-}
-
-.breadcrumbs__item {
+.breadcrumbs span {
+    display: inline-block;
     font-size: rem(14);
     text-transform: uppercase;
 }
 
-.breadcrumbs__item a:hover {
+.breadcrumbs span:not(:first-child) {
+    margin-left: rem(8);
+}
+
+.breadcrumbs a:hover {
     @include mq("md") {
         opacity: 0.8;
     }
