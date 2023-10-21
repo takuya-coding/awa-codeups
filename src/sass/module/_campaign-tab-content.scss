@@ -9,7 +9,8 @@
     justify-items: center;
     @include mq("md") {
         grid-template-columns: 1fr 1fr;
-        gap: rem(81.6) rem(40);
+        // gap: rem(81.6) rem(40);
+        gap: rem(78.4) rem(40);
     }
 }
 
