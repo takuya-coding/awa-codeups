@@ -3,4 +3,7 @@
 .layout-breadcrumbs {
     // margin-top: rem(8);
     margin-top: rem(6.4);
+
+// 改行した際、先頭にも余白がついてズレてしまうのを防ぐ（_breadcrumbs.scssに記述したmargin-leftを打ち消す）
+    margin-left: rem(-3.2);
 }
