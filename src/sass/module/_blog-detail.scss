@@ -13,23 +13,24 @@
 .blog-detail__wrapper {
     @include mq("md") {
         display: flex;
-        gap: rem(83);
+        // gap: rem(83);
+        gap: rem(86);
     }
 }
 
 .blog-detail__main {
     width: 100%;
     @include mq("md") {
-        // gap83px分は除いて997px
-        width: calc(calc(700 / 997) * 100%);
+        // gap86px分は除いて994px
+        width: calc(calc(700 / 994) * 100%);
     }
 }
 
 .blog-content__sidebar {
     width: 100%;
     @include mq("md") {
-        // gap83px分は除いて997px
-        width: calc(calc(294 / 997) * 100%);
+        // gap86px分は除いて994px
+        width: calc(calc(294 / 994) * 100%);
     }
 }
 
