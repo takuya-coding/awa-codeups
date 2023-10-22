@@ -32,7 +32,8 @@
     }
 }
 
-.blog-detail-main div {
+.blog-detail-main picture {
+    display: block;
     aspect-ratio: 345 / 231;
     // overflow: hidden;
     margin-top: rem(24);
@@ -42,7 +43,7 @@
     }
 }
 
-.blog-detail-main div img {
+.blog-detail-main picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -102,4 +103,8 @@
 
 .blog-detail-main li:not(:first-child) {
     margin-top: rem(4);
+}
+
+.blog-detail-main__pagination {
+    margin-top: rem(40);
 }
