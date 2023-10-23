@@ -9,3 +9,8 @@
         gap: rem(80) rem(40);
     }
 }
+
+.voice-tab-content__item {
+    // テキスト量が違ってもカード高さを揃えるために記述
+    display: flex;
+}
