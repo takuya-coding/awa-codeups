@@ -21,6 +21,8 @@
     text-align: center;
     background-color: $gray;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    // hover指定がない場合のaタグの透過処理
+    transition: opacity 0.3s;
     @include mq("md") {
         // font-size: rem(24);
         font-size: clamp(rem(20), 24 /1440 * 100vw, rem(24));
@@ -33,6 +35,10 @@
         // padding-left: rem(84);
         padding-left: 3.5em;
     }
+}
+
+.tab-02-list__button:hover {
+    opacity: 0.8;
 }
 
 .tab-02-list__button::before {
