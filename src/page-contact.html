@@ -6,16 +6,16 @@
     <!-- インデックスさせない -->
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>お問合せページ</title>
-    <meta name="description" content="CodeUpsダイビングショップのお問合せページ" />
+    <title>お問い合わせページ</title>
+    <meta name="description" content="CodeUpsダイビングショップのお問い合わせページ" />
     <meta name="keywords" content="" />
     <!-- ogp -->
-    <meta property="og:title" content="お問合せページ" />
+    <meta property="og:title" content="お問い合わせページ" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://aaa.com" />
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="CodeUpsダイビングショップ" />
-    <meta property="og:description" content="CodeUpsダイビングショップのお問合せページ" />
+    <meta property="og:description" content="CodeUpsダイビングショップのお問い合わせページ" />
     <!-- ファビコン -->
     <link rel="icon" href="#" />
     <!-- css -->
@@ -97,7 +97,7 @@
                         <a href="#">利用規約</a>
                       </div>
                       <div class="sp-nav__item">
-                        <a href="page-contact.html">お問合せ</a>
+                        <a href="page-contact.html">お問い合わせ</a>
                       </div>
                     </li>
                   </ul>
@@ -127,7 +127,7 @@
                     <a href="page-faq.html"><p>FAQ</p><span>よくある質問</span></a>
                   </li>
                   <li class="pc-nav__item">
-                    <a href="page-contact.html"><p>contact</p><span>お問合せ</span></a>
+                    <a href="page-contact.html"><p>contact</p><span>お問い合わせ</span></a>
                   </li>
                 </ul>
               </nav>
@@ -159,20 +159,62 @@
                         </span>
                         <span>&gt;</span>
                         <span>
-                        <span class="post post-page current-item">お問合せ</span>
+                        <span class="post post-page current-item">お問い合わせ</span>
                         </span>
                     </div>
                 </div>
 
-                <div class="Form">
-                  <!-- お名前 -->
-                  <div class="Form-Item">
-                    <p class="Form-Item-Label">
-                      お名前<span class="Form-Item-Label-Required">必須</span>
-                    </p>
-                    <span class="wpcf7-form-control-wrap">
-                      <input type="text" name="conpany_name" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="例）株式会社令和">
-                    </span>
+                <div class="contact">
+                  <div class="contact__inner">
+                    <div class="contact__list">
+                      <!-- お名前 -->
+                      <div class="contact__item">
+                        <label for="your-name" class="contact__item-title">お名前<span>必須</span></label>
+                        <span class="wpcf7-form-control-wrap contact__item-input">
+                          <input type="text" name="name" id="your-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="沖縄&emsp;太郎">
+                        </span>
+                      </div>
+
+                      <!-- メールアドレス -->
+                      <div class="contact__item">
+                        <label for="your-email" class="contact__item-title">メールアドレス<span>必須</span></label>
+                        <span class="wpcf7-form-control-wrap contact__item-input">
+                          <input type="email" name="email" id="your-email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="aaa000@ggmail.com">
+                        </span>
+                      </div>
+
+                      <!-- 電話番号 -->
+                      <div class="contact__item">
+                        <label for="your-tel" class="contact__item-title">電話番号<span>必須</span></label>
+                        <span class="wpcf7-form-control-wrap contact__item-input">
+                          <input type="tel" name="tel" value="your-tel" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="000-0000-0000">
+                        </span>
+                      </div>
+
+                      <!-- お問い合わせ項目 -->
+                      <div class="contact__item">
+                        <span class="contact__item-title">お問い合わせ項目<span>必須</span></span>
+                        <label><input type="text"></label>
+                        <span class="wpcf7-form-control-wrap contact__item-check">
+                          <span class="wpcf7-form-control wpcf7-checkbox">
+                              <span class="wpcf7-list-item first">
+                                <label>
+                                  <input type="checkbox" name="checkbox-xxx[]" value="選択技1">
+                                  <span class="wpcf7-list-item-label">選択技1</span>
+                                </label>
+                              </span>
+                              <span class="wpcf7-list-item">
+                                  <input type="checkbox" name="checkbox-xxx[]" value="選択技2">
+                                  <span class="wpcf7-list-item-label">選択技2</span>
+                              </span>
+                              <span class="wpcf7-list-item last">
+                                  <input type="checkbox" name="checkbox-xxx[]" value="選択技3">
+                                  <span class="wpcf7-list-item-label">選択技3</span>
+                              </span>
+                          </span>
+                      </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
           </main>
@@ -247,7 +289,7 @@
                             <a href="#">利用規約</a>
                           </div>
                           <div class="common-nav__item">
-                            <a href="page-contact.html">お問合せ</a>
+                            <a href="page-contact.html">お問い合わせ</a>
                           </div>
                         </div>
                       </li>
