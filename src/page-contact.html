@@ -165,13 +165,13 @@
                 </div>
 
                 <div class="contact">
-                  <div class="contact__inner">
+                  <div class="contact__inner inner">
                     <div class="contact__list">
                       <!-- お名前 -->
                       <div class="contact__item">
                         <label for="your-name" class="contact__item-title">お名前<span>必須</span></label>
                         <span class="wpcf7-form-control-wrap contact__item-input">
-                          <input type="text" name="name" id="your-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="沖縄&emsp;太郎">
+                          <input type="text" name="name" value="" size="40" id="your-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="沖縄&emsp;太郎">
                         </span>
                       </div>
 
@@ -179,7 +179,7 @@
                       <div class="contact__item">
                         <label for="your-email" class="contact__item-title">メールアドレス<span>必須</span></label>
                         <span class="wpcf7-form-control-wrap contact__item-input">
-                          <input type="email" name="email" id="your-email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="aaa000@ggmail.com">
+                          <input type="email" name="email" value="" size="40" id="your-email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="aaa000@ggmail.com">
                         </span>
                       </div>
 
@@ -187,7 +187,7 @@
                       <div class="contact__item">
                         <label for="your-tel" class="contact__item-title">電話番号<span>必須</span></label>
                         <span class="wpcf7-form-control-wrap contact__item-input">
-                          <input type="tel" name="tel" value="your-tel" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="000-0000-0000">
+                          <input type="tel" name="tel" value="" size="40" id="your-tel" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="000-0000-0000">
                         </span>
                       </div>
 
@@ -233,9 +233,9 @@
 
                       <!-- お問い合わせ内容 -->
                       <div class="contact__item">
-                        <span class="contact__item-title">お問い合わせ内容<span>必須</span></span>
+                        <label for="your-textarea" class="contact__item-title">お問い合わせ内容<span>必須</span></label>
                         <span class="wpcf7-form-control-wrap contact__item-textarea">
-                          <textarea name="textarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
+                          <textarea name="textarea" cols="40" rows="10" id="your-textarea" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
                         </span>
                       </div>
 
@@ -245,8 +245,8 @@
                           <span class="wpcf7-form-control wpcf7-acceptance">
                               <span class="wpcf7-list-item">
                                   <label>
-                                      <input type="checkbox" name="accept" value="1" aria-invalid="false" checked="checked">
-                                      <span class="wpcf7-list-item-label">個人情報の取り扱いについて同意のうえ送信します。</span>
+                                      <input type="checkbox" name="accept" value="1" aria-invalid="false">
+                                      <span class="wpcf7-list-item-label"><a href="#">個人情報の取り扱い</a>について同意のうえ送信します。</span>
                                   </label>
                               </span>
                           </span>
