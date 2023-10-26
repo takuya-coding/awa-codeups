@@ -234,12 +234,30 @@
                       <!-- お問い合わせ内容 -->
                       <div class="contact__item">
                         <span class="contact__item-title">お問い合わせ内容<span>必須</span></span>
-                        <span class="wpcf7-form-control-wrap">
+                        <span class="wpcf7-form-control-wrap contact__item-textarea">
                           <textarea name="textarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
                         </span>
                       </div>
 
+                      <!-- 同意確認 -->
+                      <div class="contact__accept">
+                        <span class="wpcf7-form-control-wrap contact__accept-check">
+                          <span class="wpcf7-form-control wpcf7-acceptance">
+                              <span class="wpcf7-list-item">
+                                  <label>
+                                      <input type="checkbox" name="accept" value="1" aria-invalid="false" checked="checked">
+                                      <span class="wpcf7-list-item-label">個人情報の取り扱いについて同意のうえ送信します。</span>
+                                  </label>
+                              </span>
+                          </span>
+                        </span>
+                      </div>
 
+                      <!-- 送信ボタン -->
+                      <div class="contact__button">
+                        <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit">
+                        <span class="ajax-loader"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
