@@ -93,7 +93,7 @@
 .contact__item-check-label {
     position: relative;
     display: inline-block;
-    padding-left: rem(22);
+    padding-left: rem(22); /* カスタムチェックボックスにスペースを確保 */
     cursor: pointer;
 }
 
@@ -132,6 +132,168 @@
 [type="checkbox"]:focus + .contact__item-check-text::before {
     outline: 2px solid #3498db; /* Outline color when focused */
   }
+
+
+
+// キャンペーン
+/* Style for the select box container */
+.contact__item-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Set a width */
+    // margin-bottom: 20px;
+    margin-top: rem(16);
+  }
+
+/* Style for the select box */
+.contact__item-select-box {
+    padding: rem(12) rem(8);
+    border: 1px solid $green;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%; /* Make it fill the container */
+    font-family: $base-font-family;
+    font-weight: $regular;
+    font-size: rem(12);
+    color: $black2;
+  }
+
+/* Arrow icon using a pseudo-element */
+.contact__item-select-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(8);
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    // border使った三角形
+    // border-left: 5px solid transparent;
+    // border-right: 5px solid transparent;
+    // border-top: 5px solid #000;
+    
+    // clip-path使った三角形
+    background-color: $green;
+    width: rem(12);
+    // height: rem(12);
+    height: calc(rem(12) / 2 * tan(60deg));
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  }
+
+/* Focus State */
+.contact__item-select-box:focus {
+    // border-color: #3498db; /* Border color when focused */
+    outline: 2px solid #3498db;
+    /* 自由な色に変更可能 */
+    outline-offset: 0;
+  }
+
+
+
+// お問い合わせ内容
+/* Style for the text area */
+textarea {
+    width: 100%; /* Set the width */
+    height: rem(200); /* Set the height */
+    padding: rem(8); /* Set padding */
+    border: 1px solid $green; /* Set border */
+    // border-radius: 4px; /* Optional: for rounded corners */
+    font-size: rem(16); /* Set font size */
+    // resize: vertical; /* Allow vertical resize */
+    resize: none;
+    outline: none; /* Remove outline */
+    box-sizing: border-box; /* Include border and padding in the element's dimensions */
+    // margin-bottom: 20px;
+    margin-top: rem(16);
+  }
+
+
+
+// 同意確認
+
+.contact__accept {
+    margin-top: rem(40);
+    width: calc(282 / 345 * 100%);
+    margin: 0 auto;
+}
+
+.contact__accept-check {
+    [type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.contact__accept-check-label {
+    position: relative;
+    display: inline-block;
+    padding-left: rem(22); /* カスタムチェックボックスにスペースを確保 */
+    cursor: pointer;
+}
+
+/* Custom Checkbox Design */
+.contact__accept-check-text::before {
+    content:"";
+    display: inline-block;
+    width: rem(22);
+    height: rem(22);
+    border: 1px solid $green;
+    position: absolute;
+    left: 0;
+    // top: 50%;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+/* Custom Checkbox Checked State */
+[type="checkbox"]:checked + .contact__accept-check-text::before {
+    border-color: #3498db; /* Border color when checked */
+  }
+
+[type="checkbox"]:checked + .contact__accept-check-text::after {
+    content: "";
+    display: block;
+    width: rem(8);
+    height: rem(14.4);
+    border: solid $red;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    // top: 48%;
+    top: 22%;
+    left: rem(7);  /* Adjusted position */
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* Focus State */
+[type="checkbox"]:focus + .contact__accept-check-text::before {
+    outline: 2px solid #3498db; /* Outline color when focused */
+  }
+
+.contact__accept-check-text {
+    display: inline-block;
+    margin-left: rem(8);
+    font-family: $base-font-family;
+    font-weight: $regular;
+    font-size: rem(14);
+    line-height: 1.5714;
+    color: $black2;
+}
+
+// よしなに
+.contact__accept-check-text > a {
+    color: $green;
+    text-decoration: underline;
+}
+
+
+
+// 送信ボタン
+
+
+
 
 
 

@@ -221,12 +221,12 @@
                       <!-- キャンペーン -->
                       <div class="contact__item">
                         <span class="contact__item-title">キャンペーン</span>
-                        <span class="wpcf7-form-control-wrap contact__item-select">
-                          <select name="select" class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                        <span class="wpcf7-form-control-wrap contact__item-select-container">
+                          <select name="select" class="wpcf7-form-control wpcf7-select contact__item-select-box" aria-invalid="false">
                             <option value="">キャンペーン内容を選択</option>
-                            <option value="選択技1">キャンペーン1</option>
-                            <option value="選択技2">キャンペーン2</option>
-                            <option value="選択技3">キャンペーン3</option>
+                            <option value="キャンペーン1">キャンペーン1</option>
+                            <option value="キャンペーン2">キャンペーン2</option>
+                            <option value="キャンペーン3">キャンペーン3</option>
                           </select>
                         </span>
                       </div>
@@ -244,9 +244,9 @@
                         <span class="wpcf7-form-control-wrap contact__accept-check">
                           <span class="wpcf7-form-control wpcf7-acceptance">
                               <span class="wpcf7-list-item">
-                                  <label>
+                                  <label class="contact__accept-check-label">
                                       <input type="checkbox" name="accept" value="1" aria-invalid="false">
-                                      <span class="wpcf7-list-item-label"><a href="#">個人情報の取り扱い</a>について同意のうえ送信します。</span>
+                                      <span class="wpcf7-list-item-label contact__accept-check-text"><a href="#">個人情報の取り扱い</a>について同意のうえ送信します。</span>
                                   </label>
                               </span>
                           </span>
