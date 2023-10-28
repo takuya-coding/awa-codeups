@@ -212,7 +212,6 @@ textarea {
 
 
 // 同意確認
-
 .contact__accept {
     margin-top: rem(40);
     width: calc(282 / 345 * 100%);
@@ -291,8 +290,110 @@ textarea {
 
 
 // 送信ボタン
+.contact__button {
+    text-align: center;
+}
 
+.contact__button-container {
+    display: inline-block;
+    // 改行ないことが前提
+    line-height: 1;
+    // 左右の値は取るけど少なめ（テキスト量増加に対応）
+    // padding: 1.3286em 1em;
+    padding: 1.14285em 1em;
+    padding-left: 3.5em;
+    // テキスト量変わってもボタン幅固定のため指定
+    max-width: rem(202);
+    width: 100%;
+    // text-align: center;
+    text-align: left;
+    border: 1px solid $green;
 
+    // ホバー時スライド用のコード
+    background-color: $green;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.contact__button-container::after {
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.contact__button-container:hover::after {
+    transform: scale(1, 1);
+}
+
+/* Style for the submit button */
+[type="submit"] {
+    border: none; /* Remove borders */
+    padding: 0; /* Remove padding */
+    // ボタンからの変更点
+    font-family: $base-font-family;
+    font-weight: $regular;
+    font-size: rem(14);
+    color: $white;
+}
+
+.contact__button-container:hover [type="submit"] {
+    color: $green;
+}
+
+.contact__button-arrow {
+    position: relative;
+}
+
+.contact__button-arrow::before {
+    position: absolute;
+    content: "";
+    top: rem(5);
+    left: rem(5);
+    z-index: 1;
+
+    // buttonと同じコード
+    display: inline-block;
+    // width: rem(40);
+    width: rem(42.4);
+    height: rem(6);
+    -webkit-mask-image: url(../images/common/button-arrow.svg);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-image: url(../images/common/button-arrow.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $white;
+    margin-left: rem(9.6);
+    padding-bottom: rem(12);
+}
+
+.contact__button-container:hover .contact__button-arrow::before {
+    background-color: $green;
+}
+
+//  後ろ側の重なり部分
+.contact__button-container::before {
+    position: absolute;
+    content: "";
+    top: rem(4);
+    // bottom: rem(-4.4);
+    bottom: rem(-6);
+    left: rem(4);
+    right: rem(-5.6);
+    border: 1px solid $green;
+    z-index: -1;
+  }
 
 
 
