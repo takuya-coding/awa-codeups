@@ -168,6 +168,13 @@
     cursor: pointer;
 }
 
+.contact__item-check-text {
+    font-family: $base-font-family;
+    font-weight: $regular;
+    font-size: rem(16);
+    color: $black2;
+}
+
 /* Custom Checkbox Design */
 .contact__item-check-text::before {
     content:"";
@@ -189,8 +196,10 @@
 [type="checkbox"]:checked + .contact__item-check-text::after {
   content: "";
   display: block;
-  width: 5px;
-  height: 10px;
+  //width: 5px;
+  width: rem(5);
+  //height: 10px;
+  height: rem(10);
   border: solid $red;
   border-width: 0 2px 2px 0;
   position: absolute;
@@ -358,7 +367,8 @@ textarea {
     border-width: 0 2px 2px 0;
     position: absolute;
     // top: 48%;
-    top: 22%;
+    // top: 22%;
+    top: 45%;
     left: rem(7);  /* Adjusted position */
     transform: translateY(-50%) rotate(45deg);
 }
@@ -382,6 +392,12 @@ textarea {
 .contact__accept-check-text > a {
     color: $green;
     text-decoration: underline;
+}
+
+.contact__accept-check-text > a:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
 }
 
 
