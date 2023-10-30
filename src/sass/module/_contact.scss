@@ -58,7 +58,7 @@
 .contact__item:not(:first-child) {
     padding-top: rem(24);
     margin-top: rem(24);
-    border-top: 1px dotted $green;
+    border-top: 1px dashed $green;
     @include mq("md") {
         padding-top: rem(40);
         margin-top: rem(40);
@@ -164,8 +164,13 @@
 .contact__item-check-label {
     position: relative;
     display: inline-block;
+    padding: rem(1.9) 0;
     padding-left: rem(22); /* カスタムチェックボックスにスペースを確保 */
     cursor: pointer;
+    @include mq("md") {
+        padding: rem(1.5) 0;
+        padding-left: rem(22);
+    }
 }
 
 .contact__item-check-text {
@@ -231,7 +236,8 @@
 
 /* Style for the select box */
 .contact__item-select-box {
-    padding: rem(12) rem(8);
+    // padding: rem(12) rem(8);
+    padding: rem(10.4) rem(8);
     border: 1px solid $green;
     outline: none;
     -webkit-appearance: none;
@@ -279,7 +285,8 @@
 // お問い合わせ内容
 .contact__item-textarea {
     width: 100%;
-    margin-top: rem(16);
+    // margin-top: rem(16);
+    margin-top: rem(17.6);
     @include mq("md") {
         width: calc(480 / 700 * 100%);
         margin-top: 0;
@@ -304,7 +311,8 @@ textarea {
 
 // 同意確認
 .contact__accept {
-    padding-top: rem(40);
+    // padding-top: rem(40);
+    padding-top: rem(41.6);
     margin-top: rem(24);
     border-top: 1px dotted $green;
     // width: calc(282 / 345 * 100%);
@@ -312,6 +320,8 @@ textarea {
     text-align: center;
     @include mq("md") {
         margin-top: rem(40);
+        // padding-top: rem(80);
+        padding-top: rem(76.8);
     }
 }
 
