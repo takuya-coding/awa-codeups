@@ -396,6 +396,9 @@ textarea {
     font-size: rem(14);
     line-height: 1.5714;
     color: $black2;
+    @include mq("md") {
+        margin-left: rem(16);
+    }
 }
 
 // よしなに
