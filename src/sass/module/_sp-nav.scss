@@ -43,7 +43,8 @@
 .sp-nav__items {
     padding-top: rem(92);
     // スクロールできるようにpadding-bottom記述
-    padding-bottom: rem(100);
+    // 下部のメニューまでクリックできるよう大きめな値に設定する
+    padding-bottom: rem(200);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     // column-gap: rem(7);
