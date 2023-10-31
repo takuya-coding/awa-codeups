@@ -66,7 +66,8 @@
 }
 
 .contact__item-title {
-    display: inline-block;
+    // display: inline-block;
+    display: flex;
     font-family: $base-font-family;
     font-weight: $bold;
     font-size: rem(16);
@@ -75,6 +76,7 @@
     line-height: 1;
     width: 100%;
     @include mq("md") {
+        display: inline-block;
         width: calc(220 / 700 * 100%);
     }
 
