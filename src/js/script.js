@@ -287,7 +287,7 @@ $(window).on("resize", function () {
 
 // campaignページのタブ
 // WordPress化前提に考えると、別ページ扱いになるためJSはコメントアウト
-// const campaign_tabButton = $(".js-tab-button-campaign"),
+// const campaign_tabButton = $(".js-category-button-campaign"),
 //       campaign_tabContent = $(".js-tab-content-campaign");
 
 // campaign_tabButton.on("click", function () {

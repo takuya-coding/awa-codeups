@@ -1,18 +1,18 @@
 @use "global" as *;
 
-.campaign-tab__content {
+.campaign__content {
     margin-top: rem(38.5);
 }
 
-.campaign-tab__pagination {
+.campaign__pagination {
     margin-top: rem(80);
 }
 
-.campaign-tab {
+.campaign {
     position: relative;
 }
 
-.campaign-tab::before {
+.campaign::before {
     display: inline-block;
     width: rem(120);
     height: rem(55);

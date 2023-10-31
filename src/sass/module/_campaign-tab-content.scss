@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign-tab-content {
+.campaign-content {
     display: grid;
     grid-template-columns: 1fr;
     // row-gap: rem(40);
@@ -13,7 +13,7 @@
     }
 }
 
-.campaign-tab-content__item {
+.campaign-content__item {
     // JSタブ切り替えのためのdisplay:none;
     // display: none;
     // flexじゃないとテキスト増減に対してpanelの高さが揃わない
@@ -26,6 +26,6 @@
     }
 }
 
-// .campaign-tab-content__item.is-active {
+// .campaign-content__item.is-active {
 //     // display: block;
 // }
