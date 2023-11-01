@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.voice-posts {
+.voice-cards {
     display: flex;
     flex-direction: column;
     // gap: rem(40);
@@ -15,7 +15,7 @@
     }
 }
 
-.voice-posts__item {
+.voice-cards__item {
     max-width: rem(345);
     width: 100%;
     @include mq("md") {
