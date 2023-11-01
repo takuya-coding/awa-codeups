@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.cards {
+.blog-cards {
     display: flex;
     flex-direction: column;
     gap: rem(40);
@@ -13,7 +13,7 @@
     }
 }
 
-.cards__item {
+.blog-cards__item {
     max-width: rem(333);
     width: 100%;
     @include mq("md") {
