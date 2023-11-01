@@ -14,11 +14,12 @@
     flex-direction: column;
 }
 
-.blog-card:hover {
-    @include mq("md") {
-        opacity: 0.8;
-    }
-}
+// .blog-card:hover {
+//     @include mq("md") {
+//         // 不要
+//         opacity: 0.8;
+//     }
+// }
 
 .blog-card__img {
     // aspect-ratio: 301 / 201;
@@ -72,6 +73,7 @@
 
 
 // blogページのcardのみ適用させるコード
+// blogページのみではなく、topページのcardにも適用させておく
 .blog-card__img.blog-card__img--blog {
     overflow: hidden;
 }
