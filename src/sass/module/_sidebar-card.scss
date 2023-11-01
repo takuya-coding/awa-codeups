@@ -10,11 +10,12 @@
     transition: opacity 0.3s;
 }
 
-.sidebar-card:hover {
-    @include mq("md") {
-        opacity: 0.8;
-    }
-}
+// 透過処理不要（hover時に画像拡大の処理を入れているので）
+// .sidebar-card:hover {
+//     @include mq("md") {
+//         opacity: 0.8;
+//     }
+// }
 
 .sidebar-card__img {
     aspect-ratio: 121 / 90;
@@ -56,5 +57,19 @@
     // はみ出たテキストは隠す
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+
+// sidebar-cardにhoverした際、画像拡大（blog-cardと仕様を統一する）
+.sidebar-card__img {
+    overflow: hidden;
+}
+
+.sidebar-card__img img {
+    transition: transform 0.5s ease;
+}
+
+.sidebar-card:hover .sidebar-card__img img {
+    transform: scale(1.3);
 }
 

@@ -14,9 +14,9 @@
     flex-direction: column;
 }
 
+// 透過処理不要（hover時に画像拡大の処理を入れているので）
 // .blog-card:hover {
 //     @include mq("md") {
-//         // 不要
 //         opacity: 0.8;
 //     }
 // }
@@ -71,18 +71,15 @@
 }
 
 
-
-// blogページのcardのみ適用させるコード
-// blogページのみではなく、topページのcardにも適用させておく
-.blog-card__img.blog-card__img--blog {
+// blog-cardにhoverした際、画像拡大
+.blog-card__img {
     overflow: hidden;
 }
 
-.blog-card__img.blog-card__img--blog img {
-    transition: transform 0.6s ease;
+.blog-card__img img {
+    transition: transform 0.5s ease;
 }
 
-.blog-card__img.blog-card__img--blog:hover img {
+.blog-card:hover .blog-card__img img {
     transform: scale(1.3);
 }
-
