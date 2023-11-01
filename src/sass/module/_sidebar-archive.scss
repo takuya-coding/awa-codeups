@@ -8,7 +8,7 @@
     line-height: 1.5;
 }
 
-.sidebar-archive__list:not(:first-child) {
+.sidebar-archive__details:not(:first-child) {
     margin-top: rem(7.4);
 }
 
@@ -47,7 +47,7 @@
 }
 
 // アコーディオン開閉時の矢印の挙動
-.sidebar-archive__list[open] .sidebar-archive__summary::before {
+.sidebar-archive__details[open] .sidebar-archive__summary::before {
     top: 27%;
     left: rem(5);
     transform: rotate(90deg);
@@ -76,7 +76,7 @@
 }
 
 /* オープン時にアニメーションを設定 */
-.sidebar-archive__list[open] .sidebar-archive__lv2-list {
+.sidebar-archive__details[open] .sidebar-archive__list {
     animation: fadeIn 0.5s ease;
   }
   @keyframes fadeIn {
@@ -94,19 +94,19 @@
 
 // 以下、第2階層目はaタグにした場合のコード
 
-.sidebar-archive__lv2-list {
+.sidebar-archive__list {
     text-indent: 1em;
     margin-top: rem(4);
 }
 
-.sidebar-archive__lv2-item a {
+.sidebar-archive__item a {
     display: inline-block;
     width: 100%;
     padding-left: rem(8);
     position: relative;
 }
 
-.sidebar-archive__lv2-item a::before {
+.sidebar-archive__item a::before {
     content: "";
     margin: auto;
     position: absolute;
@@ -120,7 +120,7 @@
     height: rem(22.4);
 }
 
-.sidebar-archive__lv2-item a:hover {
+.sidebar-archive__item a:hover {
     @include mq("md") {
         opacity: 0.8;
     }
