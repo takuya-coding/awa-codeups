@@ -62,13 +62,13 @@ const mainviewSwiper = new Swiper('.js-top-main-view-swiper', {
 
 
 // top-campaignセクションのスライダー
-const campaignSwiper = new Swiper('.js-panels .js-top-campaign-swiper', {
+const campaignSwiper = new Swiper('.js-campaign-cards .js-top-campaign-swiper', {
     loop: true,
     loopAdditionalSlides: 2, //複製するスライド数を指定（0だとループが滑らかに繋がらないことがあるため1以上がオススメ）
     spaceBetween: 24,
     slidesPerView: 1.26,
     speed: 1500, //スライド切り替えのアニメーションのスピード
-    width: 360, //panel1枚の幅を固定
+    width: 360, //campaign-card1枚の幅を固定
     autoplay: {
       delay: 3000, //次のスライドに切り替わるまでの時間
       disableOnInteraction: false, //ユーザーが操作したときに自動再生を止める（falseにしておくのがオススメ）
@@ -299,7 +299,7 @@ $(window).on("resize", function () {
 
 //   // 選択されたカテゴリーに合致するパネルを表示する
 //   campaign_content.each(function() {
-//     const categoryText = $(this).find(".panel__category").text().trim();
+//     const categoryText = $(this).find(".campaign-card__category").text().trim();
 //     if (selectedCategory === "all" || categoryText === selectedCategory) {
 //       $(this).addClass("is-active");
 //     }

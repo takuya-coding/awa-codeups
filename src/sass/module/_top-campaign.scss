@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.top-campaign__panels {
+.top-campaign__campaign-cards {
     // margin-top: rem(-65);
     margin-top: rem(27);
     @include mq("md") {
@@ -21,7 +21,7 @@
 
 .top-campaign {
     position: relative;
-    // panelsクラスに、margin-right: calc(50% - 50vw);を指定しており、横スクロールが発生するため、親要素にoverflow:hidden;を指定
+    // campaign-cardsクラスに、margin-right: calc(50% - 50vw);を指定しており、横スクロールが発生するため、親要素にoverflow:hidden;を指定
     overflow: hidden;
 }
 

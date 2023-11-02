@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.sidebar-panels {
+.sidebar-campaign-cards {
     display: flex;
     flex-direction: column;
     // gap: rem(40);
@@ -10,7 +10,7 @@
     }
 }
 
-.sidebar-panels__item {
+.sidebar-campaign-cards__item {
     max-width: rem(294);
     width: 100%;
 }

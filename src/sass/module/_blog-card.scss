@@ -9,7 +9,7 @@
     // hover指定がない場合のaタグの透過処理
     transition: opacity 0.3s;
 
-    // テキスト量が増えてもpanelの高さを揃えるための記述
+    // テキスト量が増えてもcampaign-cardの高さを揃えるための記述
     display: flex;
     flex-direction: column;
 }
@@ -36,7 +36,7 @@
 .blog-card__body {
     margin-top: rem(24);
 
-    // テキスト量が増えてもpanelの高さを揃えるための記述
+    // テキスト量が増えてもcampaign-cardの高さを揃えるための記述
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -60,7 +60,7 @@
     // overflow: hidden;
     // text-overflow: ellipsis;
 
-    // テキスト量が増えてもpanelの高さを揃えるための記述
+    // テキスト量が増えてもcampaign-cardの高さを揃えるための記述
     // flex-grow: 1;
 }
 
