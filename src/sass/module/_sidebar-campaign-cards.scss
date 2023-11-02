@@ -11,6 +11,7 @@
 }
 
 .sidebar-campaign-cards__item {
-    max-width: rem(294);
+    // max-width: rem(294);
+    // blog-sidebar__listクラスの方で幅を%管理するので、ここではwidth:100%とする
     width: 100%;
 }

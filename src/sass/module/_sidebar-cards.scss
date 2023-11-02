@@ -13,6 +13,10 @@
     // height: 100%;
 
     // スマホ実機で確認すると指定のサイズよりも小さく表示され、リロードすると指定のサイズになる不具合対策として、数値指定
-    width: rem(294);
-    height: rem(122);
+    // width: rem(294);
+    // height: rem(122);
+
+    // blog-sidebar__listクラスの方で幅を%管理するので、ここではwidth:100%とする
+    width: 100%;
+    height: auto;
 }
