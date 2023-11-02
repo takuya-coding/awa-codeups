@@ -287,18 +287,18 @@ $(window).on("resize", function () {
 
 // campaignページのタブ（厳密にはタブではない）
 // WordPress化前提に考えると、別ページ扱いになるためJSはコメントアウト
-// const campaign_tabButton = $(".js-category-button-campaign"),
-//       campaign_tabContent = $(".js-campaign-content");
+// const campaign_button = $(".js-category-button-campaign"),
+//       campaign_content = $(".js-campaign-content");
 
-// campaign_tabButton.on("click", function () {
+// campaign_button.on("click", function () {
 //   // クリックされたタブのテキストを取得
 //   const selectedCategory = $(this).text().trim();
   
 //   // 全てのパネルを非表示にする
-//   campaign_tabContent.removeClass("is-active");
+//   campaign_content.removeClass("is-active");
 
 //   // 選択されたカテゴリーに合致するパネルを表示する
-//   campaign_tabContent.each(function() {
+//   campaign_content.each(function() {
 //     const categoryText = $(this).find(".panel__category").text().trim();
 //     if (selectedCategory === "all" || categoryText === selectedCategory) {
 //       $(this).addClass("is-active");
@@ -306,7 +306,7 @@ $(window).on("resize", function () {
 //   });
 
 //   // タブのアクティブ状態を切り替える
-//   campaign_tabButton.removeClass("is-active");
+//   campaign_button.removeClass("is-active");
 //   $(this).addClass("is-active");
 // });
 
