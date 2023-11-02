@@ -1,19 +1,19 @@
 @use "global" as *;
 
-.voice-tab__content {
+.voice__content {
     // margin-top: rem(38.5);
     margin-top: rem(37);
 }
 
-.voice-tab__pagination {
+.voice__pagination {
     margin-top: rem(80);
 }
 
-.voice-tab {
+.voice {
     position: relative;
 }
 
-.voice-tab::before {
+.voice::before {
     display: inline-block;
     width: rem(120);
     height: rem(55);

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.voice-tab-content {
+.voice-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(40);
@@ -10,7 +10,7 @@
     }
 }
 
-.voice-tab-content__item {
+.voice-content__item {
     // テキスト量が違ってもカード高さを揃えるために記述
     display: flex;
 }
