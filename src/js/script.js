@@ -285,10 +285,10 @@ $(window).on("resize", function () {
 
 
 
-// campaignページのタブ
+// campaignページのタブ（厳密にはタブではない）
 // WordPress化前提に考えると、別ページ扱いになるためJSはコメントアウト
 // const campaign_tabButton = $(".js-category-button-campaign"),
-//       campaign_tabContent = $(".js-tab-content-campaign");
+//       campaign_tabContent = $(".js-campaign-content");
 
 // campaign_tabButton.on("click", function () {
 //   // クリックされたタブのテキストを取得
@@ -354,7 +354,7 @@ modal.on("click", function () {
 
 // informationページのタブ
 const information_tabButton = $(".js-tab-button-information"),
-      information_tabContent = $(".js-tab-content-information");
+      information_tabContent = $(".js-information-content");
 
 information_tabButton.on("click", function () {
 let index = information_tabButton.index(this);
