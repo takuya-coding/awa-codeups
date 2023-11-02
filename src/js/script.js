@@ -152,7 +152,7 @@ box.each(function() {
 
 // 背景色の後に画像が表示されるエフェクト（top-voiceセクション）
 // 要素の取得とスピードの設定
-let box2 = $('.post__img'),
+let box2 = $('.voice-card__img'),
 speed2 = 700;
 
 // .post__imgの付いた要素に対して下記の処理を行う
