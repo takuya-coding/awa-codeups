@@ -1,14 +1,14 @@
 @use "global" as *;
 
-// inner幅は共通のinnerの値を割り当てて、blog-sidebar__listクラスで%管理する方が良さそう
-// .blog-sidebar__inner.inner {
-//     padding-right: rem(40);
-//     padding-left: rem(40);
-//     @include mq("md") {
-//         padding-right: 0;
-//         padding-left: 0;
-//     }
-// }
+// SP時のinner幅は共通のinnerの値を割り当てて、blog-sidebar__listクラスで%管理する方が良さそう
+.blog-sidebar__inner.inner {
+    // padding-right: rem(40);
+    // padding-left: rem(40);
+    @include mq("md") {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 
 .blog-sidebar__item-button {
     text-align: center;
@@ -33,6 +33,9 @@
     // 375pxからinnerの左右padding分の値を引いた値が345px
     width: calc(calc(294 / 345) * 100%);
     margin: 0 auto;
+    @include mq("md") {
+        width: 100%;
+    }
 
 }
 
