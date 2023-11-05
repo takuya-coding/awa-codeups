@@ -109,7 +109,9 @@
     column-gap: rem(26);
     @include mq("md") {
         // column-gap: rem(128);
-        column-gap: rem(64);
+        // column-gap: rem(64);
+        // ↓余白感見ながら微調整
+        column-gap: 6.3%;
         margin-top: 0;
     }
 }
@@ -117,13 +119,15 @@
 .common-nav__item-wrap.common-nav__item-wrap--gap {
     @include mq("md") {
         // column-gap: rem(142.8);
-        column-gap: rem(64);
+        // column-gap: rem(64);
+        column-gap: calc(calc(144 / 1080) * 100%);
     }
 }
 
 .common-nav__item-wrap.common-nav__item-wrap--gap:nth-child(2) {
     @include mq("md") {
         // column-gap: rem(112.4);
-        column-gap: rem(64);
+        // column-gap: rem(64);
+        column-gap: calc(calc(144 / 1080) * 100%);
     }
 }
