@@ -35,3 +35,15 @@
         left: calc(50% - min(43vw, 38.75rem));
     }
 }
+
+
+// hover指定がない場合のaタグの透過処理
+.sitemap__content a {
+    transition: opacity 0.3s;
+}
+
+.sitemap__content a:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
+}
