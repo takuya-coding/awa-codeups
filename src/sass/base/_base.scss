@@ -80,3 +80,12 @@ body.is-active {
 main {
   flex: 1;
 }
+
+
+
+// スマホを横にした際、文字サイズが勝手に拡大しないようにするためのコード
+body {
+  -moz-text-size-adjust:100%; //Firefox
+  -webkit-text-size-adjust: 100%; //Chrome, Safari, Opera
+  -ms-text-size-adjust:100%; //IE
+}
