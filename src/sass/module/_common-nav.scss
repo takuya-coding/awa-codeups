@@ -106,7 +106,10 @@
 }
 
 .common-nav__items.common-nav__items--gap {
-    column-gap: rem(26);
+    // column-gap: rem(26);
+    // column-gap: calc(calc(27 / 345) * 100%);
+    // 320px画面幅でも改行しない程度に余白調整
+    column-gap: 6.4%;
     @include mq("md") {
         // column-gap: rem(128);
         // column-gap: rem(64);
