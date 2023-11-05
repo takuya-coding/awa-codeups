@@ -64,11 +64,9 @@
     @include mq("md") {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        column-gap: rem(7);
-        @include mq("md") {
-            // column-gap: rem(32.5);
-            column-gap: rem(50);
-        }
+        // column-gap: rem(7);
+        // column-gap: rem(32.5);
+        column-gap: rem(50);
     }
 }
 
@@ -87,7 +85,8 @@
 
 
 
-// サイトマップページに適用
+
+// サイトマップページのみ適用
 .common-nav.common-nav--color {
     color: $black;
 }
@@ -108,4 +107,19 @@
 
 .common-nav__items.common-nav__items--gap {
     column-gap: rem(26);
+    @include mq("md") {
+        column-gap: rem(128);
+    }
+}
+
+.common-nav__item-wrap.common-nav__item-wrap--gap {
+    @include mq("md") {
+        column-gap: rem(142.8);
+    }
+}
+
+.common-nav__item-wrap.common-nav__item-wrap--gap:nth-child(2) {
+    @include mq("md") {
+        column-gap: rem(112.4);
+    }
 }
