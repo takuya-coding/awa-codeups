@@ -108,18 +108,22 @@
 .common-nav__items.common-nav__items--gap {
     column-gap: rem(26);
     @include mq("md") {
-        column-gap: rem(128);
+        // column-gap: rem(128);
+        column-gap: rem(64);
+        margin-top: 0;
     }
 }
 
 .common-nav__item-wrap.common-nav__item-wrap--gap {
     @include mq("md") {
-        column-gap: rem(142.8);
+        // column-gap: rem(142.8);
+        column-gap: rem(64);
     }
 }
 
 .common-nav__item-wrap.common-nav__item-wrap--gap:nth-child(2) {
     @include mq("md") {
-        column-gap: rem(112.4);
+        // column-gap: rem(112.4);
+        column-gap: rem(64);
     }
 }
