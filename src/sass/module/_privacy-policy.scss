@@ -68,10 +68,16 @@
 
 .privacy-policy__text:nth-of-type(2){
     margin-top: rem(33.5);
+    @include mq("md") {
+        margin-top: rem(32);
+    }
 }
 
 .privacy-policy__text:nth-of-type(3){
     margin-top: rem(33.5);
+    @include mq("md") {
+        margin-top: rem(32);
+    }
 }
 
 .privacy-policy__list-ol {
@@ -99,9 +105,10 @@
     // list-style-type: disc;
     text-indent: 0.8em;
     // padding-left: 0.8em;
-    margin-top: rem(30.5);
+    margin-top: rem(32);
 }
 
+// デフォルトの中黒ではなく、オリジナルで作成
 .privacy-policy__list-ul > .privacy-policy__item::before {
     position: relative;
     content:"";
