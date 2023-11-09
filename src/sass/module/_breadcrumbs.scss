@@ -22,3 +22,11 @@
         opacity: 0.8;
     }
 }
+
+
+
+// 404ページのみ適用
+.breadcrumbs.breadcrumbs--color {
+    background-color: $green;
+    color: $white;
+}

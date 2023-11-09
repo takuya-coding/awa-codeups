@@ -97,3 +97,37 @@
    border: 1px solid $green;
    z-index: -1;
  }
+
+
+
+
+// 404ページのみ適用
+.button.button--color {
+   border: 1px solid $white;
+   background-color: $white;
+   color: $green;
+   transition: opacity 0.3s;
+}
+
+.button__arrow.button__arrow--color {
+   background-color: $green;
+}
+
+.button.button--color::after {
+   background-color: $white;
+}
+
+.button.button--color:hover {
+   color: $green;
+   @include mq("md") {
+      opacity: 0.8;
+   }
+}
+
+.button.button--color::before {
+   border: 1px solid $white;
+}
+
+.button.button--color span {
+   text-transform: uppercase;
+}
