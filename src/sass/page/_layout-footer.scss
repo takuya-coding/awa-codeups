@@ -17,3 +17,13 @@
         margin-top: rem(120);
     }
 }
+
+
+// 404ページのみ適用
+.layout-footer.layout-footer--404 {
+    margin-top: rem(0);
+    padding-top: rem(92.8);
+    @include mq("md") {
+        margin-top: rem(0);
+    }
+}

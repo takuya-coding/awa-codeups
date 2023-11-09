@@ -2,24 +2,45 @@
 
 .page-404 {
     background-color: $green;
-    // あとで消す
-    padding-bottom: rem(300);
 }
 
 // .page-404__inner {
 
 // }
 
-// .page-404__title {
+.page-404__title {
+    font-family: $third-font-family;
+    font-weight: $regular;
+    font-size: rem(80);
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    color: $white;
+    line-height: 1;
+    text-align: center;
+    @include mq("md") {
+        font-size: rem(160);
+    }
+}
 
-// }
+.page-404__text {
+    font-family: $third-font-family;
+    font-weight: $regular;
+    font-size: rem(16);
+    color: $white;
+    line-height: calc(24 / 16);
+    text-align: center;
+    margin-top: rem(5);
+    @include mq("md") {
+        margin-top: rem(43.2);
+    }
+}
 
-// .page-404__text {
-
-// }
-
-// .page-404__404-button {
-
-// }
+.page-404__404-button {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(76.8);
+    }
+}
 
 
