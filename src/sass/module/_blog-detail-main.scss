@@ -9,7 +9,7 @@
     }
 }
 
-.blog-detail-main time {
+.blog-detail-main__time {
     display: block;
     font-family: $second-font-family;
     font-weight: $regular;
@@ -18,7 +18,7 @@
     color: $black;
 }
 
-.blog-detail-main h2 {
+.blog-detail-main__title {
     font-family: $base-font-family;
     font-weight: $medium;
     font-size: rem(24);
@@ -32,14 +32,15 @@
     }
 }
 
-.blog-detail-main__inner > div  {
+.blog-detail-main__wrap > div  {
     display: block;
     aspect-ratio: 345 / 231;
     // overflow: hidden;
     margin-top: rem(24);
     @include mq("md") {
         aspect-ratio: 700 / 468;
-        margin-top: rem(40);
+        // margin-top: rem(40);
+        margin-top: rem(38.5);
     }
 }
 
@@ -49,7 +50,7 @@
     object-fit: cover;
 }
 
-.blog-detail-main p {
+.blog-detail-main__inner p {
     font-family: $base-font-family;
     font-weight: $regular;
     font-size: rem(16);
@@ -61,14 +62,14 @@
     }
 }
 
-.blog-detail-main ul {
+.blog-detail-main__inner ul {
     margin-top: rem(24);
     @include mq("md") {
         margin-top: rem(40);
     }
 }
 
-.blog-detail-main li {
+.blog-detail-main__inner li {
     font-family: $base-font-family;
     font-weight: $regular;
     font-size: rem(16);
@@ -79,12 +80,14 @@
     padding-left: rem(27);
 }
 
-.blog-detail-main li::before {
+.blog-detail-main__inner li::before {
     position: absolute;
     content:"";
-    top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
+    // 箇条書きのところはテキスト量が増えてもアイコンが左上に配置されるようにする
+    top: rem(4);
     width: rem(18);
     height: rem(18);
     // background-size: cover;
@@ -101,13 +104,62 @@
     background-color: $green;
 }
 
-.blog-detail-main li:not(:first-child) {
+.blog-detail-main__inner li:not(:first-child) {
     margin-top: rem(4);
 }
 
-.blog-detail-main__pagination {
+
+
+.blog-detail-main__button-area {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(80);
     }
+}
+
+.blog-detail-main__button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(82);
+}
+
+.blog-detail-main__button-prev a,
+.blog-detail-main__button-next a {
+    border: 1px solid $green;
+    padding: rem(8) rem(14);
+    text-align: center;
+    min-width: rem(38);
+    height: rem(38);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    @include mq("md") {
+        width: rem(38);
+    }
+}
+
+.blog-detail-main__button-prev a:hover,
+.blog-detail-main__button-next a:hover {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
+}
+
+.blog-detail-main__button-prev img,
+.blog-detail-main__button-next img {
+    display: inline-flex;
+    align-items: center;
+    max-width: rem(8);
+    width: 100%;
+}
+
+.blog-detail-main__button-next img {
+    transform: scaleX(-1);
+}
+
+.blog-detail-main__button-prev:hover img,
+.blog-detail-main__button-next:hover img {
+    filter: brightness(0) invert(1);
 }
