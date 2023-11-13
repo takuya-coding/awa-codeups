@@ -25,5 +25,6 @@
     padding-top: rem(92.8);
     @include mq("md") {
         margin-top: rem(0);
+        padding-top: rem(228);
     }
 }

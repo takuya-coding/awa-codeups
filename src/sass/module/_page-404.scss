@@ -36,18 +36,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url(../images/common/whale-404-pc.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    // background-size: contain;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: center;
     // width: clamp(rem(300), 87.7vw, rem(540));;
-    // height: 100%;
-    // width: calc(calc(328.84 / 375) * 100%);
-    width: rem(328.84);
-    width: 100%;
-    height: rem(293.59);
+    // width: clamp(rem(300), 91.7vw, rem(540));;
+    // vwの値は375px時にピクパした値、332pxはheight:100%で画像が見切れない幅に設定
+    width: clamp(rem(300), 91.7vw, rem(332));;
     height: 100%;
+    @include mq("md") {
+        // width: clamp(rem(600), 48.47vw, rem(1080));;
+        // vwの値は画像が見切れない値、
+        width: clamp(rem(600), 52.47vw, rem(1080));;
+        height: 100vh;
+    }
 }
 
 .page-404__title {
