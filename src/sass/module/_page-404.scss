@@ -3,6 +3,11 @@
 .page-404 {
     background-color: $green;
     position: relative;
+
+    // 背景画像に合わせてpadding-bottomを設定
+    @include mq("md") {
+        padding-bottom: rem(150);
+    }
 }
 
 .page-404::before {
@@ -46,9 +51,11 @@
     height: 100%;
     @include mq("md") {
         // width: clamp(rem(600), 48.47vw, rem(1080));;
-        // vwの値は画像が見切れない値、
-        width: clamp(rem(600), 52.47vw, rem(1080));;
-        height: 100vh;
+        // vwの値は375px時にピクパした値、698pxはPCサイズ画像書き出し時のサイズに設定
+        width: clamp(rem(698), 48.47vw, rem(698));;
+        // height: 100vh;
+        top: 48%;
+        left: 36.6%;
     }
 }
 
