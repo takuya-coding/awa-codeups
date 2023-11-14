@@ -77,6 +77,11 @@ body.is-active {
   flex-direction: column;
 }
 
+// 404ページのみ適用
+.wrap.wrap--404 {
+  background-color: $green;
+}
+
 main {
   flex: 1;
 }
