@@ -68,6 +68,10 @@
     color: $white;
     line-height: 1;
     text-align: center;
+
+    // 背景のあしらい画像がタイトルの上に来ていたため指定
+    position: relative;
+    z-index: 1;
     @include mq("md") {
         font-size: rem(160);
     }
