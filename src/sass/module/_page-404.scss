@@ -53,7 +53,6 @@
         // width: clamp(rem(600), 48.47vw, rem(1080));
         // vwの値は375px時にピクパした値、698pxはPCサイズ画像書き出し時のサイズに設定
         width: clamp(rem(698), 48.47vw, rem(698));
-        // height: 100vh;
         top: 48%;
         left: 36.6%;
     }
