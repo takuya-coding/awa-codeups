@@ -44,15 +44,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // width: clamp(rem(300), 87.7vw, rem(540));;
-    // width: clamp(rem(300), 91.7vw, rem(540));;
+    // width: clamp(rem(300), 87.7vw, rem(540));
+    // width: clamp(rem(300), 91.7vw, rem(540));
     // vwの値は375px時にピクパした値、332pxはheight:100%で画像が見切れない幅に設定
-    width: clamp(rem(300), 91.7vw, rem(332));;
+    width: clamp(rem(300), 91.7vw, rem(332));
     height: 100%;
     @include mq("md") {
-        // width: clamp(rem(600), 48.47vw, rem(1080));;
+        // width: clamp(rem(600), 48.47vw, rem(1080));
         // vwの値は375px時にピクパした値、698pxはPCサイズ画像書き出し時のサイズに設定
-        width: clamp(rem(698), 48.47vw, rem(698));;
+        width: clamp(rem(698), 48.47vw, rem(698));
         // height: 100vh;
         top: 48%;
         left: 36.6%;
@@ -86,7 +86,7 @@
     text-align: center;
     margin-top: rem(5);
     @include mq("md") {
-        margin-top: rem(43.2);
+        margin-top: rem(40);
     }
 }
 
@@ -94,7 +94,7 @@
     text-align: center;
     margin-top: rem(40);
     @include mq("md") {
-        margin-top: rem(76.8);
+        margin-top: rem(80);
     }
 }
 
