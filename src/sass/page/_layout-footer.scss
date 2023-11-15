@@ -9,9 +9,17 @@
 }
 
 
-
-// お問い合わせページ、サンクスページ専用の余白
+// contactページ専用の余白
 .layout-footer.layout-footer--contact {
+    margin-top: rem(144);
+    @include mq("md") {
+        margin-top: rem(160);
+    }
+}
+
+
+// サンクスページ専用の余白
+.layout-footer.layout-footer--thanks {
     margin-top: rem(144);
     @include mq("md") {
         margin-top: rem(120);

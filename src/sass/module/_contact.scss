@@ -360,9 +360,10 @@ textarea {
     border: 1px solid $green;
     position: absolute;
     left: 0;
-    top: 50%;
-    // top: 25%;
-    transform: translateY(-50%);
+    top: 0;
+    @include mq("md") {
+        top: rem(2);
+    }
 }
 
 /* Custom Checkbox Checked State */
