@@ -60,7 +60,8 @@
     padding: rem(16);
     padding-right: rem(60);
     cursor: pointer;
-    transition: opacity 0.3s;
+    // リンクではないので、ふわっと透過は不要
+    // transition: opacity 0.3s;
 
     position: relative;
     @include mq("md") {
@@ -70,11 +71,12 @@
     }
 }
 
-.faq-accordion__title:hover {
-    @include mq("md") {
-        opacity: 0.8;
-    }
-}
+// リンクではないので、ふわっと透過は不要
+// .faq-accordion__title:hover {
+//     @include mq("md") {
+//         opacity: 0.8;
+//     }
+// }
 
 // プラス記号の横棒の方
 .faq-accordion__title::before {
@@ -130,7 +132,8 @@
 .faq-accordion__content {
     border: 1px solid $green;
     padding: rem(24) rem(16);
-    // display: none;
+    // 最初は基本閉じた状態にしておく
+    display: none;
     @include mq("md") {
         margin-top: rem(16);
         padding: rem(40);
