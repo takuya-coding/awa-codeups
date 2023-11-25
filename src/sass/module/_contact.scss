@@ -123,13 +123,14 @@
         }
     }
 
-    [type="text"]:focus,
-    [type="email"]:focus,
-    [type="tel"]:focus {
-        outline: 2px solid $red;
-        /* 自由な色に変更可能 */
-        outline-offset: 0;
-    }
+    // アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
+    // [type="text"]:focus,
+    // [type="email"]:focus,
+    // [type="tel"]:focus {
+    //     outline: 2px solid $red;
+    //     /* 自由な色に変更可能 */
+    //     outline-offset: 0;
+    // }
 
     [type="text"]::placeholder,
     [type="email"]::placeholder,
@@ -215,9 +216,14 @@
   transform: translateY(-50%) rotate(45deg);
 }
 
+// アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
 /* Focus State */
+// [type="checkbox"]:focus + .contact__item-check-text::before {
+//     outline: 2px solid $red; /* Outline color when focused */
+//   }
+
 [type="checkbox"]:focus + .contact__item-check-text::before {
-    outline: 2px solid $red; /* Outline color when focused */
+    outline: 1px solid $green; /* Outline color when focused */
   }
 
 
@@ -274,10 +280,18 @@
     clip-path: polygon(0 0, 100% 0%, 50% 100%);
   }
 
+// アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
 /* Focus State */
+// .contact__item-select-box:focus {
+//     // border-color: #3498db; /* Border color when focused */
+//     outline: 2px solid $red;
+//     /* 自由な色に変更可能 */
+//     outline-offset: 0;
+//   }
+
 .contact__item-select-box:focus {
     // border-color: #3498db; /* Border color when focused */
-    outline: 2px solid $red;
+    outline: 1px solid $green;
     /* 自由な色に変更可能 */
     outline-offset: 0;
   }
@@ -316,7 +330,7 @@ textarea {
     // padding-top: rem(40);
     padding-top: rem(41.6);
     margin-top: rem(24);
-    border-top: 1px dotted $green;
+    border-top: 1px dashed $green;
     // width: calc(282 / 345 * 100%);
     width: 100%;
     text-align: center;
@@ -386,9 +400,13 @@ textarea {
     transform: translateY(-50%) rotate(45deg);
 }
 
+// アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
 /* Focus State */
+// [type="checkbox"]:focus + .contact__accept-check-text::before {
+//     outline: 2px solid $red; /* Outline color when focused */
+//   }
 [type="checkbox"]:focus + .contact__accept-check-text::before {
-    outline: 2px solid $red; /* Outline color when focused */
+    outline: 1px solid $green; /* Outline color when focused */
   }
 
 .contact__accept-check-text {
@@ -416,10 +434,11 @@ textarea {
     }
 }
 
+// アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
 /* Focus State */
-.contact__accept-check-text > a:focus {
-    outline: 2px solid $red; /* Outline color when focused */
-  }
+// .contact__accept-check-text > a:focus {
+//     outline: 2px solid $red; /* Outline color when focused */
+//   }
 
 
 
@@ -487,9 +506,13 @@ textarea {
     color: $green;
 }
 
+// アクセシビリティの観点で、選択されている部分に色を付ける場合は有効にする
 /* Focus State */
+// [type="submit"]:focus {
+//     outline: 2px solid $red; /* Outline color when focused */
+//   }
 [type="submit"]:focus {
-    outline: 2px solid $red; /* Outline color when focused */
+    outline: 1px solid $red; /* Outline color when focused */
   }
 
 .contact__button-arrow {
