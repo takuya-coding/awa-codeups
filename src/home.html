@@ -173,6 +173,21 @@
               </div>
             </div>
 
+            <!-- まずはblogページとしてのレイアウトを共通化する -->
+            <!-- <div class="blog layout-blog">
+              <div class="blog__inner inner">
+                <div class="blog__main blog-main">
+
+                </div>
+                <div class="blog__sidebar blog-sidebar">
+
+                </div>
+              </div>
+            </div> -->
+
+            <!-- blog__inner.innerクラスにpadding20pxを割り当てる。→サイドバーの余白はblog-sidebar__listクラスで%管理する -->
+            <!-- こうすれば、blog-main__innerとblog-sidebar__innerクラスの付いたdivタグは不要になるはず -->
+
             <div class="blog-content layout-blog-content">
               <div class="blog-content__inner inner">
                 <div class="blog-content__wrapper">
