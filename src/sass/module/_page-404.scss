@@ -4,8 +4,10 @@
     background-color: $green;
     position: relative;
 
-    // PCサイズ時のみ背景画像に合わせてpadding-bottomを設定
+    padding-top: rem(55.6);
     @include mq("md") {
+        padding-top: rem(132.8);
+        // PCサイズ時のみ背景画像に合わせてpadding-bottomを設定
         padding-bottom: rem(150);
     }
 }

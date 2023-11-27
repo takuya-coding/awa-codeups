@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.layout-page-404 {
-    padding-top: rem(55.6);
-    @include mq("md") {
-        padding-top: rem(132.8);
-    }
-}
