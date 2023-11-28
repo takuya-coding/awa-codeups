@@ -381,5 +381,85 @@ $(function () {
 
 
 
+// blogページサイドバーのアコーディオン
+const ANIMATION_TIME = 250;
+const OFFSET_TIME = 5;
+
+document.addEventListener('DOMContentLoaded', function () {
+
+	const accordions = document.querySelectorAll('.js-sidebar-accordion');
+	accordions.forEach((accordion) => {
+
+		const title = accordion.querySelector('.js-sidebar-accordion-title');
+		// const content = accordion.querySelector('.accordion__content');
+
+		// summary　クリックイベント
+		title.addEventListener('click', (e) => {
+			// すぐに open 属性が切り替わらないようにする
+			e.preventDefault();
+
+			// オープン / クローズ 処理
+			if (!accordion.open) {
+				// open属性を最初にセット
+				accordion.open = true;
+				const accordionHeight = accordion.offsetHeight; // コンテンツ部分の高さも含まれる
+				const titleHeight = title.offsetHeight;
+				// const contentHeight = content.offsetHeight;
+
+				// 一旦０pxにセット
+				accordion.style.height = `${titleHeight}px`;
+
+				// open付与から少しだけ遅らせた方が動作が安定する
+				setTimeout(() => {
+
+					accordion.classList.add('is-opened'); // クラスの追加
+					accordion.style.height = `${accordionHeight}px`;
+					
+					// アニメーション完了後にheight指定をリセット
+					setTimeout(() => {
+						accordion.style.height = '';
+					}, ANIMATION_TIME);
+
+				}, OFFSET_TIME);
+			
+			} else if (accordion.open) {
+				const accordionHeight = accordion.offsetHeight;
+				const titleHeight = title.offsetHeight;
+
+				console.log(accordionHeight);
+
+				accordion.style.height = `${accordionHeight}px`;
+				setTimeout(() => {
+					accordion.classList.remove('is-opened'); // クラスを削除
+					accordion.style.height = `${titleHeight}px`;
+				}, OFFSET_TIME);
+
+				// アニメーション完了後にopen属性を削除。（CSS側のアニメーション時間+少しだけ余裕をもたせている）
+				setTimeout(() => {
+					accordion.open = false;
+					accordion.style.height = '';
+				}, ANIMATION_TIME + OFFSET_TIME);
+			}
+		});
+
+			
+		// details　'toggle' イベント
+		accordion.addEventListener('toggle', () => {
+		// is-opened クラスを持つかどうか
+			const hasOpenedClass = accordion.classList.contains('is-opened');
+
+			if (accordion.open && !hasOpenedClass) {
+				// open はセットされたのに is-opened クラスがついてない時
+				accordion.classList.add('is-opened');
+			} else if (!accordion.open && hasOpenedClass) {
+				// open は削除されたのに is-opened クラスがまだついている時
+				accordion.classList.remove('is-opened');
+			}
+		});
+	});
+});
+
+
+
 
 });
