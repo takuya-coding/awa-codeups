@@ -1,9 +1,8 @@
 @use "global" as *;
 
-// innerの設定調整必要
 .blog__inner.inner {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: rem(20);
+    padding-left: rem(20);
     @include mq("md") {
         max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: $padding-pc;
@@ -11,12 +10,19 @@
     }
 }
 
+.blog__inner {
+    @include mq("md") {
+        display: flex;
+        gap: rem(80);
+    }
+}
+
 // .blog-content__wrapper {
-//     @include mq("md") {
-//         display: flex;
-//         gap: rem(80);
-//     }
-// }
+//         @include mq("md") {
+//                 display: flex;
+//                 gap: rem(80);
+//             }
+//         }
 
 .blog__main {
     width: 100%;
