@@ -8,6 +8,83 @@
     line-height: 1.5;
 }
 
+.sidebar-archive__accordion:not(:first-child) {
+    margin-top: rem(7.4);
+}
+
+.sidebar-archive__year {
+    cursor: pointer;
+
+    // 矢印アイコン分の余白
+    padding-left: rem(32);
+    position: relative;
+}
+
+// 矢印カスタマイズ
+.sidebar-archive__year::before {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: rem(5);
+    transform: translateY(-50%);
+    display: inline-block;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    background-color: $green;
+    width: rem(19.4);
+    height: rem(22.4);
+    transition: 0.4s;
+}
+
+// アコーディオン開閉時の矢印の挙動
+.sidebar-archive__year.is-open::before {
+    top: 27%;
+    left: rem(5);
+    transform: rotate(90deg);
+}
+
+.sidebar-archive__list {
+    text-indent: 1em;
+    margin-top: rem(4);
+    // 最初は閉じた状態にする
+    display: none;
+}
+
+.sidebar-archive__month a {
+    display: inline-block;
+    width: 100%;
+    padding-left: rem(8);
+    position: relative;
+    // hover指定がない場合のaタグの透過処理
+    transition: opacity 0.3s;
+}
+
+.sidebar-archive__month a::before {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: rem(5);
+    transform: translateY(-50%);
+    display: inline-block;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    background-color: $green;
+    width: rem(19.4);
+    height: rem(22.4);
+}
+
+.sidebar-archive__month a:hover {
+    @include mq("md") {
+        opacity: 0.8;
+    }
+}
+
+
+
+
+
+
+
 .sidebar-archive__details:not(:first-child) {
     margin-top: rem(7.4);
 }
@@ -120,19 +197,4 @@
     @include mq("md") {
         opacity: 0.8;
     }
-}
-
-
-
-
-
-.sidebar-archive__details {
-    height: auto;
-    transition: height .25s;
-    overflow: hidden;
-}
-
-
-.sidebar-archive__details.is-opened {
-    height: auto;
 }
