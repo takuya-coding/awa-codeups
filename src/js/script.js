@@ -352,16 +352,46 @@ modal.on("click", function () {
 
 
 
-// informationページのタブ
-const information_tabButton = $(".js-tab-button-information"),
-      information_tabContent = $(".js-information-content");
+// informationページのタブ（一般的なタブ切り替え）
+// const information_tabButton = $(".js-tab-button-information"),
+//       information_tabContent = $(".js-information-content");
 
-information_tabButton.on("click", function () {
-let index = information_tabButton.index(this);
-information_tabButton.removeClass("is-active");
-$(this).addClass("is-active");
-information_tabContent.removeClass("is-active");
-information_tabContent.eq(index).addClass("is-active");
+// information_tabButton.on("click", function () {
+// let index = information_tabButton.index(this);
+// information_tabButton.removeClass("is-active");
+// $(this).addClass("is-active");
+// information_tabContent.removeClass("is-active");
+// information_tabContent.eq(index).addClass("is-active");
+// });
+
+
+// informationページのタブ切り替え（リンククリック時に任意のタブコンテンツを開いた状態にする）
+$(function() {
+  // パラメータ取得
+  function getParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+ 
+  // ページ読み込み時のタブ切り替え
+  let tabPram = ['tab-1', 'tab-2', 'tab-3'];
+  let pram = getParam('active-tab');
+  if (pram && $.inArray(pram, tabPram) !== -1) {
+    $('.js-tab-button-information,.js-information-content').removeClass('is-active');
+    $('[data-tab="' + pram + '"]').addClass('is-active');
+  }
+ 
+  // ロード後のタブ切り替え
+  $('.js-tab-button-information').on('click', function() {
+    let dataPram = $(this).data('tab');
+    $('.js-tab-button-information,.js-information-content').removeClass('is-active');
+    $('[data-tab="' + dataPram + '"]').addClass('is-active');
+  });
 });
 
 

@@ -175,13 +175,13 @@
             <div class="information layout-information">
               <div class="information__inner inner">
                 <div class="information__tab information-tab">
-                  <button class="information-tab__button js-tab-button-information is-active">ライセンス<br class="u-mobile">講習</button>
-                  <button class="information-tab__button js-tab-button-information">ファン<br class="u-mobile">ダイビング</button>
-                  <button class="information-tab__button js-tab-button-information">体験<br class="u-mobile">ダイビング</button>
+                  <button class="information-tab__button js-tab-button-information is-active" data-tab="tab-1">ライセンス<br class="u-mobile">講習</button>
+                  <button class="information-tab__button js-tab-button-information" data-tab="tab-2">ファン<br class="u-mobile">ダイビング</button>
+                  <button class="information-tab__button js-tab-button-information" data-tab="tab-3">体験<br class="u-mobile">ダイビング</button>
                 </div>
 
                 <div class="information__content information-content">
-                  <div class="information-content__item js-information-content is-active">
+                  <div class="information-content__item js-information-content is-active" data-tab="tab-1">
                     <div class="information-content__item-wrap">
                       <div class="information-content__item-text">
                         <h3 class="information-content__title">ライセンス講習</h3>
@@ -192,7 +192,7 @@
                     </div>
                     </div>
                   </div>
-                  <div class="information-content__item js-information-content">
+                  <div class="information-content__item js-information-content" data-tab="tab-2">
                     <div class="information-content__item-wrap">
                       <div class="information-content__item-text">
                         <h3 class="information-content__title">ファインダイビング</h3>
@@ -203,7 +203,7 @@
                     </div>
                     </div>
                   </div>
-                  <div class="information-content__item js-information-content">
+                  <div class="information-content__item js-information-content" data-tab="tab-3">
                     <div class="information-content__item-wrap">
                       <div class="information-content__item-text">
                         <h3 class="information-content__title">体験ダイビング</h3>
@@ -285,9 +285,9 @@
                           <div class="common-nav__item">
                             <a href="page-diving-info.html">ダイビング情報</a>
                             <ul class="common-nav__lv2-items">
-                              <li class="common-nav__lv2-item"><a href="page-diving-info.html">ライセンス取得</a></li>
-                              <li class="common-nav__lv2-item"><a href="page-diving-info.html">体験ダイビング</a></li>
-                              <li class="common-nav__lv2-item"><a href="page-diving-info.html">ファンダイビング</a></li>
+                              <li class="common-nav__lv2-item"><a href="page-diving-info.html?active-tab=tab-1">ライセンス取得</a></li>
+                              <li class="common-nav__lv2-item"><a href="page-diving-info.html?active-tab=tab-2">体験ダイビング</a></li>
+                              <li class="common-nav__lv2-item"><a href="page-diving-info.html?active-tab=tab-3">ファンダイビング</a></li>
                             </ul>
                           </div>
                           <div class="common-nav__item">
