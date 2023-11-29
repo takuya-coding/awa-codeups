@@ -15,7 +15,9 @@
     // PC→SPへのレスポンシブ対応
     display: block;
     @include mq("md") {
-        max-width: rem(700);
+        // innerと幅制御がダブっている（innerで幅制御しているので、不要）
+        // 内側の子要素になるほど極力幅歯持たせず柔軟にしておくべき
+        // max-width: rem(700);
 
         // PCレイアウト維持のために必要（tableタグのdisplay初期値）
         display: table;
