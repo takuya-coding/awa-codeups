@@ -122,3 +122,17 @@
     }
 }
 
+
+
+
+
+.sidebar-archive__details {
+    height: auto;
+    transition: height .25s;
+    overflow: hidden;
+}
+
+
+.sidebar-archive__details.is-opened {
+    height: auto;
+}
