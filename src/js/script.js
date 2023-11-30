@@ -399,13 +399,12 @@ $(function() {
 // FAQページのアコーディオン
 $(function () {
     // 最初のコンテンツだけ表示する
-    $(".faq-accordion__item:first-of-type .faq-accordion__content").css("display", "block");
+    $(".js-faq-accordion-item:first-of-type .js-faq-accordion-content").css("display", "block");
     // 最初のみ矢印の向きを開いている状態に変えておく
-    $(".faq-accordion__item:first-of-type .faq-accordion__title").addClass("is-open");
+    $(".js-faq-accordion-item:first-of-type .js-faq-accordion-title").addClass("is-open");
     $(".js-faq-accordion-title").on("click", function () {
-    // $(this).toggleClass("is-open");
-    $(this).next().slideToggle(300);
-    $(this).toggleClass("is-open", 300);
+    $(this).next().slideToggle(400);
+    $(this).toggleClass("is-open", 400);
   });
 });
 
