@@ -10,6 +10,18 @@
     }
 }
 
+// blog詳細ページのみ適用
+.blog__inner.blog__inner--padding.inner {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    @include mq("md") {
+        max-width: $inner + strip-unit($padding-pc) * 2;
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+
 .blog__inner {
     @include mq("md") {
         display: flex;
@@ -34,13 +46,40 @@
     }
 }
 
+// .blog__sidebar {
+//     // width: 100%;
+//     @include mq("md") {
+//         // gap80px分は除いて1000px
+//         width: calc(calc(294 / 1000) * 100%);
+//     }
+// }
+
 .blog__sidebar {
-    width: 100%;
+    margin: 0 auto;
+    margin-top: rem(80);
+    // 375pxからinnerの左右padding分の値を引いた値が335px
+    width: calc(calc(294 / 335) * 100%);
     @include mq("md") {
+        margin-top: 0;
         // gap80px分は除いて1000px
         width: calc(calc(294 / 1000) * 100%);
     }
 }
+
+// blog詳細ページのみ適用
+.blog__sidebar.blog__sidebar--width {
+    // 375pxからinnerの左右padding分の値を引いた値が345px
+    width: calc(calc(294 / 345) * 100%);
+    @include mq("md") {
+        margin-top: 0;
+        // gap80px分は除いて1000px
+        width: calc(calc(294 / 1000) * 100%);
+    }
+}
+
+
+
+
 
 .blog {
     position: relative;
@@ -75,16 +114,5 @@
         width:rem(301);
         height:rem(138);
         left: calc(50% - min(43vw, 38.75rem));
-    }
-}
-
-.blog__sidebar {
-    margin-top: rem(80);
-
-    // 375pxからinnerの左右padding分の値を引いた値が335px
-    width: calc(calc(294 / 335) * 100%);
-    margin: 0 auto;
-    @include mq("md") {
-        margin-top: 0;
     }
 }
