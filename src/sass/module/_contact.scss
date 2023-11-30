@@ -55,13 +55,24 @@
     }
 }
 
+.contact__item:first-child {
+    padding-bottom: rem(24);
+    @include mq("md") {
+        padding-bottom: rem(40);
+    }
+}
+
 .contact__item:not(:first-child) {
-    padding-top: rem(24);
-    margin-top: rem(24);
+    // padding-top: rem(24);
+    // 上下にpaddingを取る
+    padding-block: rem(24);
+    // margin-top: rem(24);
     border-top: 1px dashed $green;
     @include mq("md") {
-        padding-top: rem(40);
-        margin-top: rem(40);
+        // padding-top: rem(40);
+        // 上下にpaddingを取る
+        padding-block: rem(40);
+        // margin-top: rem(40);
     }
 }
 
@@ -329,13 +340,13 @@ textarea {
 .contact__accept {
     // padding-top: rem(40);
     padding-top: rem(41.6);
-    margin-top: rem(24);
+    // margin-top: rem(24);
     border-top: 1px dashed $green;
     // width: calc(282 / 345 * 100%);
     width: 100%;
     text-align: center;
     @include mq("md") {
-        margin-top: rem(40);
+        // margin-top: rem(40);
         // padding-top: rem(80);
         padding-top: rem(76.8);
     }
