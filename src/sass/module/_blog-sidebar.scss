@@ -10,6 +10,11 @@
 //     }
 // }
 
+.blog-sidebar {
+    display: grid;
+    gap: rem(80);
+}
+
 .blog-sidebar__item-button {
     text-align: center;
     margin-top: rem(40);
@@ -59,12 +64,3 @@
 //     flex-wrap: wrap;
 //     align-content: center;
 // }
-
-
-
-
-
-.blog-sidebar {
-    display: grid;
-    gap: rem(80);
-}

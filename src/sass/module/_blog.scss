@@ -13,7 +13,9 @@
 .blog__inner {
     @include mq("md") {
         display: flex;
-        gap: rem(80);
+        column-gap: rem(80);
+        // サイドバーの高さがメインコンテンツに合わせて伸びてしまうのを防ぐ
+        align-items: flex-start;
     }
 }
 
